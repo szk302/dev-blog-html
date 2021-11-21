@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/categories/</link>
+    <description>Recent content in Categories on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Development</title>
+      <link>https://szk302.dev/categories/development/</link>
+      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://szk302.dev/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gravatar</title>
+      <link>https://szk302.dev/categories/gravatar/</link>
+      <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/gravatar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OSS</title>
+      <link>https://szk302.dev/categories/oss/</link>
+      <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/oss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service</title>
+      <link>https://szk302.dev/categories/service/</link>
+      <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://szk302.dev/categories/hugo/</link>
+      <pubDate>Sun, 14 Nov 2021 00:27:20 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
