@@ -9,7 +9,25 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 21 Nov 2021 20:24:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://szk302.dev/categories/git/</link>
+      <pubDate>Sun, 21 Nov 2021 20:24:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OSS</title>
+      <link>https://szk302.dev/categories/oss/</link>
+      <pubDate>Sun, 21 Nov 2021 20:24:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/oss/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Development</title>
       <link>https://szk302.dev/categories/development/</link>
@@ -25,15 +43,6 @@
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
       <guid>https://szk302.dev/categories/gravatar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OSS</title>
-      <link>https://szk302.dev/categories/oss/</link>
-      <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
-      
-      <guid>https://szk302.dev/categories/oss/</guid>
       <description></description>
     </item>
     
