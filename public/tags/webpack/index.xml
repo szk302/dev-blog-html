@@ -29,10 +29,10 @@ const rewireWebpackBundleAnalyzer = require(&amp;#39;react-app-rewire-webpack-bu
     
     <item>
       <title>Webpackでビルド時にconsole.logを削除する</title>
-      <link>https://szk302.dev/posts/webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABconsole.log%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</link>
+      <link>https://szk302.dev/posts/Webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABconsole.log%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://szk302.dev/posts/webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABconsole.log%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</guid>
+      <guid>https://szk302.dev/posts/Webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABconsole.log%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</guid>
       <description>Reactで書いたコードに含まれているconsole.logをwebpackのビルド時に消したいという要望があったので調査
    環境  react  17.0.1
  webpack  4.44.2
@@ -44,10 +44,10 @@ const rewireWebpackBundleAnalyzer = require(&amp;#39;react-app-rewire-webpack-bu
     
     <item>
       <title>Webpackでビルド時にSplitChunksPluginでファイル分割を行う</title>
-      <link>https://szk302.dev/posts/webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABsplitchunksplugin%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%88%86%E5%89%B2%E3%82%92%E8%A1%8C%E3%81%86/</link>
+      <link>https://szk302.dev/posts/Webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABSplitChunksPlugin%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%88%86%E5%89%B2%E3%82%92%E8%A1%8C%E3%81%86/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://szk302.dev/posts/webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABsplitchunksplugin%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%88%86%E5%89%B2%E3%82%92%E8%A1%8C%E3%81%86/</guid>
+      <guid>https://szk302.dev/posts/Webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABSplitChunksPlugin%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%88%86%E5%89%B2%E3%82%92%E8%A1%8C%E3%81%86/</guid>
       <description>Webpackでビルド時に生成されるファイルを300kb以下に抑えたいという要望があったので調査
    環境  react  17.0.1
  webpack  4.44.2

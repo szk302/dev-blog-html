@@ -9,31 +9,40 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Nov 2021 07:46:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Nov 2021 22:37:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cloudflare</title>
+      <link>https://szk302.dev/tags/Cloudflare/</link>
+      <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Cloudflare/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Cloudfrare</title>
-      <link>https://szk302.dev/tags/cloudfrare/</link>
+      <link>https://szk302.dev/tags/Cloudfrare/</link>
       <pubDate>Mon, 22 Nov 2021 07:46:00 +0900</pubDate>
       
-      <guid>https://szk302.dev/tags/cloudfrare/</guid>
+      <guid>https://szk302.dev/tags/Cloudfrare/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://szk302.dev/tags/git/</link>
+      <link>https://szk302.dev/tags/Git/</link>
       <pubDate>Sun, 21 Nov 2021 20:24:00 +0900</pubDate>
       
-      <guid>https://szk302.dev/tags/git/</guid>
+      <guid>https://szk302.dev/tags/Git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>React</title>
-      <link>https://szk302.dev/tags/react/</link>
+      <link>https://szk302.dev/tags/React/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://szk302.dev/tags/react/</guid>
+      <guid>https://szk302.dev/tags/React/</guid>
       <description></description>
     </item>
     
@@ -75,46 +84,46 @@
     
     <item>
       <title>AsciiDoc</title>
-      <link>https://szk302.dev/tags/asciidoc/</link>
+      <link>https://szk302.dev/tags/AsciiDoc/</link>
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
-      <guid>https://szk302.dev/tags/asciidoc/</guid>
+      <guid>https://szk302.dev/tags/AsciiDoc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Asciidoctor</title>
-      <link>https://szk302.dev/tags/asciidoctor/</link>
+      <link>https://szk302.dev/tags/Asciidoctor/</link>
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
-      <guid>https://szk302.dev/tags/asciidoctor/</guid>
+      <guid>https://szk302.dev/tags/Asciidoctor/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gravatar</title>
-      <link>https://szk302.dev/tags/gravatar/</link>
+      <link>https://szk302.dev/tags/Gravatar/</link>
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
-      <guid>https://szk302.dev/tags/gravatar/</guid>
+      <guid>https://szk302.dev/tags/Gravatar/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
-      <link>https://szk302.dev/tags/hugo/</link>
+      <link>https://szk302.dev/tags/Hugo/</link>
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
-      <guid>https://szk302.dev/tags/hugo/</guid>
+      <guid>https://szk302.dev/tags/Hugo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PlantUML</title>
-      <link>https://szk302.dev/tags/plantuml/</link>
+      <link>https://szk302.dev/tags/PlantUML/</link>
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
-      <guid>https://szk302.dev/tags/plantuml/</guid>
+      <guid>https://szk302.dev/tags/PlantUML/</guid>
       <description></description>
     </item>
     
@@ -138,10 +147,10 @@
     
     <item>
       <title>Awesome Open Source</title>
-      <link>https://szk302.dev/tags/awesome-open-source/</link>
+      <link>https://szk302.dev/tags/Awesome-Open-Source/</link>
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://szk302.dev/tags/awesome-open-source/</guid>
+      <guid>https://szk302.dev/tags/Awesome-Open-Source/</guid>
       <description></description>
     </item>
     

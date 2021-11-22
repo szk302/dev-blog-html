@@ -9,58 +9,67 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Nov 2021 07:46:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Nov 2021 22:37:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cloudfrare</title>
-      <link>https://szk302.dev/categories/cloudfrare/</link>
-      <pubDate>Mon, 22 Nov 2021 07:46:00 +0900</pubDate>
+      <title>Cloudflare</title>
+      <link>https://szk302.dev/categories/Cloudflare/</link>
+      <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
       
-      <guid>https://szk302.dev/categories/cloudfrare/</guid>
+      <guid>https://szk302.dev/categories/Cloudflare/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Service</title>
-      <link>https://szk302.dev/categories/service/</link>
+      <link>https://szk302.dev/categories/Service/</link>
+      <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/Service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloudfrare</title>
+      <link>https://szk302.dev/categories/Cloudfrare/</link>
       <pubDate>Mon, 22 Nov 2021 07:46:00 +0900</pubDate>
       
-      <guid>https://szk302.dev/categories/service/</guid>
+      <guid>https://szk302.dev/categories/Cloudfrare/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Git</title>
-      <link>https://szk302.dev/categories/git/</link>
+      <link>https://szk302.dev/categories/Git/</link>
       <pubDate>Sun, 21 Nov 2021 20:24:00 +0900</pubDate>
       
-      <guid>https://szk302.dev/categories/git/</guid>
+      <guid>https://szk302.dev/categories/Git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OSS</title>
-      <link>https://szk302.dev/categories/oss/</link>
+      <link>https://szk302.dev/categories/OSS/</link>
       <pubDate>Sun, 21 Nov 2021 20:24:00 +0900</pubDate>
       
-      <guid>https://szk302.dev/categories/oss/</guid>
+      <guid>https://szk302.dev/categories/OSS/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://szk302.dev/categories/development/</link>
+      <link>https://szk302.dev/categories/Development/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://szk302.dev/categories/development/</guid>
+      <guid>https://szk302.dev/categories/Development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gravatar</title>
-      <link>https://szk302.dev/categories/gravatar/</link>
+      <link>https://szk302.dev/categories/Gravatar/</link>
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
-      <guid>https://szk302.dev/categories/gravatar/</guid>
+      <guid>https://szk302.dev/categories/Gravatar/</guid>
       <description></description>
     </item>
     

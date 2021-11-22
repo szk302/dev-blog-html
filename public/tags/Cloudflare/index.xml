@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cloudflare on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/tags/Cloudflare/</link>
+    <description>Recent content in Cloudflare on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 22 Nov 2021 22:37:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CloudflareのWebサイト設定でcacheを無効にする</title>
+      <link>https://szk302.dev/posts/Cloudflare%E3%81%AEWeb%E3%82%B5%E3%82%A4%E3%83%88%E8%A8%AD%E5%AE%9A%E3%81%A7cache%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Cloudflare%E3%81%AEWeb%E3%82%B5%E3%82%A4%E3%83%88%E8%A8%AD%E5%AE%9A%E3%81%A7cache%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B/</guid>
+      <description>CloudflarePagesにはデフォルトでcacheが組み込まれているらしい。 Webサイト側のcacheはいらないようなのでRuleで無効化した。(※ルール以外で無効化する方法がわからなかった)
+   手順  Webサイトの画面を表示しルールのページルールから[ページルールを作成]をクリック
+  
+     以下の項目を設定
+  URLが一致する場合: *.szk302.dev/*
+  その後の設定は: キャッシュレベル スキップ
+  
+     [保存]ボタンを押下
+     参考   Caching and performance
+  Disable Cloudflare caching completly
+     </description>
+    </item>
+    
+    <item>
+      <title>Cloudflareでホスティングしてキャッシュした際ブラウザでCSSだけダウンロードブロックされる</title>
+      <link>https://szk302.dev/posts/Cloudflare%E3%81%A7%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%81%97%E3%81%9F%E9%9A%9B%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A7CSS%E3%81%A0%E3%81%91%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%95%E3%82%8C%E3%82%8B/</link>
+      <pubDate>Mon, 22 Nov 2021 07:46:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Cloudflare%E3%81%A7%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%81%97%E3%81%9F%E9%9A%9B%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A7CSS%E3%81%A0%E3%81%91%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%95%E3%82%8C%E3%82%8B/</guid>
+      <description>Cloudflareでこのブログをホスティングしたところ、cssファイルのダウンロードがされず画面が崩れた。
+   対応 Webサイトの設定からキャッシュをパージする。
+  Webサイトの設定画面を表示
+  [キャッシュをパージ]をクリック
+  
+     [すべてパージ]をクリック
+  
+        確認   自分のブラウザのキャッシュを消して再表示
+     発生したブラウザのコンソールのエラー Failed to find a valid digest in the &amp;#39;integrity&amp;#39; attribute for resource &amp;#39;https://szk302.dev/assets/css/stylesheet.min.61dfb3f0b4cda95d2ccb867f9a3b244ce5d23e12492bcc3c277df594c7bc1adf.css&amp;#39; with computed SHA-256 integrity &amp;#39;QGnSnhEdLT7Y+NlgDiW6AvlhSlFVwPYr2z3i9eimKWU=&amp;#39;. The resource has been blocked.     参考   Failed to find a valid digest in the integrity attribute #114</description>
+    </item>
+    
+  </channel>
+</rss>
