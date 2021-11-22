@@ -9,7 +9,16 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Nov 2021 23:26:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Nov 2021 23:36:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://szk302.dev/tags/Git/</link>
+      <pubDate>Mon, 22 Nov 2021 23:36:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Git/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Hugo</title>
       <link>https://szk302.dev/tags/Hugo/</link>
@@ -29,11 +38,11 @@
     </item>
     
     <item>
-      <title>Git</title>
-      <link>https://szk302.dev/tags/Git/</link>
-      <pubDate>Sun, 21 Nov 2021 20:24:00 +0900</pubDate>
+      <title>Cloudfrare</title>
+      <link>https://szk302.dev/tags/Cloudfrare/</link>
+      <pubDate>Mon, 22 Nov 2021 08:50:00 +0900</pubDate>
       
-      <guid>https://szk302.dev/tags/Git/</guid>
+      <guid>https://szk302.dev/tags/Cloudfrare/</guid>
       <description></description>
     </item>
     

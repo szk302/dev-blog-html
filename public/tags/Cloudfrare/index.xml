@@ -9,22 +9,18 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Nov 2021 07:46:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Cloudfrare/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Nov 2021 08:50:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Cloudfrare/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cloudfrareでホスティングしてキャッシュした際ブラウザでCSSだけダウンロードブロックされる</title>
-      <link>https://szk302.dev/posts/Cloudfrare%E3%81%A7%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%81%97%E3%81%9F%E9%9A%9B%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A7CSS%E3%81%A0%E3%81%91%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%95%E3%82%8C%E3%82%8B/</link>
-      <pubDate>Mon, 22 Nov 2021 07:46:00 +0900</pubDate>
+      <title>GitSubmoduleで親のリポジトリでupdateしても子が同期されない</title>
+      <link>https://szk302.dev/posts/GitSubmodule%E3%81%A7%E8%A6%AA%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%A7update%E3%81%97%E3%81%A6%E3%82%82%E5%AD%90%E3%81%8C%E5%90%8C%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/</link>
+      <pubDate>Mon, 22 Nov 2021 08:50:00 +0900</pubDate>
       
-      <guid>https://szk302.dev/posts/Cloudfrare%E3%81%A7%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%81%97%E3%81%9F%E9%9A%9B%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A7CSS%E3%81%A0%E3%81%91%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%95%E3%82%8C%E3%82%8B/</guid>
-      <description>Cloudfrareでこのブログをホスティングしたところ、cssファイルのダウンロードがされず画面が崩れた。
-   対応 Webサイトの設定からキャッシュをパージする。
-  Webサイトの設定画面を表示
-  [キャッシュをパージ]をクリック
-  
-     [すべてパージ]をクリック
-  
-        確認   自分のブラウザのキャッシュを消して再表示
-     発生したブラウザのコンソールのエラー Failed to find a valid digest in the &amp;#39;integrity&amp;#39; attribute for resource &amp;#39;https://szk302.dev/assets/css/stylesheet.min.61dfb3f0b4cda95d2ccb867f9a3b244ce5d23e12492bcc3c277df594c7bc1adf.css&amp;#39; with computed SHA-256 integrity &amp;#39;QGnSnhEdLT7Y+NlgDiW6AvlhSlFVwPYr2z3i9eimKWU=&amp;#39;. The resource has been blocked.     参考   Failed to find a valid digest in the integrity attribute #114</description>
+      <guid>https://szk302.dev/posts/GitSubmodule%E3%81%A7%E8%A6%AA%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%A7update%E3%81%97%E3%81%A6%E3%82%82%E5%AD%90%E3%81%8C%E5%90%8C%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/</guid>
+      <description>git submodule update してもsubmoduleがupdateがされない。
+ 最初に行ったsubmoduleの追加方法が悪いようだった。
+   対応  以下のようにブランチを指定して追加
+git submodule add -b ブランチ名 リポジトリアドレス パス     親リポジトリで git submodule update --remote コマンドでsubmoduleのリポジトリを最新化
+     </description>
     </item>
     
   </channel>

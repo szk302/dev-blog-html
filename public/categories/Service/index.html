@@ -6,7 +6,10 @@ URLが一致する場合: *.szk302.dev/*
 その後の設定は: キャッシュレベル スキップ
 [保存]ボタンを押下
 参考 Caching and performance
-Disable Cloudflare caching completly</p></section><footer class=entry-footer><span title="2021-11-22 22:37:00 +0900 +0900">2021-11-22T22:37:00+09:00</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Szk302</footer><a class=entry-link aria-label="post link to CloudflareのWebサイト設定でcacheを無効にする" href=https://szk302.dev/posts/Cloudflare%E3%81%AEWeb%E3%82%B5%E3%82%A4%E3%83%88%E8%A8%AD%E5%AE%9A%E3%81%A7cache%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2>Cloudflareでホスティングしてキャッシュした際ブラウザでCSSだけダウンロードブロックされる</h2></header><section class=entry-content><p>Cloudflareでこのブログをホスティングしたところ、cssファイルのダウンロードがされず画面が崩れた。
+Disable Cloudflare caching completly</p></section><footer class=entry-footer><span title="2021-11-22 22:37:00 +0900 +0900">2021-11-22T22:37:00+09:00</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Szk302</footer><a class=entry-link aria-label="post link to CloudflareのWebサイト設定でcacheを無効にする" href=https://szk302.dev/posts/Cloudflare%E3%81%AEWeb%E3%82%B5%E3%82%A4%E3%83%88%E8%A8%AD%E5%AE%9A%E3%81%A7cache%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2>GitSubmoduleで親のリポジトリでupdateしても子が同期されない</h2></header><section class=entry-content><p>git submodule update してもsubmoduleがupdateがされない。
+最初に行ったsubmoduleの追加方法が悪いようだった。
+対応 以下のようにブランチを指定して追加
+git submodule add -b ブランチ名 リポジトリアドレス パス 親リポジトリで git submodule update --remote コマンドでsubmoduleのリポジトリを最新化</p></section><footer class=entry-footer><span title="2021-11-22 08:50:00 +0900 +0900">2021-11-22T08:50:00+09:00</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Szk302</footer><a class=entry-link aria-label="post link to GitSubmoduleで親のリポジトリでupdateしても子が同期されない" href=https://szk302.dev/posts/GitSubmodule%E3%81%A7%E8%A6%AA%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%A7update%E3%81%97%E3%81%A6%E3%82%82%E5%AD%90%E3%81%8C%E5%90%8C%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/></a></article><article class="post-entry tag-entry"><header class=entry-header><h2>Cloudflareでホスティングしてキャッシュした際ブラウザでCSSだけダウンロードブロックされる</h2></header><section class=entry-content><p>Cloudflareでこのブログをホスティングしたところ、cssファイルのダウンロードがされず画面が崩れた。
 対応 Webサイトの設定からキャッシュをパージする。
 Webサイトの設定画面を表示
 [キャッシュをパージ]をクリック

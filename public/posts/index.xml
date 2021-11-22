@@ -9,7 +9,27 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Nov 2021 23:26:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Nov 2021 23:36:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitSubmoduleを削除</title>
+      <link>https://szk302.dev/posts/GitSubmodule%E3%82%92%E5%89%8A%E9%99%A4/</link>
+      <pubDate>Mon, 22 Nov 2021 23:36:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/GitSubmodule%E3%82%92%E5%89%8A%E9%99%A4/</guid>
+      <description>contentをsubmoduleとして登録してあり削除する。
+ Console szk@X1:~/szk302/dev-blog-builder$ tree -L 1 . ├── archetypes ├── config.yml ├── content // submodule ├── environment ├── layouts ├── public ├── resources ├── themes └── tool_version.env 7 directories, 2 files   Console git submodule deinit -f content git rm -f content rm -rf .git/modules/content   </description>
+    </item>
+    
+    <item>
+      <title>Gitメモ</title>
+      <link>https://szk302.dev/posts/Git%E3%83%A1%E3%83%A2/</link>
+      <pubDate>Mon, 22 Nov 2021 23:36:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Git%E3%83%A1%E3%83%A2/</guid>
+      <description>GitSubmoduleを削除 contentをsubmoduleとして登録してあり削除する。
+ Console szk@X1:~/szk302/dev-blog-builder$ tree -L 1 . ├── archetypes ├── config.yml ├── content // submodule ├── environment ├── layouts ├── public ├── resources ├── themes └── tool_version.env 7 directories, 2 files   Console git submodule deinit -f content git rm -f content rm -rf .git/modules/content     </description>
+    </item>
+    
     <item>
       <title>Hugoでhtmlを生成した際にパスが小文字になる</title>
       <link>https://szk302.dev/posts/Hugo%E3%81%A7html%E3%82%92%E7%94%9F%E6%88%90%E3%81%97%E3%81%9F%E9%9A%9B%E3%81%AB%E3%83%91%E3%82%B9%E3%81%8C%E5%B0%8F%E6%96%87%E5%AD%97%E3%81%AB%E3%81%AA%E3%82%8B/</link>
@@ -38,6 +58,19 @@
      [保存]ボタンを押下
      参考   Caching and performance
   Disable Cloudflare caching completly
+     </description>
+    </item>
+    
+    <item>
+      <title>GitSubmoduleで親のリポジトリでupdateしても子が同期されない</title>
+      <link>https://szk302.dev/posts/GitSubmodule%E3%81%A7%E8%A6%AA%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%A7update%E3%81%97%E3%81%A6%E3%82%82%E5%AD%90%E3%81%8C%E5%90%8C%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/</link>
+      <pubDate>Mon, 22 Nov 2021 08:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/GitSubmodule%E3%81%A7%E8%A6%AA%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%A7update%E3%81%97%E3%81%A6%E3%82%82%E5%AD%90%E3%81%8C%E5%90%8C%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/</guid>
+      <description>git submodule update してもsubmoduleがupdateがされない。
+ 最初に行ったsubmoduleの追加方法が悪いようだった。
+   対応  以下のようにブランチを指定して追加
+git submodule add -b ブランチ名 リポジトリアドレス パス     親リポジトリで git submodule update --remote コマンドでsubmoduleのリポジトリを最新化
      </description>
     </item>
     
