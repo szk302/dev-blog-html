@@ -9,22 +9,22 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Nov 2021 22:37:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Nov 2021 23:26:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo</title>
+      <link>https://szk302.dev/tags/Hugo/</link>
+      <pubDate>Mon, 22 Nov 2021 23:26:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Hugo/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Cloudflare</title>
       <link>https://szk302.dev/tags/Cloudflare/</link>
       <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Cloudflare/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Cloudfrare</title>
-      <link>https://szk302.dev/tags/Cloudfrare/</link>
-      <pubDate>Mon, 22 Nov 2021 07:46:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/Cloudfrare/</guid>
       <description></description>
     </item>
     
@@ -106,15 +106,6 @@
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Gravatar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>https://szk302.dev/tags/Hugo/</link>
-      <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/Hugo/</guid>
       <description></description>
     </item>
     

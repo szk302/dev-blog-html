@@ -9,7 +9,19 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 21 Nov 2021 20:24:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/OSS/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Nov 2021 23:26:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/OSS/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugoでhtmlを生成した際にパスが小文字になる</title>
+      <link>https://szk302.dev/posts/Hugo%E3%81%A7html%E3%82%92%E7%94%9F%E6%88%90%E3%81%97%E3%81%9F%E9%9A%9B%E3%81%AB%E3%83%91%E3%82%B9%E3%81%8C%E5%B0%8F%E6%96%87%E5%AD%97%E3%81%AB%E3%81%AA%E3%82%8B/</link>
+      <pubDate>Mon, 22 Nov 2021 23:26:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Hugo%E3%81%A7html%E3%82%92%E7%94%9F%E6%88%90%E3%81%97%E3%81%9F%E9%9A%9B%E3%81%AB%E3%83%91%E3%82%B9%E3%81%8C%E5%B0%8F%E6%96%87%E5%AD%97%E3%81%AB%E3%81%AA%E3%82%8B/</guid>
+      <description>Hugoでhtmlを生成した際に大文字のファイル名で生成したところ、パスが小文字となり画像が表示されない問題が発生 config.ymlにオプション disablePathToLower を指定することで大文字のままhtmlを出力できた。
+   参考   Configure Hugo/disablePathToLower
+  Url is downcased #557
+     </description>
+    </item>
+    
     <item>
       <title>Gitで差分がある場合だけコミットする</title>
       <link>https://szk302.dev/posts/Git%E3%81%A7%E5%B7%AE%E5%88%86%E3%81%8C%E3%81%82%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%A0%E3%81%91%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%99%E3%82%8B/</link>

@@ -9,7 +9,25 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Nov 2021 22:37:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Nov 2021 23:26:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hugo</title>
+      <link>https://szk302.dev/categories/hugo/</link>
+      <pubDate>Mon, 22 Nov 2021 23:26:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OSS</title>
+      <link>https://szk302.dev/categories/OSS/</link>
+      <pubDate>Mon, 22 Nov 2021 23:26:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/OSS/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Cloudflare</title>
       <link>https://szk302.dev/categories/Cloudflare/</link>
@@ -29,29 +47,11 @@
     </item>
     
     <item>
-      <title>Cloudfrare</title>
-      <link>https://szk302.dev/categories/Cloudfrare/</link>
-      <pubDate>Mon, 22 Nov 2021 07:46:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/categories/Cloudfrare/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Git</title>
       <link>https://szk302.dev/categories/Git/</link>
       <pubDate>Sun, 21 Nov 2021 20:24:00 +0900</pubDate>
       
       <guid>https://szk302.dev/categories/Git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>OSS</title>
-      <link>https://szk302.dev/categories/OSS/</link>
-      <pubDate>Sun, 21 Nov 2021 20:24:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/categories/OSS/</guid>
       <description></description>
     </item>
     
@@ -70,15 +70,6 @@
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
       <guid>https://szk302.dev/categories/Gravatar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>hugo</title>
-      <link>https://szk302.dev/categories/hugo/</link>
-      <pubDate>Sun, 14 Nov 2021 00:27:20 +0900</pubDate>
-      
-      <guid>https://szk302.dev/categories/hugo/</guid>
       <description></description>
     </item>
     
