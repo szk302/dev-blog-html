@@ -9,6 +9,7 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
     <lastBuildDate>Mon, 22 Nov 2021 22:37:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/Service/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CloudflareのWebサイト設定でcacheを無効にする</title>
@@ -16,17 +17,7 @@
       <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Cloudflare%E3%81%AEWeb%E3%82%B5%E3%82%A4%E3%83%88%E8%A8%AD%E5%AE%9A%E3%81%A7cache%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B/</guid>
-      <description>CloudflarePagesにはデフォルトでcacheが組み込まれているらしい。 Webサイト側のcacheはいらないようなのでRuleで無効化した。(※ルール以外で無効化する方法がわからなかった)
-   手順  Webサイトの画面を表示しルールのページルールから[ページルールを作成]をクリック
-  
-     以下の項目を設定
-  URLが一致する場合: *.szk302.dev/*
-  その後の設定は: キャッシュレベル スキップ
-  
-     [保存]ボタンを押下
-     参考   Caching and performance
-  Disable Cloudflare caching completly
-     </description>
+      <description>CloudflarePagesにはデフォルトでcacheが組み込まれているらしい。 Webサイト側のcacheはいらないようなのでRuleで無</description>
     </item>
     
     <item>
@@ -35,11 +26,7 @@
       <pubDate>Mon, 22 Nov 2021 08:50:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/GitSubmodule%E3%81%A7%E8%A6%AA%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%A7update%E3%81%97%E3%81%A6%E3%82%82%E5%AD%90%E3%81%8C%E5%90%8C%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/</guid>
-      <description>git submodule update してもsubmoduleがupdateがされない。
- 最初に行ったsubmoduleの追加方法が悪いようだった。
-   対応  以下のようにブランチを指定して追加
-git submodule add -b ブランチ名 リポジトリアドレス パス     親リポジトリで git submodule update --remote コマンドでsubmoduleのリポジトリを最新化
-     </description>
+      <description>git submodule update してもsubmoduleがupdateがされない。 最初に行ったsubmoduleの追加方法が悪いようだった。 対応 以下のようにブランチを</description>
     </item>
     
     <item>
@@ -48,15 +35,7 @@ git submodule add -b ブランチ名 リポジトリアドレス パス     親�
       <pubDate>Mon, 22 Nov 2021 07:46:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Cloudflare%E3%81%A7%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%81%97%E3%81%9F%E9%9A%9B%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A7CSS%E3%81%A0%E3%81%91%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%95%E3%82%8C%E3%82%8B/</guid>
-      <description>Cloudflareでこのブログをホスティングしたところ、cssファイルのダウンロードがされず画面が崩れた。
-   対応 Webサイトの設定からキャッシュをパージする。
-  Webサイトの設定画面を表示
-  [キャッシュをパージ]をクリック
-  
-     [すべてパージ]をクリック
-  
-        確認   自分のブラウザのキャッシュを消して再表示
-     発生したブラウザのコンソールのエラー Failed to find a valid digest in the &amp;#39;integrity&amp;#39; attribute for resource &amp;#39;https://szk302.dev/assets/css/stylesheet.min.61dfb3f0b4cda95d2ccb867f9a3b244ce5d23e12492bcc3c277df594c7bc1adf.css&amp;#39; with computed SHA-256 integrity &amp;#39;QGnSnhEdLT7Y+NlgDiW6AvlhSlFVwPYr2z3i9eimKWU=&amp;#39;. The resource has been blocked.     参考   Failed to find a valid digest in the integrity attribute #114</description>
+      <description>Cloudflareでこのブログをホスティングしたところ、cssファイルのダウンロードがされず画面が崩れた。 対応 Webサイトの設定からキャッ</description>
     </item>
     
     <item>
@@ -65,11 +44,7 @@ git submodule add -b ブランチ名 リポジトリアドレス パス     親�
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Gravatar%E3%81%AB%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%9F%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E7%94%BB%E5%83%8F%E3%81%AEURL%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</guid>
-      <description>Gravatarに登録したプロフィール画像のURL取得方法を調査した。
- MD5のハッシュ値(小文字)に変換して https://www.gravatar.com/avatar/ につなげることでプロフィール画像のURLになる
- 以下、Powershellのスクリプト
- $email = &amp;#34;メールアドレス&amp;#34; $stream = [IO.MemoryStream]::new([Text.Encoding]::UTF8.GetBytes($email.Trim().ToLower())) $hash = (Get-FileHash -InputStream $stream -Algorithm MD5).Hash.toLower() echo &amp;#34;https://www.gravatar.com/avatar/$hash&amp;#34;     参考   Gravatar/Creating the Hash
-     </description>
+      <description>Gravatarに登録したプロフィール画像のURL取得方法を調査した。 MD5のハッシュ値(小文字)に変換して https://www.gravatar.com/avatar/ につなげることでプロフィール画</description>
     </item>
     
     <item>
@@ -78,11 +53,7 @@ git submodule add -b ブランチ名 リポジトリアドレス パス     親�
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Gravatar%E3%81%AB%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%9F%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E7%94%BB%E5%83%8F%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B/</guid>
-      <description>URLの最後に ?s=ピルクセル数 をつける
-  100px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=100)  
- 200px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=200)  
-     参考   Gravatar/Image Requests
-     </description>
+      <description>URLの最後に ?s=ピルクセル数 をつける 100px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=100) 200px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=200) 参考 Gravatar/Image Requests</description>
     </item>
     
   </channel>

@@ -9,6 +9,7 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
     <lastBuildDate>Wed, 17 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://szk302.dev/categories/Development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>react-app-rewiredでwebpack-bundle-analyzerを使用する</title>
@@ -16,15 +17,7 @@
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://szk302.dev/posts/react-app-rewired%E3%81%A7webpack-bundle-analyzer%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B/</guid>
-      <description>react-app-rewiredで作られたプロジェクトでwebpack-bundle-analyzerを使用したかったので調査
-   環境   react: 17.0.1
-  webpack: 4.44.2
-  react-app-rewired: 2.1.8
-     方法 byzyk/react-app-rewire-webpack-bundle-analyzer を使用する
-  インストール
-  yarn add --dev react-app-rewire-webpack-bundle-analyzer
-     config-overrides.jsに以下のように記述
-const rewireWebpackBundleAnalyzer = require(&amp;#39;react-app-rewire-webpack-bundle-analyzer&amp;#39;) module.exports = function override(config, env) { // ... if (env === &amp;#39;production&amp;#39;) { config = rewireWebpackBundleAnalyzer(config, env, { analyzerMode: &amp;#39;static&amp;#39;, reportFilename: &amp;#39;report.html&amp;#39; }) } return config }     yarn build でビルド終了後、ブラウザが立ち上がり結果が表示される</description>
+      <description>react-app-rewiredで作られたプロジェクトでwebpack-bundle-analyzerを使用したかったので調査 環境 react: 17.0.1 webpack: 4.44.2</description>
     </item>
     
     <item>
@@ -33,13 +26,7 @@ const rewireWebpackBundleAnalyzer = require(&amp;#39;react-app-rewire-webpack-bu
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://szk302.dev/posts/Webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABconsole.log%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</guid>
-      <description>Reactで書いたコードに含まれているconsole.logをwebpackのビルド時に消したいという要望があったので調査
-   環境  react  17.0.1
- webpack  4.44.2
- terser-webpack-plugin  4.2.3
-     設定 console.* 系すべてを消す場合 terserOptionsのcompressに drop_console=true を設定する
- { terserOptions:{ cache: true, parallel: true, sourceMap: false, compress:{ drop_console: true, } } }    console.log,infoだけ消す場合 terserOptionsのcompressに pure_funcs=[&amp;#39;console.log&amp;#39;,&amp;#39;console.info&amp;#39;] を設定する
- { terserOptions:{ cache: true, parallel: true, sourceMap: false, compress:{ pure_funcs: [ &amp;#39;console.log&amp;#39;, &amp;#39;console.info&amp;#39; ] } } }      参考   Remove console.</description>
+      <description>Reactで書いたコードに含まれているconsole.logをwebpackのビルド時に消したいという要望があったので調査 環境 react 17.0.1 webpack 4.44.2 terser-webpack-plugin 4.2.3 設</description>
     </item>
     
     <item>
@@ -48,15 +35,7 @@ const rewireWebpackBundleAnalyzer = require(&amp;#39;react-app-rewire-webpack-bu
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://szk302.dev/posts/Webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABSplitChunksPlugin%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%88%86%E5%89%B2%E3%82%92%E8%A1%8C%E3%81%86/</guid>
-      <description>Webpackでビルド時に生成されるファイルを300kb以下に抑えたいという要望があったので調査
-   環境  react  17.0.1
- webpack  4.44.2
- terser-webpack-plugin  4.2.3
-     設定 以下のパラメータ設定をしたところ、ファイル数とファイルサイズが要望通りに収まった
-   minSize: 100000,
-  maxSize: 300000,
-  maxInitialRequests: 10,
-   { optimization: { splitChunks: { chunks: &amp;#39;initial&amp;#39;, minSize: 100000, maxSize: 300000, maxInitialRequests: 10, cacheGroups: { vendor: { test: /[\\/]node_modules[\\/]/, reuseExistingChunk: true, name(module,chunks,cacheGroupKey) { const allChunksHashes = chunks.map((item)=&amp;gt;item.hash).join(&amp;#39;~&amp;#39;); return `${cacheGroupKey}${allChunksHashes}` } }, }, }, }, }   ファイルは以下のようなファイル名で出力された。</description>
+      <description>Webpackでビルド時に生成されるファイルを300kb以下に抑えたいという要望があったので調査 環境 react 17.0.1 webpack 4.44.2 terser-webpack-plugin 4.2.3 設定 以下のパラメータ設定をし</description>
     </item>
     
   </channel>

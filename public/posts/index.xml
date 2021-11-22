@@ -9,6 +9,7 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
     <lastBuildDate>Mon, 22 Nov 2021 23:36:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GitSubmoduleを削除</title>
@@ -16,18 +17,7 @@
       <pubDate>Mon, 22 Nov 2021 23:36:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/GitSubmodule%E3%82%92%E5%89%8A%E9%99%A4/</guid>
-      <description>contentをsubmoduleとして登録してあり削除する。
- Console szk@X1:~/szk302/dev-blog-builder$ tree -L 1 . ├── archetypes ├── config.yml ├── content // submodule ├── environment ├── layouts ├── public ├── resources ├── themes └── tool_version.env 7 directories, 2 files   Console git submodule deinit -f content git rm -f content rm -rf .git/modules/content   </description>
-    </item>
-    
-    <item>
-      <title>Gitメモ</title>
-      <link>https://szk302.dev/posts/Git%E3%83%A1%E3%83%A2/</link>
-      <pubDate>Mon, 22 Nov 2021 23:36:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/posts/Git%E3%83%A1%E3%83%A2/</guid>
-      <description>GitSubmoduleを削除 contentをsubmoduleとして登録してあり削除する。
- Console szk@X1:~/szk302/dev-blog-builder$ tree -L 1 . ├── archetypes ├── config.yml ├── content // submodule ├── environment ├── layouts ├── public ├── resources ├── themes └── tool_version.env 7 directories, 2 files   Console git submodule deinit -f content git rm -f content rm -rf .git/modules/content     </description>
+      <description>contentをsubmoduleとして登録してあり削除する。 Console szk@X1:~/szk302/dev-blog-builder$ tree -L 1 . ├── archetypes ├── config.yml ├── content // submodule ├── environment ├── layouts ├── public ├── resources ├──</description>
     </item>
     
     <item>
@@ -36,10 +26,7 @@
       <pubDate>Mon, 22 Nov 2021 23:26:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Hugo%E3%81%A7html%E3%82%92%E7%94%9F%E6%88%90%E3%81%97%E3%81%9F%E9%9A%9B%E3%81%AB%E3%83%91%E3%82%B9%E3%81%8C%E5%B0%8F%E6%96%87%E5%AD%97%E3%81%AB%E3%81%AA%E3%82%8B/</guid>
-      <description>Hugoでhtmlを生成した際に大文字のファイル名で生成したところ、パスが小文字となり画像が表示されない問題が発生 config.ymlにオプション disablePathToLower を指定することで大文字のままhtmlを出力できた。
-   参考   Configure Hugo/disablePathToLower
-  Url is downcased #557
-     </description>
+      <description>Hugoでhtmlを生成した際に大文字のファイル名で生成したところ、パスが小文字となり画像が表示されない問題が発生 config.ymlにオプ</description>
     </item>
     
     <item>
@@ -48,17 +35,7 @@
       <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Cloudflare%E3%81%AEWeb%E3%82%B5%E3%82%A4%E3%83%88%E8%A8%AD%E5%AE%9A%E3%81%A7cache%E3%82%92%E7%84%A1%E5%8A%B9%E3%81%AB%E3%81%99%E3%82%8B/</guid>
-      <description>CloudflarePagesにはデフォルトでcacheが組み込まれているらしい。 Webサイト側のcacheはいらないようなのでRuleで無効化した。(※ルール以外で無効化する方法がわからなかった)
-   手順  Webサイトの画面を表示しルールのページルールから[ページルールを作成]をクリック
-  
-     以下の項目を設定
-  URLが一致する場合: *.szk302.dev/*
-  その後の設定は: キャッシュレベル スキップ
-  
-     [保存]ボタンを押下
-     参考   Caching and performance
-  Disable Cloudflare caching completly
-     </description>
+      <description>CloudflarePagesにはデフォルトでcacheが組み込まれているらしい。 Webサイト側のcacheはいらないようなのでRuleで無</description>
     </item>
     
     <item>
@@ -67,11 +44,7 @@
       <pubDate>Mon, 22 Nov 2021 08:50:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/GitSubmodule%E3%81%A7%E8%A6%AA%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%A7update%E3%81%97%E3%81%A6%E3%82%82%E5%AD%90%E3%81%8C%E5%90%8C%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/</guid>
-      <description>git submodule update してもsubmoduleがupdateがされない。
- 最初に行ったsubmoduleの追加方法が悪いようだった。
-   対応  以下のようにブランチを指定して追加
-git submodule add -b ブランチ名 リポジトリアドレス パス     親リポジトリで git submodule update --remote コマンドでsubmoduleのリポジトリを最新化
-     </description>
+      <description>git submodule update してもsubmoduleがupdateがされない。 最初に行ったsubmoduleの追加方法が悪いようだった。 対応 以下のようにブランチを</description>
     </item>
     
     <item>
@@ -80,15 +53,7 @@ git submodule add -b ブランチ名 リポジトリアドレス パス     親�
       <pubDate>Mon, 22 Nov 2021 07:46:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Cloudflare%E3%81%A7%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%81%97%E3%81%9F%E9%9A%9B%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A7CSS%E3%81%A0%E3%81%91%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%95%E3%82%8C%E3%82%8B/</guid>
-      <description>Cloudflareでこのブログをホスティングしたところ、cssファイルのダウンロードがされず画面が崩れた。
-   対応 Webサイトの設定からキャッシュをパージする。
-  Webサイトの設定画面を表示
-  [キャッシュをパージ]をクリック
-  
-     [すべてパージ]をクリック
-  
-        確認   自分のブラウザのキャッシュを消して再表示
-     発生したブラウザのコンソールのエラー Failed to find a valid digest in the &amp;#39;integrity&amp;#39; attribute for resource &amp;#39;https://szk302.dev/assets/css/stylesheet.min.61dfb3f0b4cda95d2ccb867f9a3b244ce5d23e12492bcc3c277df594c7bc1adf.css&amp;#39; with computed SHA-256 integrity &amp;#39;QGnSnhEdLT7Y+NlgDiW6AvlhSlFVwPYr2z3i9eimKWU=&amp;#39;. The resource has been blocked.     参考   Failed to find a valid digest in the integrity attribute #114</description>
+      <description>Cloudflareでこのブログをホスティングしたところ、cssファイルのダウンロードがされず画面が崩れた。 対応 Webサイトの設定からキャッ</description>
     </item>
     
     <item>
@@ -97,9 +62,7 @@ git submodule add -b ブランチ名 リポジトリアドレス パス     親�
       <pubDate>Sun, 21 Nov 2021 20:24:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Git%E3%81%A7%E5%B7%AE%E5%88%86%E3%81%8C%E3%81%82%E3%82%8B%E5%A0%B4%E5%90%88%E3%81%A0%E3%81%91%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%99%E3%82%8B/</guid>
-      <description>自動コミットを作成した際に、差分がない場合にコミットすると終了コードが1になり失敗する 差分がある場合にだけCommitするようにしたい。
- git add -A git diff-index --quiet HEAD || git commit -m &amp;#39;Auto commit&amp;#39;     参考   stackoverflow/How to git commit nothing without an error?
-     </description>
+      <description>自動コミットを作成した際に、差分がない場合にコミットすると終了コードが1になり失敗する 差分がある場合にだけCommitするようにしたい。 git add</description>
     </item>
     
     <item>
@@ -108,15 +71,7 @@ git submodule add -b ブランチ名 リポジトリアドレス パス     親�
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://szk302.dev/posts/react-app-rewired%E3%81%A7webpack-bundle-analyzer%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B/</guid>
-      <description>react-app-rewiredで作られたプロジェクトでwebpack-bundle-analyzerを使用したかったので調査
-   環境   react: 17.0.1
-  webpack: 4.44.2
-  react-app-rewired: 2.1.8
-     方法 byzyk/react-app-rewire-webpack-bundle-analyzer を使用する
-  インストール
-  yarn add --dev react-app-rewire-webpack-bundle-analyzer
-     config-overrides.jsに以下のように記述
-const rewireWebpackBundleAnalyzer = require(&amp;#39;react-app-rewire-webpack-bundle-analyzer&amp;#39;) module.exports = function override(config, env) { // ... if (env === &amp;#39;production&amp;#39;) { config = rewireWebpackBundleAnalyzer(config, env, { analyzerMode: &amp;#39;static&amp;#39;, reportFilename: &amp;#39;report.html&amp;#39; }) } return config }     yarn build でビルド終了後、ブラウザが立ち上がり結果が表示される</description>
+      <description>react-app-rewiredで作られたプロジェクトでwebpack-bundle-analyzerを使用したかったので調査 環境 react: 17.0.1 webpack: 4.44.2</description>
     </item>
     
     <item>
@@ -125,13 +80,7 @@ const rewireWebpackBundleAnalyzer = require(&amp;#39;react-app-rewire-webpack-bu
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://szk302.dev/posts/Webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABconsole.log%E3%82%92%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</guid>
-      <description>Reactで書いたコードに含まれているconsole.logをwebpackのビルド時に消したいという要望があったので調査
-   環境  react  17.0.1
- webpack  4.44.2
- terser-webpack-plugin  4.2.3
-     設定 console.* 系すべてを消す場合 terserOptionsのcompressに drop_console=true を設定する
- { terserOptions:{ cache: true, parallel: true, sourceMap: false, compress:{ drop_console: true, } } }    console.log,infoだけ消す場合 terserOptionsのcompressに pure_funcs=[&amp;#39;console.log&amp;#39;,&amp;#39;console.info&amp;#39;] を設定する
- { terserOptions:{ cache: true, parallel: true, sourceMap: false, compress:{ pure_funcs: [ &amp;#39;console.log&amp;#39;, &amp;#39;console.info&amp;#39; ] } } }      参考   Remove console.</description>
+      <description>Reactで書いたコードに含まれているconsole.logをwebpackのビルド時に消したいという要望があったので調査 環境 react 17.0.1 webpack 4.44.2 terser-webpack-plugin 4.2.3 設</description>
     </item>
     
     <item>
@@ -140,15 +89,7 @@ const rewireWebpackBundleAnalyzer = require(&amp;#39;react-app-rewire-webpack-bu
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://szk302.dev/posts/Webpack%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABSplitChunksPlugin%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%88%86%E5%89%B2%E3%82%92%E8%A1%8C%E3%81%86/</guid>
-      <description>Webpackでビルド時に生成されるファイルを300kb以下に抑えたいという要望があったので調査
-   環境  react  17.0.1
- webpack  4.44.2
- terser-webpack-plugin  4.2.3
-     設定 以下のパラメータ設定をしたところ、ファイル数とファイルサイズが要望通りに収まった
-   minSize: 100000,
-  maxSize: 300000,
-  maxInitialRequests: 10,
-   { optimization: { splitChunks: { chunks: &amp;#39;initial&amp;#39;, minSize: 100000, maxSize: 300000, maxInitialRequests: 10, cacheGroups: { vendor: { test: /[\\/]node_modules[\\/]/, reuseExistingChunk: true, name(module,chunks,cacheGroupKey) { const allChunksHashes = chunks.map((item)=&amp;gt;item.hash).join(&amp;#39;~&amp;#39;); return `${cacheGroupKey}${allChunksHashes}` } }, }, }, }, }   ファイルは以下のようなファイル名で出力された。</description>
+      <description>Webpackでビルド時に生成されるファイルを300kb以下に抑えたいという要望があったので調査 環境 react 17.0.1 webpack 4.44.2 terser-webpack-plugin 4.2.3 設定 以下のパラメータ設定をし</description>
     </item>
     
     <item>
@@ -157,11 +98,7 @@ const rewireWebpackBundleAnalyzer = require(&amp;#39;react-app-rewire-webpack-bu
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Gravatar%E3%81%AB%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%9F%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E7%94%BB%E5%83%8F%E3%81%AEURL%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</guid>
-      <description>Gravatarに登録したプロフィール画像のURL取得方法を調査した。
- MD5のハッシュ値(小文字)に変換して https://www.gravatar.com/avatar/ につなげることでプロフィール画像のURLになる
- 以下、Powershellのスクリプト
- $email = &amp;#34;メールアドレス&amp;#34; $stream = [IO.MemoryStream]::new([Text.Encoding]::UTF8.GetBytes($email.Trim().ToLower())) $hash = (Get-FileHash -InputStream $stream -Algorithm MD5).Hash.toLower() echo &amp;#34;https://www.gravatar.com/avatar/$hash&amp;#34;     参考   Gravatar/Creating the Hash
-     </description>
+      <description>Gravatarに登録したプロフィール画像のURL取得方法を調査した。 MD5のハッシュ値(小文字)に変換して https://www.gravatar.com/avatar/ につなげることでプロフィール画</description>
     </item>
     
     <item>
@@ -170,11 +107,7 @@ const rewireWebpackBundleAnalyzer = require(&amp;#39;react-app-rewire-webpack-bu
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Gravatar%E3%81%AB%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%9F%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E7%94%BB%E5%83%8F%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B/</guid>
-      <description>URLの最後に ?s=ピルクセル数 をつける
-  100px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=100)  
- 200px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=200)  
-     参考   Gravatar/Image Requests
-     </description>
+      <description>URLの最後に ?s=ピルクセル数 をつける 100px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=100) 200px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=200) 参考 Gravatar/Image Requests</description>
     </item>
     
     <item>
@@ -183,12 +116,7 @@ const rewireWebpackBundleAnalyzer = require(&amp;#39;react-app-rewire-webpack-bu
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Hugo%E3%81%A7AsciiDoc%E5%BD%A2%E5%BC%8F%E3%81%A7%E8%A8%98%E8%BF%B0%E3%81%97%E3%81%9FPlantumln%E3%81%AE%E3%82%B7%E3%83%BC%E3%82%B1%E3%83%B3%E3%82%B9%E5%9B%B3%E3%82%92%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B/</guid>
-      <description>以下のプルリクでPlantUMLが表示できるようになったようだ
-   rework external asciidoc integration #7281
-     対応 Gem経由でインストールしたAsciidocが対象とのことなので、ベースイメージを asciidoctor/docker-asciidoctor に変更し、 必要なモジュールを追加する。
-  Hugoを動かしているDockerファイルにモジュールを追加
-RUN apk add --no-cache ruby-dev alpine-sdk graphviz RUN gem install bundler json asciidoctor-html5s asciidoctor-diagram     config.ymlに以下のように設定を追加
-   markup: asciidocext: extensions: - asciidoctor-html5s - asciidoctor-diagram workingFolderCurrent: true trace: true attributes: my-base-url: &amp;#39;https://localhost/&amp;#39; my-attribute-name: my value     確認  hugo --destination 出力先ディレクトリ</description>
+      <description>以下のプルリクでPlantUMLが表示できるようになったようだ rework external asciidoc integration #7281 対応 Gem経由でインストールしたAsciidocが対象とのことなので</description>
     </item>
     
     <item>
@@ -197,15 +125,7 @@ RUN apk add --no-cache ruby-dev alpine-sdk graphviz RUN gem install bundler json
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Blog%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8BTheme%E3%82%92%E6%B1%BA%E3%82%81%E3%82%8B/</guid>
-      <description>Awesome Open Source/hugo-themeなどからThemeを探してみた。
- スター数やシンプルなブログを考慮すると以下のThemeが残った。
-   Hugo Papermod
-  Loveit
-   fuseを使用してみたかったのでPapermodに決定
-   参考   Awesome Open Source/hugo-theme
-  Hugo Papermod
-  Loveit
-     </description>
+      <description>Awesome Open Source/hugo-themeなどからThemeを探してみた。 スター数やシンプルなブログを考慮すると以下のThemeが残った。 Hugo Papermod Loveit</description>
     </item>
     
     <item>
@@ -214,10 +134,7 @@ RUN apk add --no-cache ruby-dev alpine-sdk graphviz RUN gem install bundler json
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://szk302.dev/posts/GitHub%E3%81%AEPackages%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E7%94%A8PAT%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E8%A8%B1%E5%8F%AF%E3%82%92packages%E3%81%AE%E3%81%BF%E3%81%AB%E5%88%B6%E9%99%90%E3%81%99%E3%82%8B/</guid>
-      <description>設定画面(Settings/Developer settings/Personal access tokens)からGithubPackages用のPATを作成しようとすると、 repo のスコープのアクセス許可が追加されてしまう。 以下のアドレスからアクセスすることで、`packages`のスコープのみ追加できる
-   https://github.com/settings/tokens/new?scopes=write:packages
-     参考   個人アクセストークンを使用する
-     </description>
+      <description>設定画面(Settings/Developer settings/Personal access tokens)からGithubPackages用のPATを作成しようとすると、 repo のスコープ</description>
     </item>
     
   </channel>

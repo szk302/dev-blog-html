@@ -9,6 +9,7 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
     <lastBuildDate>Mon, 22 Nov 2021 23:26:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugoでhtmlを生成した際にパスが小文字になる</title>
@@ -16,10 +17,7 @@
       <pubDate>Mon, 22 Nov 2021 23:26:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Hugo%E3%81%A7html%E3%82%92%E7%94%9F%E6%88%90%E3%81%97%E3%81%9F%E9%9A%9B%E3%81%AB%E3%83%91%E3%82%B9%E3%81%8C%E5%B0%8F%E6%96%87%E5%AD%97%E3%81%AB%E3%81%AA%E3%82%8B/</guid>
-      <description>Hugoでhtmlを生成した際に大文字のファイル名で生成したところ、パスが小文字となり画像が表示されない問題が発生 config.ymlにオプション disablePathToLower を指定することで大文字のままhtmlを出力できた。
-   参考   Configure Hugo/disablePathToLower
-  Url is downcased #557
-     </description>
+      <description>Hugoでhtmlを生成した際に大文字のファイル名で生成したところ、パスが小文字となり画像が表示されない問題が発生 config.ymlにオプ</description>
     </item>
     
     <item>
@@ -46,15 +44,7 @@
       <pubDate>Sun, 14 Nov 2021 00:00:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Blog%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8BTheme%E3%82%92%E6%B1%BA%E3%82%81%E3%82%8B/</guid>
-      <description>Awesome Open Source/hugo-themeなどからThemeを探してみた。
- スター数やシンプルなブログを考慮すると以下のThemeが残った。
-   Hugo Papermod
-  Loveit
-   fuseを使用してみたかったのでPapermodに決定
-   参考   Awesome Open Source/hugo-theme
-  Hugo Papermod
-  Loveit
-     </description>
+      <description>Awesome Open Source/hugo-themeなどからThemeを探してみた。 スター数やシンプルなブログを考慮すると以下のThemeが残った。 Hugo Papermod Loveit</description>
     </item>
     
   </channel>

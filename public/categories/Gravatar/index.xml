@@ -9,6 +9,7 @@
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
     <lastBuildDate>Wed, 17 Nov 2021 00:27:20 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/Gravatar/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gravatarに登録したプロフィール画像のURLを取得する</title>
@@ -16,11 +17,7 @@
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Gravatar%E3%81%AB%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%9F%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E7%94%BB%E5%83%8F%E3%81%AEURL%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</guid>
-      <description>Gravatarに登録したプロフィール画像のURL取得方法を調査した。
- MD5のハッシュ値(小文字)に変換して https://www.gravatar.com/avatar/ につなげることでプロフィール画像のURLになる
- 以下、Powershellのスクリプト
- $email = &amp;#34;メールアドレス&amp;#34; $stream = [IO.MemoryStream]::new([Text.Encoding]::UTF8.GetBytes($email.Trim().ToLower())) $hash = (Get-FileHash -InputStream $stream -Algorithm MD5).Hash.toLower() echo &amp;#34;https://www.gravatar.com/avatar/$hash&amp;#34;     参考   Gravatar/Creating the Hash
-     </description>
+      <description>Gravatarに登録したプロフィール画像のURL取得方法を調査した。 MD5のハッシュ値(小文字)に変換して https://www.gravatar.com/avatar/ につなげることでプロフィール画</description>
     </item>
     
     <item>
@@ -29,11 +26,7 @@
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Gravatar%E3%81%AB%E7%99%BB%E9%8C%B2%E3%81%97%E3%81%9F%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E7%94%BB%E5%83%8F%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B/</guid>
-      <description>URLの最後に ?s=ピルクセル数 をつける
-  100px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=100)  
- 200px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=200)  
-     参考   Gravatar/Image Requests
-     </description>
+      <description>URLの最後に ?s=ピルクセル数 をつける 100px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=100) 200px(https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?s=200) 参考 Gravatar/Image Requests</description>
     </item>
     
   </channel>
