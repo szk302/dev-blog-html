@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Fixeds on Szk302 開発ブログ</title>
-    <link>https://szk302.dev/fixed/</link>
-    <description>Recent content in Fixeds on Szk302 開発ブログ</description>
+    <title>link on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/categories/link/</link>
+    <description>Recent content in link on Szk302 開発ブログ</description>
     <image>
       <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 24 Nov 2021 08:54:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/fixed/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Nov 2021 08:54:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/link/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>リンクメモ</title>
       <link>https://szk302.dev/fixed/link-memo/</link>
@@ -18,24 +18,6 @@
       
       <guid>https://szk302.dev/fixed/link-memo/</guid>
       <description>忘れやすいので以下の条件のリンクをここに貼り付ける 公式サイトであること リンクに記載されている内容通りの作業 Service GitHub ワークフローの成果物をダウンロ</description>
-    </item>
-    
-    <item>
-      <title>このブログについて</title>
-      <link>https://szk302.dev/fixed/blog/</link>
-      <pubDate>Sun, 14 Nov 2021 00:27:20 +0900</pubDate>
-      
-      <guid>https://szk302.dev/fixed/blog/</guid>
-      <description>Desc Text.</description>
-    </item>
-    
-    <item>
-      <title>プロフィール</title>
-      <link>https://szk302.dev/fixed/profile/</link>
-      <pubDate>Sun, 14 Nov 2021 00:27:20 +0900</pubDate>
-      
-      <guid>https://szk302.dev/fixed/profile/</guid>
-      <description>Desc Text.</description>
     </item>
     
   </channel>

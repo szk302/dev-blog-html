@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 22 Nov 2021 23:36:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 24 Nov 2021 08:54:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>link</title>
+      <link>https://szk302.dev/categories/link/</link>
+      <pubDate>Wed, 24 Nov 2021 08:54:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/link/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Git</title>
       <link>https://szk302.dev/categories/Git/</link>
@@ -44,6 +53,15 @@
       <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
       
       <guid>https://szk302.dev/categories/Cloudflare/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GitHub</title>
+      <link>https://szk302.dev/categories/GitHub/</link>
+      <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/GitHub/</guid>
       <description></description>
     </item>
     

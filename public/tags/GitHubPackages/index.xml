@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>GitHubPackages on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/tags/GitHubPackages/</link>
+    <description>Recent content in GitHubPackages on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Mon, 22 Nov 2021 22:37:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/GitHubPackages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHubのPackagesアクセス用PATのアクセス許可をpackagesのみに制限する</title>
+      <link>https://szk302.dev/posts/GitHub%E3%81%AEPackages%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E7%94%A8PAT%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E8%A8%B1%E5%8F%AF%E3%82%92packages%E3%81%AE%E3%81%BF%E3%81%AB%E5%88%B6%E9%99%90%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/GitHub%E3%81%AEPackages%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E7%94%A8PAT%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E8%A8%B1%E5%8F%AF%E3%82%92packages%E3%81%AE%E3%81%BF%E3%81%AB%E5%88%B6%E9%99%90%E3%81%99%E3%82%8B/</guid>
+      <description>設定画面(Settings/Developer settings/Personal access tokens)からGithubPackages用のPATを作成しようとすると、 repo のスコープ</description>
+    </item>
+    
+  </channel>
+</rss>
