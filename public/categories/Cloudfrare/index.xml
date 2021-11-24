@@ -21,11 +21,11 @@
     </item>
     
     <item>
-      <title>Plantumlでオブジェクトの並びを試す</title>
-      <link>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%99/</link>
+      <title>Plantumlでオブジェクトの並びを試してみる</title>
+      <link>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</link>
       <pubDate>Mon, 22 Nov 2021 08:50:00 +0900</pubDate>
       
-      <guid>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%99/</guid>
+      <guid>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
       <description>plantumlの配置 -と–について - の数で階層が変わる デフォルト設定では下方向に階層が広がる Note 分かりやすいようアルファベットの隣に階層の番</description>
     </item>
     
