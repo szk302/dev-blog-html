@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Thu, 25 Nov 2021 07:52:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Nov 2021 08:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PlantUML</title>
+      <link>https://szk302.dev/tags/PlantUML/</link>
+      <pubDate>Thu, 25 Nov 2021 08:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/PlantUML/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>JavaScript</title>
       <link>https://szk302.dev/tags/JavaScript/</link>
@@ -84,15 +93,6 @@
     </item>
     
     <item>
-      <title>Cloudfrare</title>
-      <link>https://szk302.dev/tags/Cloudfrare/</link>
-      <pubDate>Mon, 22 Nov 2021 08:50:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/Cloudfrare/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>React</title>
       <link>https://szk302.dev/tags/React/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
@@ -161,15 +161,6 @@
       <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Gravatar/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PlantUML</title>
-      <link>https://szk302.dev/tags/PlantUML/</link>
-      <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/PlantUML/</guid>
       <description></description>
     </item>
     

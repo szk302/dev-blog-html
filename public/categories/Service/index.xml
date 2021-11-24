@@ -30,24 +30,6 @@
     </item>
     
     <item>
-      <title>GitSubmoduleで親のリポジトリでupdateしても子が同期されない</title>
-      <link>https://szk302.dev/posts/GitSubmodule%E3%81%A7%E8%A6%AA%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%A7update%E3%81%97%E3%81%A6%E3%82%82%E5%AD%90%E3%81%8C%E5%90%8C%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/</link>
-      <pubDate>Mon, 22 Nov 2021 08:50:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/posts/GitSubmodule%E3%81%A7%E8%A6%AA%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%A7update%E3%81%97%E3%81%A6%E3%82%82%E5%AD%90%E3%81%8C%E5%90%8C%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/</guid>
-      <description>git submodule update してもsubmoduleがupdateがされない。 最初に行ったsubmoduleの追加方法が悪いようだった。 対応 以下のようにブランチを</description>
-    </item>
-    
-    <item>
-      <title>Plantumlでオブジェクトの並びを試してみる</title>
-      <link>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</link>
-      <pubDate>Mon, 22 Nov 2021 08:50:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
-      <description>plantumlの配置 -と–について - の数で階層が変わる デフォルト設定では下方向に階層が広がる Note 分かりやすいようアルファベットの隣に階層の番</description>
-    </item>
-    
-    <item>
       <title>Cloudflareでホスティングしてキャッシュした際ブラウザでCSSだけダウンロードブロックされる</title>
       <link>https://szk302.dev/posts/Cloudflare%E3%81%A7%E3%83%9B%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%97%E3%81%A6%E3%82%AD%E3%83%A3%E3%83%83%E3%82%B7%E3%83%A5%E3%81%97%E3%81%9F%E9%9A%9B%E3%83%96%E3%83%A9%E3%82%A6%E3%82%B6%E3%81%A7CSS%E3%81%A0%E3%81%91%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%95%E3%82%8C%E3%82%8B/</link>
       <pubDate>Mon, 22 Nov 2021 07:46:00 +0900</pubDate>

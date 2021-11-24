@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Thu, 25 Nov 2021 07:52:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Nov 2021 08:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PlantUMLでオブジェクトの並びを試してみる</title>
+      <link>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</link>
+      <pubDate>Thu, 25 Nov 2021 08:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
+      <description>PlantUMLの配置 -と–について - の数で階層が変わる デフォルト設定では下方向に階層が広がる Note 分かりやすいようアルファベットの隣に階層の番</description>
+    </item>
+    
     <item>
       <title>Node.jsで同期的にファイル一覧を取得する</title>
       <link>https://szk302.dev/posts/Node.js%E3%81%A7%E5%90%8C%E6%9C%9F%E7%9A%84%E3%81%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</link>
@@ -72,15 +81,6 @@
       
       <guid>https://szk302.dev/posts/GitSubmodule%E3%81%A7%E8%A6%AA%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%A7update%E3%81%97%E3%81%A6%E3%82%82%E5%AD%90%E3%81%8C%E5%90%8C%E6%9C%9F%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/</guid>
       <description>git submodule update してもsubmoduleがupdateがされない。 最初に行ったsubmoduleの追加方法が悪いようだった。 対応 以下のようにブランチを</description>
-    </item>
-    
-    <item>
-      <title>Plantumlでオブジェクトの並びを試してみる</title>
-      <link>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</link>
-      <pubDate>Mon, 22 Nov 2021 08:50:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</guid>
-      <description>plantumlの配置 -と–について - の数で階層が変わる デフォルト設定では下方向に階層が広がる Note 分かりやすいようアルファベットの隣に階層の番</description>
     </item>
     
     <item>
