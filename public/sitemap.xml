@@ -4,7 +4,42 @@
   
   <url>
     <loc>https://szk302.dev/categories/</loc>
-    <lastmod>2021-11-24T08:54:00+09:00</lastmod>
+    <lastmod>2021-11-25T07:52:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/JavaScript/</loc>
+    <lastmod>2021-11-25T07:52:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/Node.js/</loc>
+    <lastmod>2021-11-25T07:52:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/categories/Node.js/</loc>
+    <lastmod>2021-11-25T07:52:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/Node.js%E3%81%A7%E5%90%8C%E6%9C%9F%E7%9A%84%E3%81%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2021-11-25T07:52:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2021-11-25T07:52:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2021-11-25T07:52:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2021-11-25T07:52:00+09:00</lastmod>
   </url>
   
   <url>
@@ -19,16 +54,6 @@
   
   <url>
     <loc>https://szk302.dev/categories/link/</loc>
-    <lastmod>2021-11-24T08:54:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2021-11-24T08:54:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2021-11-24T08:54:00+09:00</lastmod>
   </url>
   
@@ -54,11 +79,6 @@
   
   <url>
     <loc>https://szk302.dev/categories/OSS/</loc>
-    <lastmod>2021-11-22T23:36:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/posts/</loc>
     <lastmod>2021-11-22T23:36:00+09:00</lastmod>
   </url>
   

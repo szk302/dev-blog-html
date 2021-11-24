@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>JavaScript on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/tags/JavaScript/</link>
+    <description>Recent content in JavaScript on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Thu, 25 Nov 2021 07:52:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/JavaScript/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.jsで同期的にファイル一覧を取得する</title>
+      <link>https://szk302.dev/posts/Node.js%E3%81%A7%E5%90%8C%E6%9C%9F%E7%9A%84%E3%81%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</link>
+      <pubDate>Thu, 25 Nov 2021 07:52:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Node.js%E3%81%A7%E5%90%8C%E6%9C%9F%E7%9A%84%E3%81%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</guid>
+      <description>時々Node.jsでモジュールなしかつ同期的にファイル一覧を取得する必要があるので書いた。 実装 file一覧 const fs = require(&amp;#34;fs&amp;#34;); const path = require(&amp;#34;path&amp;#34;); const targetDirpath = &amp;#34;./target&amp;#34;; function listFiles(dir) { return fs</description>
+    </item>
+    
+  </channel>
+</rss>

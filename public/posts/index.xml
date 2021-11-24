@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 22 Nov 2021 23:36:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Nov 2021 07:52:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.jsで同期的にファイル一覧を取得する</title>
+      <link>https://szk302.dev/posts/Node.js%E3%81%A7%E5%90%8C%E6%9C%9F%E7%9A%84%E3%81%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</link>
+      <pubDate>Thu, 25 Nov 2021 07:52:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Node.js%E3%81%A7%E5%90%8C%E6%9C%9F%E7%9A%84%E3%81%AB%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E4%B8%80%E8%A6%A7%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</guid>
+      <description>時々Node.jsでモジュールなしかつ同期的にファイル一覧を取得する必要があるので書いた。 実装 file一覧 const fs = require(&amp;#34;fs&amp;#34;); const path = require(&amp;#34;path&amp;#34;); const targetDirpath = &amp;#34;./target&amp;#34;; function listFiles(dir) { return fs</description>
+    </item>
+    
     <item>
       <title>GitSubmoduleを削除</title>
       <link>https://szk302.dev/posts/GitSubmodule%E3%82%92%E5%89%8A%E9%99%A4/</link>
