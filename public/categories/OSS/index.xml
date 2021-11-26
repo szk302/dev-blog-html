@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Thu, 25 Nov 2021 08:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/OSS/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Nov 2021 08:35:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/OSS/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gitで一時的にコミット時の名前とメールアドレスを変更する</title>
+      <link>https://szk302.dev/posts/Git%E3%81%A7%E4%B8%80%E6%99%82%E7%9A%84%E3%81%AB%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E6%99%82%E3%81%AE%E5%90%8D%E5%89%8D%E3%81%A8%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sat, 27 Nov 2021 08:35:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Git%E3%81%A7%E4%B8%80%E6%99%82%E7%9A%84%E3%81%AB%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E6%99%82%E3%81%AE%E5%90%8D%E5%89%8D%E3%81%A8%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%A2%E3%83%89%E3%83%AC%E3%82%B9%E3%82%92%E5%A4%89%E6%9B%B4%E3%81%99%E3%82%8B/</guid>
+      <description>一時的にcloneしたリポジトリに対しコミットしたい場合に名前とメールアドレスを変えたかったので調査 `-c`オプションをつけてコマンドを実行</description>
+    </item>
+    
     <item>
       <title>PlantUMLでオブジェクトの並びを試してみる</title>
       <link>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</link>
