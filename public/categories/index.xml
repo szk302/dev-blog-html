@@ -10,7 +10,43 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Thu, 25 Nov 2021 08:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Nov 2021 05:39:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub</title>
+      <link>https://szk302.dev/categories/GitHub/</link>
+      <pubDate>Fri, 26 Nov 2021 05:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/GitHub/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://szk302.dev/categories/Go/</link>
+      <pubDate>Fri, 26 Nov 2021 05:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/Go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Language</title>
+      <link>https://szk302.dev/categories/Language/</link>
+      <pubDate>Fri, 26 Nov 2021 05:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/Language/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Service</title>
+      <link>https://szk302.dev/categories/Service/</link>
+      <pubDate>Fri, 26 Nov 2021 05:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/Service/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>OSS</title>
       <link>https://szk302.dev/categories/OSS/</link>
@@ -62,24 +98,6 @@
       <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
       
       <guid>https://szk302.dev/categories/Cloudflare/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>GitHub</title>
-      <link>https://szk302.dev/categories/GitHub/</link>
-      <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/categories/GitHub/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Service</title>
-      <link>https://szk302.dev/categories/Service/</link>
-      <pubDate>Mon, 22 Nov 2021 22:37:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/categories/Service/</guid>
       <description></description>
     </item>
     

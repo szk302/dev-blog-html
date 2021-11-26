@@ -10,7 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Thu, 25 Nov 2021 08:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Nov 2021 05:39:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHubActionsで別のJobの成果物を利用する</title>
+      <link>https://szk302.dev/posts/GitHubActions%E3%81%A7%E5%88%A5%E3%81%AEJob%E3%81%AE%E6%88%90%E6%9E%9C%E7%89%A9%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</link>
+      <pubDate>Fri, 26 Nov 2021 05:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/GitHubActions%E3%81%A7%E5%88%A5%E3%81%AEJob%E3%81%AE%E6%88%90%E6%9E%9C%E7%89%A9%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</guid>
+      <description>あるJobでビルドしてartifactとしてアップロードし、別のJobでアップロードしたartifactを使用した 実装 actions/che</description>
+    </item>
+    
+    <item>
+      <title>GoのPercent-encoding用関数はPath用とQuery用の2種類ある</title>
+      <link>https://szk302.dev/posts/Go%E3%81%AEPercent-encoding%E7%94%A8%E9%96%A2%E6%95%B0%E3%81%AFPath%E7%94%A8%E3%81%A8Query%E7%94%A8%E3%81%AE2%E7%A8%AE%E9%A1%9E%E3%81%82%E3%82%8B/</link>
+      <pubDate>Fri, 26 Nov 2021 05:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Go%E3%81%AEPercent-encoding%E7%94%A8%E9%96%A2%E6%95%B0%E3%81%AFPath%E7%94%A8%E3%81%A8Query%E7%94%A8%E3%81%AE2%E7%A8%AE%E9%A1%9E%E3%81%82%E3%82%8B/</guid>
+      <description>GoのPercent-encoding用関数はPath用とQuery用の2種類ある。 Path用 url.PathEscape() url.PathUnescape() Query用 url.QueryEscape() url.QueryUnescape() 参考 Go言語/パッケージ url</description>
+    </item>
+    
     <item>
       <title>PlantUMLでオブジェクトの並びを試してみる</title>
       <link>https://szk302.dev/posts/Plantuml%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E4%B8%A6%E3%81%B3%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</link>
