@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Go on Szk302 開発ブログ</title>
-    <link>https://szk302.dev/tags/Go/</link>
-    <description>Recent content in Go on Szk302 開発ブログ</description>
+    <title>ProgrammingLanguages on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/categories/ProgrammingLanguages/</link>
+    <description>Recent content in ProgrammingLanguages on Szk302 開発ブログ</description>
     <image>
       <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
       <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sat, 27 Nov 2021 08:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Go/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Nov 2021 08:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/ProgrammingLanguages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Goで標準出力にログを出力する</title>
       <link>https://szk302.dev/posts/Go%E3%81%A7%E6%A8%99%E6%BA%96%E5%87%BA%E5%8A%9B%E3%81%AB%E3%83%AD%E3%82%B0%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B/</link>
@@ -18,15 +18,6 @@
       
       <guid>https://szk302.dev/posts/Go%E3%81%A7%E6%A8%99%E6%BA%96%E5%87%BA%E5%8A%9B%E3%81%AB%E3%83%AD%E3%82%B0%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B/</guid>
       <description>軽くデバッグするために標準出力に出す方法を調べた package main import &amp;#34;log&amp;#34; func main() { log.Println(&amp;#34;ログ&amp;#34;) }</description>
-    </item>
-    
-    <item>
-      <title>GoのPercent-encoding用関数はPath用とQuery用の2種類ある</title>
-      <link>https://szk302.dev/posts/Go%E3%81%AEPercent-encoding%E7%94%A8%E9%96%A2%E6%95%B0%E3%81%AFPath%E7%94%A8%E3%81%A8Query%E7%94%A8%E3%81%AE2%E7%A8%AE%E9%A1%9E%E3%81%82%E3%82%8B/</link>
-      <pubDate>Fri, 26 Nov 2021 05:39:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/posts/Go%E3%81%AEPercent-encoding%E7%94%A8%E9%96%A2%E6%95%B0%E3%81%AFPath%E7%94%A8%E3%81%A8Query%E7%94%A8%E3%81%AE2%E7%A8%AE%E9%A1%9E%E3%81%82%E3%82%8B/</guid>
-      <description>GoのPercent-encoding用関数はPath用とQuery用の2種類ある。 Path用 url.PathEscape() url.PathUnescape() Query用 url.QueryEscape() url.QueryUnescape() 参考 Go言語/パッケージ url</description>
     </item>
     
   </channel>
