@@ -4,7 +4,47 @@
   
   <url>
     <loc>https://szk302.dev/categories/</loc>
-    <lastmod>2021-11-27T08:42:00+09:00</lastmod>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/categories/Development/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/React/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/react-ap-rewired/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/react-app-rewired%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E3%81%97%E3%81%9F%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AEclass%E5%90%8D%E3%82%92%E5%9B%BA%E5%AE%9A%E5%8C%96%E3%81%97%E3%81%9F%E3%81%84/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/webpack/</loc>
+    <lastmod>2021-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -18,22 +58,7 @@
   </url>
   
   <url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2021-11-27T08:42:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://szk302.dev/categories/ProgrammingLanguages/</loc>
-    <lastmod>2021-11-27T08:42:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2021-11-27T08:42:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2021-11-27T08:42:00+09:00</lastmod>
   </url>
   
@@ -213,32 +238,12 @@
   </url>
   
   <url>
-    <loc>https://szk302.dev/categories/Development/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/React/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/react-ap-rewired/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://szk302.dev/posts/react-app-rewired%E3%81%A7webpack-bundle-analyzer%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://szk302.dev/tags/terser/</loc>
-    <lastmod>2021-11-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/webpack/</loc>
     <lastmod>2021-11-17T00:00:00+00:00</lastmod>
   </url>
   

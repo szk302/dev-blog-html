@@ -10,7 +10,34 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sat, 27 Nov 2021 08:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>React</title>
+      <link>https://szk302.dev/tags/React/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://szk302.dev/tags/React/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>react-ap-rewired</title>
+      <link>https://szk302.dev/tags/react-ap-rewired/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://szk302.dev/tags/react-ap-rewired/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>webpack</title>
+      <link>https://szk302.dev/tags/webpack/</link>
+      <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://szk302.dev/tags/webpack/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Go</title>
       <link>https://szk302.dev/tags/Go/</link>
@@ -111,38 +138,11 @@
     </item>
     
     <item>
-      <title>React</title>
-      <link>https://szk302.dev/tags/React/</link>
-      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://szk302.dev/tags/React/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>react-ap-rewired</title>
-      <link>https://szk302.dev/tags/react-ap-rewired/</link>
-      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://szk302.dev/tags/react-ap-rewired/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>terser</title>
       <link>https://szk302.dev/tags/terser/</link>
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://szk302.dev/tags/terser/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>webpack</title>
-      <link>https://szk302.dev/tags/webpack/</link>
-      <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://szk302.dev/tags/webpack/</guid>
       <description></description>
     </item>
     
