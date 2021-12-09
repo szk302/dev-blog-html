@@ -12,6 +12,15 @@
     <copyright>Copyright (c) 2021年 Szk302</copyright>
     <lastBuildDate>Fri, 26 Nov 2021 05:39:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/GitHub/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>GitHubActionsでWorkflowから別のリポジトリのWorkflowを使用する</title>
+      <link>https://szk302.dev/posts/GitHubActions%E3%81%A7Workflow%E3%81%8B%E3%82%89%E5%88%A5%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AEWorkflow%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B/</link>
+      <pubDate>Fri, 26 Nov 2021 05:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/GitHubActions%E3%81%A7Workflow%E3%81%8B%E3%82%89%E5%88%A5%E3%81%AE%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E3%81%AEWorkflow%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B/</guid>
+      <description>このBlogを構築するにあたりGitHubActionsを利用した。 コンテンツ用リポジトリとHugoの環境のリポジトリを分けており、 コンテン</description>
+    </item>
+    
+    <item>
       <title>GitHubActionsで別のJobの成果物を利用する</title>
       <link>https://szk302.dev/posts/GitHubActions%E3%81%A7%E5%88%A5%E3%81%AEJob%E3%81%AE%E6%88%90%E6%9E%9C%E7%89%A9%E3%82%92%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B/</link>
       <pubDate>Fri, 26 Nov 2021 05:39:00 +0900</pubDate>
