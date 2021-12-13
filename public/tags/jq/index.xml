@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>jq on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/tags/jq/</link>
+    <description>Recent content in jq on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Mon, 13 Dec 2021 14:33:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/jq/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jqでファイルの内容をjsonの値として取り込む</title>
+      <link>https://szk302.dev/posts/jq%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92json%E3%81%AE%E5%80%A4%E3%81%A8%E3%81%97%E3%81%A6%E5%8F%96%E3%82%8A%E8%BE%BC%E3%82%80/</link>
+      <pubDate>Mon, 13 Dec 2021 14:33:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/jq%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92json%E3%81%AE%E5%80%A4%E3%81%A8%E3%81%97%E3%81%A6%E5%8F%96%E3%82%8A%E8%BE%BC%E3%82%80/</guid>
+      <description>ファイルの内容を改行などをエスケープしつつjsonの項目のvalueとして取り込みたい 対応 rawfileオプションを使用する rawfile 指定されたファ</description>
+    </item>
+    
+  </channel>
+</rss>
