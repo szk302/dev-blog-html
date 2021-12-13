@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 05 Dec 2021 12:38:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Dec 2021 14:33:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Node.js</title>
+      <link>https://szk302.dev/categories/Node.js/</link>
+      <pubDate>Mon, 13 Dec 2021 14:33:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/categories/Node.js/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Git</title>
       <link>https://szk302.dev/categories/Git/</link>
@@ -80,15 +89,6 @@
       <pubDate>Fri, 26 Nov 2021 05:39:00 +0900</pubDate>
       
       <guid>https://szk302.dev/categories/Service/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Node.js</title>
-      <link>https://szk302.dev/categories/Node.js/</link>
-      <pubDate>Thu, 25 Nov 2021 07:52:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/categories/Node.js/</guid>
       <description></description>
     </item>
     
