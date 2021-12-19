@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Linux on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/tags/Linux/</link>
+    <description>Recent content in Linux on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Sun, 19 Dec 2021 22:36:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AlpineLinuxにcsplitをインストールする</title>
+      <link>https://szk302.dev/posts/AlpineLinux%E3%81%ABcsplit%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 19 Dec 2021 22:36:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AlpineLinux%E3%81%ABcsplit%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</guid>
+      <description>AlpineLinuxでcsplitを使用したい インストール apk add coreutils csplit --version csplit (GNU coreutils) 8.32 Copyright (C) 2020 Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or later &amp;lt;https://gnu.org/licenses/gpl.html&amp;gt;. This is free software: you are free to change and redistribute it. There is NO</description>
+    </item>
+    
+  </channel>
+</rss>

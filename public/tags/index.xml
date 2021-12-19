@@ -10,7 +10,34 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 19 Dec 2021 22:34:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Dec 2021 22:36:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AlpineLinux</title>
+      <link>https://szk302.dev/tags/AlpineLinux/</link>
+      <pubDate>Sun, 19 Dec 2021 22:36:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AlpineLinux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://szk302.dev/tags/Linux/</link>
+      <pubDate>Sun, 19 Dec 2021 22:36:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OS</title>
+      <link>https://szk302.dev/tags/OS/</link>
+      <pubDate>Sun, 19 Dec 2021 22:36:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/OS/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>yq</title>
       <link>https://szk302.dev/tags/yq/</link>

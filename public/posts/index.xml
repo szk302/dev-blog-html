@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 19 Dec 2021 22:34:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Dec 2021 22:36:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AlpineLinuxにcsplitをインストールする</title>
+      <link>https://szk302.dev/posts/AlpineLinux%E3%81%ABcsplit%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 19 Dec 2021 22:36:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AlpineLinux%E3%81%ABcsplit%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</guid>
+      <description>AlpineLinuxでcsplitを使用したい インストール apk add coreutils csplit --version csplit (GNU coreutils) 8.32 Copyright (C) 2020 Free Software Foundation, Inc. License GPLv3+: GNU GPL version 3 or later &amp;lt;https://gnu.org/licenses/gpl.html&amp;gt;. This is free software: you are free to change and redistribute it. There is NO</description>
+    </item>
+    
     <item>
       <title>yqでyamlからjsonに変換する</title>
       <link>https://szk302.dev/posts/yq%E3%81%A7yaml%E3%81%8B%E3%82%89json%E3%81%AB%E5%A4%89%E6%8F%9B%E3%81%99%E3%82%8B/</link>
