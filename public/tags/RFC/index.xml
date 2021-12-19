@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>RFC on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/tags/RFC/</link>
+    <description>Recent content in RFC on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Mon, 20 Dec 2021 08:38:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/RFC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>テストに使用できる特別なIP</title>
+      <link>https://szk302.dev/posts/%E3%83%86%E3%82%B9%E3%83%88%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%A7%E3%81%8D%E3%82%8B%E7%89%B9%E5%88%A5%E3%81%AAIP/</link>
+      <pubDate>Mon, 20 Dec 2021 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/%E3%83%86%E3%82%B9%E3%83%88%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%A7%E3%81%8D%E3%82%8B%E7%89%B9%E5%88%A5%E3%81%AAIP/</guid>
+      <description>ブログの記事中で記述できるドメインの example.com のような特別なIPを調査 TEST-NET-2: 203.0.113.0/24 参考 rfc6890 RFC 6890 - Special-Purpose IP Address Registries 日本語訳</description>
+    </item>
+    
+  </channel>
+</rss>

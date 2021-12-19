@@ -10,7 +10,34 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 19 Dec 2021 22:36:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Dec 2021 08:38:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network</title>
+      <link>https://szk302.dev/tags/Network/</link>
+      <pubDate>Mon, 20 Dec 2021 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Network/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RFC</title>
+      <link>https://szk302.dev/tags/RFC/</link>
+      <pubDate>Mon, 20 Dec 2021 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/RFC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RFC6890</title>
+      <link>https://szk302.dev/tags/RFC6890/</link>
+      <pubDate>Mon, 20 Dec 2021 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/RFC6890/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>AlpineLinux</title>
       <link>https://szk302.dev/tags/AlpineLinux/</link>
