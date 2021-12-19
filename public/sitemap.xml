@@ -4,31 +4,66 @@
   
   <url>
     <loc>https://szk302.dev/categories/</loc>
-    <lastmod>2021-12-15T00:45:00+09:00</lastmod>
+    <lastmod>2021-12-19T10:01:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://szk302.dev/tags/Git/</loc>
-    <lastmod>2021-12-15T00:45:00+09:00</lastmod>
+    <loc>https://szk302.dev/categories/OSS/</loc>
+    <lastmod>2021-12-19T10:01:00+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://szk302.dev/posts/Git%E3%81%A7%E7%9B%B4%E8%BF%91%E3%81%AB%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%95%E3%82%8C%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%83%91%E3%82%B9%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</loc>
-    <lastmod>2021-12-15T00:45:00+09:00</lastmod>
+    <loc>https://szk302.dev/tags/pip/</loc>
+    <lastmod>2021-12-19T10:01:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/pip%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%97%E3%81%9F%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB%E3%81%AEbin%E3%81%AE%E3%83%91%E3%82%B9%E3%82%92%E8%AA%BF%E3%81%B9%E3%82%8B/</loc>
+    <lastmod>2021-12-19T10:01:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2021-12-15T00:45:00+09:00</lastmod>
+    <lastmod>2021-12-19T10:01:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/Python/</loc>
+    <lastmod>2021-12-19T10:01:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://szk302.dev/</loc>
-    <lastmod>2021-12-15T00:45:00+09:00</lastmod>
+    <lastmod>2021-12-19T10:01:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2021-12-19T10:01:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/filter-repo/</loc>
+    <lastmod>2021-12-19T08:44:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/Git/</loc>
+    <lastmod>2021-12-19T08:44:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/git-filter-repo/</loc>
+    <lastmod>2021-12-19T08:44:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/Git%E3%81%AE%E3%83%AD%E3%82%B0%E3%81%AECommiter%E3%81%A8Author%E3%82%92%E3%81%BE%E3%81%A8%E3%82%81%E3%81%A6%E6%94%B9%E7%B7%A8%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2021-12-19T08:44:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/Git%E3%81%A7%E7%9B%B4%E8%BF%91%E3%81%AB%E3%82%B3%E3%83%9F%E3%83%83%E3%83%88%E3%81%95%E3%82%8C%E3%81%9F%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%83%91%E3%82%B9%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</loc>
     <lastmod>2021-12-15T00:45:00+09:00</lastmod>
   </url>
   
@@ -49,11 +84,6 @@
   
   <url>
     <loc>https://szk302.dev/categories/Git/</loc>
-    <lastmod>2021-12-05T12:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/categories/OSS/</loc>
     <lastmod>2021-12-05T12:38:00+09:00</lastmod>
   </url>
   

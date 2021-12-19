@@ -10,13 +10,49 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 15 Dec 2021 00:45:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Dec 2021 10:01:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>pip</title>
+      <link>https://szk302.dev/tags/pip/</link>
+      <pubDate>Sun, 19 Dec 2021 10:01:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/pip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://szk302.dev/tags/Python/</link>
+      <pubDate>Sun, 19 Dec 2021 10:01:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>filter-repo</title>
+      <link>https://szk302.dev/tags/filter-repo/</link>
+      <pubDate>Sun, 19 Dec 2021 08:44:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/filter-repo/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Git</title>
       <link>https://szk302.dev/tags/Git/</link>
-      <pubDate>Wed, 15 Dec 2021 00:45:00 +0900</pubDate>
+      <pubDate>Sun, 19 Dec 2021 08:44:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git-filter-repo</title>
+      <link>https://szk302.dev/tags/git-filter-repo/</link>
+      <pubDate>Sun, 19 Dec 2021 08:44:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/git-filter-repo/</guid>
       <description></description>
     </item>
     
