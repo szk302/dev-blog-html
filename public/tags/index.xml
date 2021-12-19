@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 19 Dec 2021 14:49:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Dec 2021 22:12:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git</title>
+      <link>https://szk302.dev/tags/Git/</link>
+      <pubDate>Sun, 19 Dec 2021 22:12:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Git/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>RTX830</title>
       <link>https://szk302.dev/tags/RTX830/</link>
@@ -44,15 +53,6 @@
       <pubDate>Sun, 19 Dec 2021 08:44:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/filter-repo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Git</title>
-      <link>https://szk302.dev/tags/Git/</link>
-      <pubDate>Sun, 19 Dec 2021 08:44:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/Git/</guid>
       <description></description>
     </item>
     
