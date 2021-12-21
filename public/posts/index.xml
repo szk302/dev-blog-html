@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 20 Dec 2021 08:38:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Dec 2021 07:51:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jqでjsonの値を書き換える</title>
+      <link>https://szk302.dev/posts/jq%E3%81%A7json%E3%81%AE%E5%80%A4%E3%82%92%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88%E3%82%8B/</link>
+      <pubDate>Wed, 22 Dec 2021 07:51:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/jq%E3%81%A7json%E3%81%AE%E5%80%A4%E3%82%92%E6%9B%B8%E3%81%8D%E6%8F%9B%E3%81%88%E3%82%8B/</guid>
+      <description>jqでjsonの一部の値だけ書き換えたい 方法 更新割当演算子(|=)を使用する Ex base.json { &amp;#34;title&amp;#34;: &amp;#34;Sample json&amp;#34;, &amp;#34;body&amp;#34;: { &amp;#34;storage&amp;#34;: { &amp;#34;value&amp;#34;: &amp;#34;&amp;#34; } } } jq &amp;#39;.body.storage.value |=&amp;#34;xyz&amp;#34;&amp;#39; base.json { &amp;#34;title&amp;#34;: &amp;#34;Sample json&amp;#34;, &amp;#34;body&amp;#34;: { &amp;#34;storage&amp;#34;: { &amp;#34;value&amp;#34;: &amp;#34;xyz&amp;#34; } } }</description>
+    </item>
+    
     <item>
       <title>テストに使用できる特別なIP</title>
       <link>https://szk302.dev/posts/%E3%83%86%E3%82%B9%E3%83%88%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%A7%E3%81%8D%E3%82%8B%E7%89%B9%E5%88%A5%E3%81%AAIP/</link>
