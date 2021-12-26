@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>PowerShell on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/tags/PowerShell/</link>
+    <description>Recent content in PowerShell on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Mon, 27 Dec 2021 07:52:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PowerShell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowershellでHTTPサーバを建てる</title>
+      <link>https://szk302.dev/posts/Powershell%E3%81%A7HTTP%E3%82%B5%E3%83%BC%E3%83%90%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/</link>
+      <pubDate>Mon, 27 Dec 2021 07:52:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Powershell%E3%81%A7HTTP%E3%82%B5%E3%83%BC%E3%83%90%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/</guid>
+      <description>WindowsPCを使用したネットワーク疎通確認用にPowershellで簡易HTTPサーバを作成した。 http-server.ps1 $html = @&amp;#34; &amp;lt;!doctype html&amp;gt; &amp;lt;html lang=&amp;#34;ja&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;utf-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;TestPage&amp;lt;/title&amp;gt; &amp;lt;meta name=&amp;#34;description&amp;#34; content=&amp;#34;Test page&amp;#34;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt;</description>
+    </item>
+    
+  </channel>
+</rss>
