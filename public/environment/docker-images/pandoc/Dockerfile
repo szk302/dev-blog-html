@@ -1,5 +1,5 @@
 ARG ASCIIDOCTOR_VERSION='1.14.0'
-ARG PANDOC_VERSION='2.16.2'
+ARG PANDOC_VERSION='2.17.0.1'
 
 FROM pandoc/core:${PANDOC_VERSION} as pandoc
 
@@ -15,7 +15,6 @@ SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
 COPY --from=pandoc \
   /usr/local/bin/pandoc \
-  /usr/local/bin/pandoc-citeproc \
   /usr/local/bin/
 
 RUN apk --no-cache add \
