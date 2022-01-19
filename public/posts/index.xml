@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 27 Dec 2021 07:52:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Jan 2022 08:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GradleでSpringBoot使用時のWarファイル生成に依存jarを含めない</title>
+      <link>https://szk302.dev/posts/Gradle%E3%81%A7SpringBoot%E4%BD%BF%E7%94%A8%E6%99%82%E3%81%AEWar%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%94%9F%E6%88%90%E3%81%AB%E4%BE%9D%E5%AD%98jar%E3%82%92%E5%90%AB%E3%82%81%E3%81%AA%E3%81%84/</link>
+      <pubDate>Wed, 12 Jan 2022 08:42:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Gradle%E3%81%A7SpringBoot%E4%BD%BF%E7%94%A8%E6%99%82%E3%81%AEWar%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%94%9F%E6%88%90%E3%81%AB%E4%BE%9D%E5%AD%98jar%E3%82%92%E5%90%AB%E3%82%81%E3%81%AA%E3%81%84/</guid>
+      <description>SpringBootを使用して作成したWebアプリケーションをWarにするときに、依存ライブラリを別にしたい 方法 dependenciesの書</description>
+    </item>
+    
     <item>
       <title>PowershellでHTTPサーバを建てる</title>
       <link>https://szk302.dev/posts/Powershell%E3%81%A7HTTP%E3%82%B5%E3%83%BC%E3%83%90%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/</link>

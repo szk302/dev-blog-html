@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>SpringBoot on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/tags/SpringBoot/</link>
+    <description>Recent content in SpringBoot on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Wed, 12 Jan 2022 08:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/SpringBoot/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GradleでSpringBoot使用時のWarファイル生成に依存jarを含めない</title>
+      <link>https://szk302.dev/posts/Gradle%E3%81%A7SpringBoot%E4%BD%BF%E7%94%A8%E6%99%82%E3%81%AEWar%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%94%9F%E6%88%90%E3%81%AB%E4%BE%9D%E5%AD%98jar%E3%82%92%E5%90%AB%E3%82%81%E3%81%AA%E3%81%84/</link>
+      <pubDate>Wed, 12 Jan 2022 08:42:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Gradle%E3%81%A7SpringBoot%E4%BD%BF%E7%94%A8%E6%99%82%E3%81%AEWar%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E7%94%9F%E6%88%90%E3%81%AB%E4%BE%9D%E5%AD%98jar%E3%82%92%E5%90%AB%E3%82%81%E3%81%AA%E3%81%84/</guid>
+      <description>SpringBootを使用して作成したWebアプリケーションをWarにするときに、依存ライブラリを別にしたい 方法 dependenciesの書</description>
+    </item>
+    
+  </channel>
+</rss>
