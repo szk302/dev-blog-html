@@ -10,7 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 12 Jan 2022 08:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 19 Jan 2022 23:39:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>date</title>
+      <link>https://szk302.dev/tags/date/</link>
+      <pubDate>Wed, 19 Jan 2022 23:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/date/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://szk302.dev/tags/Linux/</link>
+      <pubDate>Wed, 19 Jan 2022 23:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Linux/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Gradle</title>
       <link>https://szk302.dev/tags/Gradle/</link>
@@ -80,15 +98,6 @@
       <pubDate>Sun, 19 Dec 2021 22:36:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/AlpineLinux/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linux</title>
-      <link>https://szk302.dev/tags/Linux/</link>
-      <pubDate>Sun, 19 Dec 2021 22:36:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/Linux/</guid>
       <description></description>
     </item>
     
