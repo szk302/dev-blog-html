@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://szk302.dev/categories/</loc>
+    <lastmod>2022-01-25T08:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/Network/</loc>
+    <lastmod>2022-01-25T08:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/categories/Network/</loc>
+    <lastmod>2022-01-25T08:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-01-25T08:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-01-25T08:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-01-25T08:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/Network/%E3%83%96%E3%83%AD%E3%83%BC%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%A8%E3%83%9E%E3%83%AB%E3%83%81%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%AE%E9%81%95%E3%81%84/</loc>
+    <lastmod>2022-01-25T08:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://szk302.dev/tags/AWS/</loc>
     <lastmod>2022-01-24T22:32:00+09:00</lastmod>
   </url>
@@ -18,27 +53,7 @@
   </url>
   
   <url>
-    <loc>https://szk302.dev/categories/</loc>
-    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://szk302.dev/categories/Service/</loc>
-    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-01-24T22:32:00+09:00</lastmod>
   </url>
   
@@ -104,11 +119,6 @@
   
   <url>
     <loc>https://szk302.dev/categories/Netowrk/</loc>
-    <lastmod>2021-12-20T08:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/Network/</loc>
     <lastmod>2021-12-20T08:38:00+09:00</lastmod>
   </url>
   
@@ -180,11 +190,6 @@
   <url>
     <loc>https://szk302.dev/categories/OSS/</loc>
     <lastmod>2021-12-19T22:12:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/categories/Network/</loc>
-    <lastmod>2021-12-19T14:49:00+09:00</lastmod>
   </url>
   
   <url>

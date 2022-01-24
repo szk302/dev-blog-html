@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 24 Jan 2022 22:32:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jan 2022 08:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ブロードキャストとマルチキャストの違い</title>
+      <link>https://szk302.dev/posts/Network/%E3%83%96%E3%83%AD%E3%83%BC%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%A8%E3%83%9E%E3%83%AB%E3%83%81%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%AE%E9%81%95%E3%81%84/</link>
+      <pubDate>Tue, 25 Jan 2022 08:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Network/%E3%83%96%E3%83%AD%E3%83%BC%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%A8%E3%83%9E%E3%83%AB%E3%83%81%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%AE%E9%81%95%E3%81%84/</guid>
+      <description>ブロードキャストとマルチキャストの違いを忘れたのでメモ ユニキャスト 一対一 ブロードキャスト データリンク内のすべて マルチキャスト 特定のグループ内</description>
+    </item>
+    
     <item>
       <title>AWSDirectConnectの接続方法</title>
       <link>https://szk302.dev/posts/AWSDirectConnect%E3%81%AE%E6%8E%A5%E7%B6%9A%E6%96%B9%E6%B3%95/</link>

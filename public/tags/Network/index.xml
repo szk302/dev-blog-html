@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 20 Dec 2021 08:38:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Jan 2022 08:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ブロードキャストとマルチキャストの違い</title>
+      <link>https://szk302.dev/posts/Network/%E3%83%96%E3%83%AD%E3%83%BC%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%A8%E3%83%9E%E3%83%AB%E3%83%81%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%AE%E9%81%95%E3%81%84/</link>
+      <pubDate>Tue, 25 Jan 2022 08:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Network/%E3%83%96%E3%83%AD%E3%83%BC%E3%83%89%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%A8%E3%83%9E%E3%83%AB%E3%83%81%E3%82%AD%E3%83%A3%E3%82%B9%E3%83%88%E3%81%AE%E9%81%95%E3%81%84/</guid>
+      <description>ブロードキャストとマルチキャストの違いを忘れたのでメモ ユニキャスト 一対一 ブロードキャスト データリンク内のすべて マルチキャスト 特定のグループ内</description>
+    </item>
+    
     <item>
       <title>テストに使用できる特別なIP</title>
       <link>https://szk302.dev/posts/%E3%83%86%E3%82%B9%E3%83%88%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%A7%E3%81%8D%E3%82%8B%E7%89%B9%E5%88%A5%E3%81%AAIP/</link>
