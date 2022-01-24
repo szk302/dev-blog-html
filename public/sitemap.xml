@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://szk302.dev/tags/AWS/</loc>
+    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/AWS-Direct-Connect/</loc>
+    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/AWSDirectConnect%E3%81%AE%E6%8E%A5%E7%B6%9A%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/categories/</loc>
+    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/categories/Service/</loc>
+    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://szk302.dev/tags/date/</loc>
     <lastmod>2022-01-19T23:39:00+09:00</lastmod>
   </url>
@@ -14,21 +54,6 @@
   
   <url>
     <loc>https://szk302.dev/tags/Linux/</loc>
-    <lastmod>2022-01-19T23:39:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-01-19T23:39:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-01-19T23:39:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-01-19T23:39:00+09:00</lastmod>
   </url>
   
@@ -45,11 +70,6 @@
   <url>
     <loc>https://szk302.dev/tags/SpringBoot/</loc>
     <lastmod>2022-01-12T08:42:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/categories/</loc>
-    <lastmod>2021-12-27T07:52:00+09:00</lastmod>
   </url>
   
   <url>
@@ -339,11 +359,6 @@
   
   <url>
     <loc>https://szk302.dev/categories/Language/</loc>
-    <lastmod>2021-11-26T05:39:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/categories/Service/</loc>
     <lastmod>2021-11-26T05:39:00+09:00</lastmod>
   </url>
   

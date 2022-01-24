@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 19 Jan 2022 23:39:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Jan 2022 22:32:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWSDirectConnectの接続方法</title>
+      <link>https://szk302.dev/posts/AWSDirectConnect%E3%81%AE%E6%8E%A5%E7%B6%9A%E6%96%B9%E6%B3%95/</link>
+      <pubDate>Mon, 24 Jan 2022 22:32:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AWSDirectConnect%E3%81%AE%E6%8E%A5%E7%B6%9A%E6%96%B9%E6%B3%95/</guid>
+      <description>AWSDirectConnectを使用してS3やAPIGateway(Public)に接続したいという要件が出たため調査 専用接続、ホスト接続</description>
+    </item>
+    
     <item>
       <title>dateコマンドで日付を含むファイル名を作成する</title>
       <link>https://szk302.dev/posts/date%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%A7%E6%97%A5%E4%BB%98%E3%82%92%E5%90%AB%E3%82%80%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/</link>
