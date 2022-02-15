@@ -3,12 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://szk302.dev/tags/AlpineLinux/</loc>
+    <loc>https://szk302.dev/tags/AWS/</loc>
     <lastmod>2022-02-16T05:33:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://szk302.dev/categories/AWS/</loc>
+    <lastmod>2022-02-16T05:33:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/AWS-CLI/</loc>
     <lastmod>2022-02-16T05:33:00+09:00</lastmod>
   </url>
   
@@ -19,16 +24,6 @@
   
   <url>
     <loc>https://szk302.dev/categories/</loc>
-    <lastmod>2022-02-16T05:33:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/Linux/</loc>
-    <lastmod>2022-02-16T05:33:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/OS/</loc>
     <lastmod>2022-02-16T05:33:00+09:00</lastmod>
   </url>
   
@@ -63,11 +58,6 @@
   </url>
   
   <url>
-    <loc>https://szk302.dev/tags/AWS/</loc>
-    <lastmod>2022-01-24T22:32:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://szk302.dev/tags/AWS-Direct-Connect/</loc>
     <lastmod>2022-01-24T22:32:00+09:00</lastmod>
   </url>
@@ -94,6 +84,11 @@
   
   <url>
     <loc>https://szk302.dev/posts/date%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%A7%E6%97%A5%E4%BB%98%E3%82%92%E5%90%AB%E3%82%80%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-01-19T23:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/Linux/</loc>
     <lastmod>2022-01-19T23:39:00+09:00</lastmod>
   </url>
   
@@ -163,12 +158,22 @@
   </url>
   
   <url>
+    <loc>https://szk302.dev/tags/AlpineLinux/</loc>
+    <lastmod>2021-12-19T22:36:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://szk302.dev/categories/AlpineLinux/</loc>
     <lastmod>2021-12-19T22:36:00+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://szk302.dev/posts/AlpineLinux%E3%81%ABcsplit%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2021-12-19T22:36:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/OS/</loc>
     <lastmod>2021-12-19T22:36:00+09:00</lastmod>
   </url>
   
