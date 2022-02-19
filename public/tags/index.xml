@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Fri, 18 Feb 2022 08:07:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 09:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tomcat</title>
+      <link>https://szk302.dev/tags/Tomcat/</link>
+      <pubDate>Sat, 19 Feb 2022 09:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Tomcat/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>CLI</title>
       <link>https://szk302.dev/tags/CLI/</link>

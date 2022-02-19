@@ -10,7 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Fri, 18 Feb 2022 08:07:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 09:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tomcatのログの種類</title>
+      <link>https://szk302.dev/posts/Tomcat%E3%81%AE%E3%83%AD%E3%82%B0%E3%81%AE%E7%A8%AE%E9%A1%9E/</link>
+      <pubDate>Sat, 19 Feb 2022 09:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Tomcat%E3%81%AE%E3%83%AD%E3%82%B0%E3%81%AE%E7%A8%AE%E9%A1%9E/</guid>
+      <description>どれがなんのログなのかわからないため調べた。 Tomcatはデフォルトで以下のログを出力している。 catalina.out コンソール出力と同じ(標準出力/標準エラー</description>
+    </item>
+    
+    <item>
+      <title>Tomcatで不要なログ出力を停止する</title>
+      <link>https://szk302.dev/posts/Tomcat%E3%81%A7%E4%B8%8D%E8%A6%81%E3%81%AA%E3%83%AD%E3%82%B0%E5%87%BA%E5%8A%9B%E3%82%92%E5%81%9C%E6%AD%A2%E3%81%99%E3%82%8B/</link>
+      <pubDate>Fri, 18 Feb 2022 08:32:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Tomcat%E3%81%A7%E4%B8%8D%E8%A6%81%E3%81%AA%E3%83%AD%E3%82%B0%E5%87%BA%E5%8A%9B%E3%82%92%E5%81%9C%E6%AD%A2%E3%81%99%E3%82%8B/</guid>
+      <description>Tomcatを使用する際、managerなどのデフォルトで含まれるアプリは消すため、ログ出力設定もプロパティをコメントアウトする。 以下のログ</description>
+    </item>
+    
     <item>
       <title>ストレージ容量を圧迫しているディレクトリを探す</title>
       <link>https://szk302.dev/posts/%E3%82%B9%E3%83%88%E3%83%AC%E3%83%BC%E3%82%B8%E5%AE%B9%E9%87%8F%E3%82%92%E5%9C%A7%E8%BF%AB%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%92%E6%8E%A2%E3%81%99/</link>

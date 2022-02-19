@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-02-19T09:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-02-19T09:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-02-19T09:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/Tomcat/</loc>
+    <lastmod>2022-02-19T09:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/Tomcat%E3%81%AE%E3%83%AD%E3%82%B0%E3%81%AE%E7%A8%AE%E9%A1%9E/</loc>
+    <lastmod>2022-02-19T09:20:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/Tomcat%E3%81%A7%E4%B8%8D%E8%A6%81%E3%81%AA%E3%83%AD%E3%82%B0%E5%87%BA%E5%8A%9B%E3%82%92%E5%81%9C%E6%AD%A2%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-02-18T08:32:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://szk302.dev/categories/</loc>
     <lastmod>2022-02-18T08:07:00+09:00</lastmod>
   </url>
@@ -28,22 +58,7 @@
   </url>
   
   <url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-02-18T08:07:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://szk302.dev/tags/sort/</loc>
-    <lastmod>2022-02-18T08:07:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-02-18T08:07:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-02-18T08:07:00+09:00</lastmod>
   </url>
   

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tomcat on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/tags/Tomcat/</link>
+    <description>Recent content in Tomcat on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Sat, 19 Feb 2022 09:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Tomcat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tomcatのログの種類</title>
+      <link>https://szk302.dev/posts/Tomcat%E3%81%AE%E3%83%AD%E3%82%B0%E3%81%AE%E7%A8%AE%E9%A1%9E/</link>
+      <pubDate>Sat, 19 Feb 2022 09:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Tomcat%E3%81%AE%E3%83%AD%E3%82%B0%E3%81%AE%E7%A8%AE%E9%A1%9E/</guid>
+      <description>どれがなんのログなのかわからないため調べた。 Tomcatはデフォルトで以下のログを出力している。 catalina.out コンソール出力と同じ(標準出力/標準エラー</description>
+    </item>
+    
+    <item>
+      <title>Tomcatで不要なログ出力を停止する</title>
+      <link>https://szk302.dev/posts/Tomcat%E3%81%A7%E4%B8%8D%E8%A6%81%E3%81%AA%E3%83%AD%E3%82%B0%E5%87%BA%E5%8A%9B%E3%82%92%E5%81%9C%E6%AD%A2%E3%81%99%E3%82%8B/</link>
+      <pubDate>Fri, 18 Feb 2022 08:32:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Tomcat%E3%81%A7%E4%B8%8D%E8%A6%81%E3%81%AA%E3%83%AD%E3%82%B0%E5%87%BA%E5%8A%9B%E3%82%92%E5%81%9C%E6%AD%A2%E3%81%99%E3%82%8B/</guid>
+      <description>Tomcatを使用する際、managerなどのデフォルトで含まれるアプリは消すため、ログ出力設定もプロパティをコメントアウトする。 以下のログ</description>
+    </item>
+    
+  </channel>
+</rss>
