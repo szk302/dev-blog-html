@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sat, 19 Feb 2022 15:49:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/CLI/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 19 Feb 2022 23:15:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/CLI/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>digやnslookupでネームサーバを指定して問い合わせ</title>
+      <link>https://szk302.dev/posts/dig%E3%82%84nslookup%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%82%B5%E3%83%BC%E3%83%90%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%A6%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/</link>
+      <pubDate>Sat, 19 Feb 2022 23:15:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/dig%E3%82%84nslookup%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%82%B5%E3%83%BC%E3%83%90%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%A6%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/</guid>
+      <description>毎度忘れるのでメモ dig dig www.google.com @1.1.1.1 を実行 ; &amp;lt;&amp;lt;&amp;gt;&amp;gt; DiG 9.16.1-Ubuntu &amp;lt;&amp;lt;&amp;gt;&amp;gt; www.google.com @1.1.1.1 ;; global options: +cmd ;; Got answer: ;; -&amp;gt;&amp;gt;HEADER&amp;lt;&amp;lt;- opcode: QUERY, status: NOERROR, id: 60699 ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1 ;; OPT PSEUDOSECTION: ; EDNS: version: 0, flags:; udp: 1232 ;; QUESTION SECTION: ;www.google.com. IN A ;; ANSWER SECTION:</description>
+    </item>
+    
     <item>
       <title>curlでHTTPステータスコードが200になるまでwaitする</title>
       <link>https://szk302.dev/posts/curl%E3%81%A7HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89%E3%81%8C200%E3%81%AB%E3%81%AA%E3%82%8B%E3%81%BE%E3%81%A7wait%E3%81%99%E3%82%8B/</link>

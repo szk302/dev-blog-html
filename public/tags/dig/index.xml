@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>dig on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/tags/dig/</link>
+    <description>Recent content in dig on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Sat, 19 Feb 2022 23:15:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/dig/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>digやnslookupでネームサーバを指定して問い合わせ</title>
+      <link>https://szk302.dev/posts/dig%E3%82%84nslookup%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%82%B5%E3%83%BC%E3%83%90%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%A6%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/</link>
+      <pubDate>Sat, 19 Feb 2022 23:15:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/dig%E3%82%84nslookup%E3%81%A7%E3%83%8D%E3%83%BC%E3%83%A0%E3%82%B5%E3%83%BC%E3%83%90%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%A6%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/</guid>
+      <description>毎度忘れるのでメモ dig dig www.google.com @1.1.1.1 を実行 ; &amp;lt;&amp;lt;&amp;gt;&amp;gt; DiG 9.16.1-Ubuntu &amp;lt;&amp;lt;&amp;gt;&amp;gt; www.google.com @1.1.1.1 ;; global options: +cmd ;; Got answer: ;; -&amp;gt;&amp;gt;HEADER&amp;lt;&amp;lt;- opcode: QUERY, status: NOERROR, id: 60699 ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1 ;; OPT PSEUDOSECTION: ; EDNS: version: 0, flags:; udp: 1232 ;; QUESTION SECTION: ;www.google.com. IN A ;; ANSWER SECTION:</description>
+    </item>
+    
+  </channel>
+</rss>
