@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 27 Dec 2021 07:52:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PowerShell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Mar 2022 08:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PowerShell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowershellでTCP接続できるまで待つ</title>
+      <link>https://szk302.dev/posts/Powershell%E3%81%A7TCP%E6%8E%A5%E7%B6%9A%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%BE%E3%81%A7%E5%BE%85%E3%81%A4/</link>
+      <pubDate>Wed, 16 Mar 2022 08:42:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Powershell%E3%81%A7TCP%E6%8E%A5%E7%B6%9A%E3%81%A7%E3%81%8D%E3%82%8B%E3%81%BE%E3%81%A7%E5%BE%85%E3%81%A4/</guid>
+      <description>PowershellでTCP接続可能になるまで待ちたい wait.ps1 $dstHost = &amp;#39;szk302.dev&amp;#39; $dstPort = 443 $maxRetryCount = 2 $count = 0 while (-not (Test-NetConnection -ComputerName $dstHost -Port $dstPort -InformationLevel Quiet) -and ($count -lt $maxRetryCount)) { Write-Host &amp;#34;Retry NetConnection&amp;#34; $count+=1 } 参考 loop until IP:port is responding</description>
+    </item>
+    
     <item>
       <title>PowershellでHTTPサーバを建てる</title>
       <link>https://szk302.dev/posts/Powershell%E3%81%A7HTTP%E3%82%B5%E3%83%BC%E3%83%90%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/</link>
