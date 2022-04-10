@@ -12,6 +12,15 @@
     <copyright>Copyright (c) 2021年 Szk302</copyright>
     <lastBuildDate>Sun, 10 Apr 2022 14:21:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/AWS/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>AmazonECSのタスク定義に指定されている環境変数をkey=value形式で出力する</title>
+      <link>https://szk302.dev/posts/AmazonECS%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E5%AE%9A%E7%BE%A9%E3%81%AB%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%82%92keyvalue%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 10 Apr 2022 14:21:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AmazonECS%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E5%AE%9A%E7%BE%A9%E3%81%AB%E6%8C%87%E5%AE%9A%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8B%E7%92%B0%E5%A2%83%E5%A4%89%E6%95%B0%E3%82%92keyvalue%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B/</guid>
+      <description>AmazonECSのタスク定義に指定されている環境変数をkey=value形式で出力したい 方法 AWS CLIとjqを使用して加工する cmd aws ecs describe-task-definition --task-definition タス</description>
+    </item>
+    
+    <item>
       <title>AmazonECSのタスク定義をコピーする</title>
       <link>https://szk302.dev/posts/AmazonECS%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E5%AE%9A%E7%BE%A9%E3%82%92%E3%82%B3%E3%83%94%E3%83%BC%E3%81%99%E3%82%8B/</link>
       <pubDate>Sun, 10 Apr 2022 14:21:00 +0900</pubDate>
