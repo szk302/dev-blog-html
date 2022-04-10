@@ -10,11 +10,20 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 06 Apr 2022 07:56:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Apr 2022 14:21:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon ECS</title>
+      <link>https://szk302.dev/tags/Amazon-ECS/</link>
+      <pubDate>Sun, 10 Apr 2022 14:21:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Amazon-ECS/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>AWS</title>
       <link>https://szk302.dev/tags/AWS/</link>
-      <pubDate>Wed, 06 Apr 2022 07:56:00 +0900</pubDate>
+      <pubDate>Sun, 10 Apr 2022 14:21:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/AWS/</guid>
       <description></description>
@@ -23,9 +32,18 @@
     <item>
       <title>AWS CLI</title>
       <link>https://szk302.dev/tags/AWS-CLI/</link>
-      <pubDate>Wed, 06 Apr 2022 07:56:00 +0900</pubDate>
+      <pubDate>Sun, 10 Apr 2022 14:21:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/AWS-CLI/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>task definition</title>
+      <link>https://szk302.dev/tags/task-definition/</link>
+      <pubDate>Sun, 10 Apr 2022 14:21:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/task-definition/</guid>
       <description></description>
     </item>
     

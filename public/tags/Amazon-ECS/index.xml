@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Amazon ECS on Szk302 開発ブログ</title>
+    <link>https://szk302.dev/tags/Amazon-ECS/</link>
+    <description>Recent content in Amazon ECS on Szk302 開発ブログ</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Sun, 10 Apr 2022 14:21:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Amazon-ECS/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AmazonECSのタスク定義をコピーする</title>
+      <link>https://szk302.dev/posts/AmazonECS%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E5%AE%9A%E7%BE%A9%E3%82%92%E3%82%B3%E3%83%94%E3%83%BC%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 10 Apr 2022 14:21:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AmazonECS%E3%81%AE%E3%82%BF%E3%82%B9%E3%82%AF%E5%AE%9A%E7%BE%A9%E3%82%92%E3%82%B3%E3%83%94%E3%83%BC%E3%81%99%E3%82%8B/</guid>
+      <description>AmazonECSのタスク定義をコピーして別のタスク定義を作成したい。 CLIからタスク定義を取得し、別のタスク定義として保存する 方法 AWS CLI</description>
+    </item>
+    
+  </channel>
+</rss>
