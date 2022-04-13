@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 10 Apr 2022 21:30:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Apr 2022 22:07:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpringBootのapplication.propertiesに使用できる文字コードはISO8859-1形式</title>
+      <link>https://szk302.dev/posts/SpringBoot%E3%81%AEapplication.properties%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%A7%E3%81%8D%E3%82%8B%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AFISO8859-1%E5%BD%A2%E5%BC%8F/</link>
+      <pubDate>Wed, 13 Apr 2022 22:07:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/SpringBoot%E3%81%AEapplication.properties%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%A7%E3%81%8D%E3%82%8B%E6%96%87%E5%AD%97%E3%82%B3%E3%83%BC%E3%83%89%E3%81%AFISO8859-1%E5%BD%A2%E5%BC%8F/</guid>
+      <description>application.propertiesに日本語文字列を定義していて、プレースホルダーで環境変数から取得するようにしたらエラーになったの</description>
+    </item>
+    
     <item>
       <title>Books</title>
       <link>https://szk302.dev/fixed/books/</link>
