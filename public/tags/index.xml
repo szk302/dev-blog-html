@@ -10,7 +10,169 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Fri, 13 May 2022 07:48:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 May 2022 08:38:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>free</title>
+      <link>https://szk302.dev/tags/free/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/free/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kill</title>
+      <link>https://szk302.dev/tags/kill/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/kill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pgrep</title>
+      <link>https://szk302.dev/tags/pgrep/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/pgrep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pkill</title>
+      <link>https://szk302.dev/tags/pkill/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/pkill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pmap</title>
+      <link>https://szk302.dev/tags/pmap/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/pmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Procps</title>
+      <link>https://szk302.dev/tags/Procps/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Procps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ps</title>
+      <link>https://szk302.dev/tags/ps/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/ps/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pwdx</title>
+      <link>https://szk302.dev/tags/pwdx/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/pwdx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>skill</title>
+      <link>https://szk302.dev/tags/skill/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/skill/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>slabtop</title>
+      <link>https://szk302.dev/tags/slabtop/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/slabtop/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>snice</title>
+      <link>https://szk302.dev/tags/snice/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/snice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sysctl</title>
+      <link>https://szk302.dev/tags/sysctl/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/sysctl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tload</title>
+      <link>https://szk302.dev/tags/tload/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/tload/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>top</title>
+      <link>https://szk302.dev/tags/top/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/top/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>uptime</title>
+      <link>https://szk302.dev/tags/uptime/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/uptime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vmstat</title>
+      <link>https://szk302.dev/tags/vmstat/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/vmstat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>w</title>
+      <link>https://szk302.dev/tags/w/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/w/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>watch</title>
+      <link>https://szk302.dev/tags/watch/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/watch/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Apache JMeter</title>
       <link>https://szk302.dev/tags/Apache-JMeter/</link>

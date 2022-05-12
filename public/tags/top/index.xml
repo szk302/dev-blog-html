@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>top on Szk302 Tech Blog</title>
+    <link>https://szk302.dev/tags/top/</link>
+    <description>Recent content in top on Szk302 Tech Blog</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Fri, 13 May 2022 08:38:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CorrettoECRコンテナ内でps,vmstat,freeを実行する</title>
+      <link>https://szk302.dev/posts/CorrettoECR%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%A7psvmstatfree%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/CorrettoECR%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%A7psvmstatfree%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</guid>
+      <description>コンテナ内からメモリ使用率を確認したかったが必要なコマンドが存在しなかったため、インストール 対応 Dockerfileに以下を追記 RUN yum install -y procps 参</description>
+    </item>
+    
+  </channel>
+</rss>

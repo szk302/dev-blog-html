@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Fri, 13 May 2022 07:48:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 May 2022 08:38:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CorrettoECRコンテナ内でps,vmstat,freeを実行する</title>
+      <link>https://szk302.dev/posts/CorrettoECR%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%A7psvmstatfree%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</link>
+      <pubDate>Fri, 13 May 2022 08:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/CorrettoECR%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%A7psvmstatfree%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</guid>
+      <description>コンテナ内からメモリ使用率を確認したかったが必要なコマンドが存在しなかったため、インストール 対応 Dockerfileに以下を追記 RUN yum install -y procps 参</description>
+    </item>
+    
     <item>
       <title>JMeterのインストール</title>
       <link>https://szk302.dev/posts/JMeter%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
