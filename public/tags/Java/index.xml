@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Java on Szk302 Tech Blog</title>
+    <link>https://szk302.dev/tags/Java/</link>
+    <description>Recent content in Java on Szk302 Tech Blog</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Fri, 13 May 2022 07:48:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Java/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JMeterのインストール</title>
+      <link>https://szk302.dev/posts/JMeter%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</link>
+      <pubDate>Fri, 13 May 2022 07:48:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/JMeter%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB/</guid>
+      <description>JMeterをインストールして日本語化する 環境 OS Microsoft Windows 10 JAVA openjdk 11.0.15 2022-04-19 LTS インストール 以下のページからJMeterをダウンロード(今回はapache-</description>
+    </item>
+    
+  </channel>
+</rss>
