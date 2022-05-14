@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://szk302.dev/tags/Java/</loc>
+    <lastmod>2022-05-14T09:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/Java11/</loc>
+    <lastmod>2022-05-14T09:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/Java11%E3%81%A7Heap%E3%83%A1%E3%83%A2%E3%83%AA%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-05-14T09:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-05-14T09:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-05-14T09:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-05-14T09:59:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://szk302.dev/posts/CorrettoECR%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E3%81%A7psvmstatfree%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</loc>
     <lastmod>2022-05-13T08:38:00+09:00</lastmod>
   </url>
@@ -29,11 +59,6 @@
   
   <url>
     <loc>https://szk302.dev/tags/pmap/</loc>
-    <lastmod>2022-05-13T08:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/posts/</loc>
     <lastmod>2022-05-13T08:38:00+09:00</lastmod>
   </url>
   
@@ -73,16 +98,6 @@
   </url>
   
   <url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-05-13T08:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/</loc>
-    <lastmod>2022-05-13T08:38:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://szk302.dev/tags/tload/</loc>
     <lastmod>2022-05-13T08:38:00+09:00</lastmod>
   </url>
@@ -114,11 +129,6 @@
   
   <url>
     <loc>https://szk302.dev/tags/Apache-JMeter/</loc>
-    <lastmod>2022-05-13T07:48:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/Java/</loc>
     <lastmod>2022-05-13T07:48:00+09:00</lastmod>
   </url>
   
