@@ -10,7 +10,43 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sat, 14 May 2022 09:59:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 May 2022 08:17:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon SES</title>
+      <link>https://szk302.dev/tags/Amazon-SES/</link>
+      <pubDate>Thu, 26 May 2022 08:17:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Amazon-SES/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://szk302.dev/tags/AWS/</link>
+      <pubDate>Thu, 26 May 2022 08:17:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AWS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS CLI</title>
+      <link>https://szk302.dev/tags/AWS-CLI/</link>
+      <pubDate>Thu, 26 May 2022 08:17:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AWS-CLI/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SES</title>
+      <link>https://szk302.dev/tags/SES/</link>
+      <pubDate>Thu, 26 May 2022 08:17:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/SES/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Java</title>
       <link>https://szk302.dev/tags/Java/</link>
@@ -206,24 +242,6 @@
       <pubDate>Fri, 22 Apr 2022 08:33:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Amazon-ECS/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS</title>
-      <link>https://szk302.dev/tags/AWS/</link>
-      <pubDate>Fri, 22 Apr 2022 08:33:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/AWS/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS CLI</title>
-      <link>https://szk302.dev/tags/AWS-CLI/</link>
-      <pubDate>Fri, 22 Apr 2022 08:33:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/AWS-CLI/</guid>
       <description></description>
     </item>
     
