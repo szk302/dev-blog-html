@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>A5M2 on Szk302 Tech Blog</title>
+    <link>https://szk302.dev/tags/A5M2/</link>
+    <description>Recent content in A5M2 on Szk302 Tech Blog</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Mon, 30 May 2022 08:14:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/A5M2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A5M2で作成したSQLをA5M2cmdでコマンドラインから実行する</title>
+      <link>https://szk302.dev/posts/A5M2%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9FSQL%E3%82%92A5M2cmd%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%8B%E3%82%89%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 30 May 2022 08:14:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/A5M2%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9FSQL%E3%82%92A5M2cmd%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%8B%E3%82%89%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</guid>
+      <description>A5M2で生成されたSQLをコマンドラインから実行する。 実行方法はコマンドラインツールのzipを解凍すると一緒に入っているa5m2cmd.j</description>
+    </item>
+    
+  </channel>
+</rss>

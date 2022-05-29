@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 29 May 2022 10:01:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 May 2022 08:14:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A5M2で作成したSQLをA5M2cmdでコマンドラインから実行する</title>
+      <link>https://szk302.dev/posts/A5M2%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9FSQL%E3%82%92A5M2cmd%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%8B%E3%82%89%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 30 May 2022 08:14:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/A5M2%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9FSQL%E3%82%92A5M2cmd%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%8B%E3%82%89%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</guid>
+      <description>A5M2で生成されたSQLをコマンドラインから実行する。 実行方法はコマンドラインツールのzipを解凍すると一緒に入っているa5m2cmd.j</description>
+    </item>
+    
     <item>
       <title>AWSのALBのアクセスログがS3に出力されない</title>
       <link>https://szk302.dev/posts/AWS%E3%81%AEALB%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%83%AD%E3%82%B0%E3%81%8CS3%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/</link>
