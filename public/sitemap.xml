@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-06-05T08:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/PowerShell/</loc>
+    <lastmod>2022-06-05T08:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-06-05T08:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-06-05T08:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/Visual-Studio-Code/</loc>
+    <lastmod>2022-06-05T08:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/VSCode/</loc>
+    <lastmod>2022-06-05T08:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/Windows/</loc>
+    <lastmod>2022-06-05T08:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/Windows%E3%81%ABPowerShell%E3%81%A7VSCode%E3%82%92%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-06-05T08:49:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://szk302.dev/tags/A5SQL-Mk-2/</loc>
     <lastmod>2022-05-30T08:14:00+09:00</lastmod>
   </url>
@@ -29,21 +69,6 @@
   
   <url>
     <loc>https://szk302.dev/tags/PostgreSQL/</loc>
-    <lastmod>2022-05-30T08:14:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-05-30T08:14:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-05-30T08:14:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-05-30T08:14:00+09:00</lastmod>
   </url>
   
@@ -218,11 +243,6 @@
   </url>
   
   <url>
-    <loc>https://szk302.dev/tags/PowerShell/</loc>
-    <lastmod>2022-04-22T08:33:00+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://szk302.dev/posts/PowerShell%E3%81%A7Fargate%E3%82%B3%E3%83%B3%E3%83%86%E3%83%8A%E5%86%85%E3%81%AEbash%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</loc>
     <lastmod>2022-04-22T08:33:00+09:00</lastmod>
   </url>
@@ -354,16 +374,6 @@
   
   <url>
     <loc>https://szk302.dev/categories/Development/</loc>
-    <lastmod>2022-03-12T13:08:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/Visual-Studio-Code/</loc>
-    <lastmod>2022-03-12T13:08:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/VSCode/</loc>
     <lastmod>2022-03-12T13:08:00+09:00</lastmod>
   </url>
   

@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 30 May 2022 08:14:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 08:49:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WindowsにPowerShellでVSCodeをサイレントインストールする</title>
+      <link>https://szk302.dev/posts/Windows%E3%81%ABPowerShell%E3%81%A7VSCode%E3%82%92%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 05 Jun 2022 08:49:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Windows%E3%81%ABPowerShell%E3%81%A7VSCode%E3%82%92%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</guid>
+      <description>chocolateyやwingetが使用禁止のためpowershellでインストールする install_vscode.ps1 $INSTALLER_FILE_NAME = &amp;#34;vscode_installer.exe&amp;#34;; $INSTALLER_VERSION = &amp;#34;latest&amp;#34;; $current_dir_path = $PSScriptRoot; $path = $env:TEMP; Invoke-WebRequest &amp;#34;https://update.code.visualstudio.com/${INSTALLER_VERSION}/win32-x64/stable&amp;#34; -OutFile ${path}\${INSTALLER_FILE_NAME}; Start-Process -FilePath ${path}\${INSTALLER_FILE_NAME} -Args &amp;#34;/VERYSILENT /NORESTART /MERGETASKS=!runcode,desktopicon,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath /LOG=${current_dir_path}/vscode_installer.log&amp;#34; -Verb</description>
+    </item>
+    
     <item>
       <title>A5M2で作成したSQLをA5M2cmdでコマンドラインから実行する</title>
       <link>https://szk302.dev/posts/A5M2%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9FSQL%E3%82%92A5M2cmd%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%8B%E3%82%89%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</link>
