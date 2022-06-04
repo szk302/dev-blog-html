@@ -17,7 +17,7 @@
       <pubDate>Sun, 05 Jun 2022 08:49:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/Windows%E3%81%ABPowerShell%E3%81%A7VSCode%E3%82%92%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</guid>
-      <description>chocolateyやwingetが使用禁止のためpowershellでインストールする install_vscode.ps1 $INSTALLER_FILE_NAME = &amp;#34;vscode_installer.exe&amp;#34;; $INSTALLER_VERSION = &amp;#34;latest&amp;#34;; $current_dir_path = $PSScriptRoot; $path = $env:TEMP; Invoke-WebRequest &amp;#34;https://update.code.visualstudio.com/${INSTALLER_VERSION}/win32-x64/stable&amp;#34; -OutFile ${path}\${INSTALLER_FILE_NAME}; Start-Process -FilePath ${path}\${INSTALLER_FILE_NAME} -Args &amp;#34;/VERYSILENT /NORESTART /MERGETASKS=!runcode,desktopicon,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath /LOG=${current_dir_path}/vscode_installer.log&amp;#34; -Verb</description>
+      <description>chocolateyやwingetが使用禁止のためpowershellでインストールする install_vscode.ps1 $INSTALLER_FILE_NAME = &amp;#34;vscode_installer.exe&amp;#34;; $INSTALLER_VERSION = &amp;#34;latest&amp;#34;; $current_dir_path = $PSScriptRoot; $tmp_dir_path = &amp;#34;$env:TEMP/&amp;#34; + (Get-Date).ToString(&amp;#34;yyyyMMdd_HHmmssfff&amp;#34;); $installer_file_path = &amp;#34;${tmp_dir_path}/${INSTALLER_FILE_NAME}&amp;#34; New-Item -ItemType Directory ${tmp_dir_path}; Invoke-WebRequest &amp;#34;https://update.code.visualstudio.com/${INSTALLER_VERSION}/win32-x64/stable&amp;#34; -OutFile ${installer_file_path};</description>
     </item>
     
     <item>
