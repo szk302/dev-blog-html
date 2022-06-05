@@ -10,7 +10,34 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 05 Jun 2022 16:23:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 16:50:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell</title>
+      <link>https://szk302.dev/tags/PowerShell/</link>
+      <pubDate>Sun, 05 Jun 2022 16:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/PowerShell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Remove-Item</title>
+      <link>https://szk302.dev/tags/Remove-Item/</link>
+      <pubDate>Sun, 05 Jun 2022 16:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Remove-Item/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rm -rf</title>
+      <link>https://szk302.dev/tags/rm-rf/</link>
+      <pubDate>Sun, 05 Jun 2022 16:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/rm-rf/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Amazon Machine Image</title>
       <link>https://szk302.dev/tags/Amazon-Machine-Image/</link>
@@ -62,15 +89,6 @@
       <pubDate>Sun, 05 Jun 2022 16:23:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PowerShell</title>
-      <link>https://szk302.dev/tags/PowerShell/</link>
-      <pubDate>Sun, 05 Jun 2022 09:07:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/PowerShell/</guid>
       <description></description>
     </item>
     
