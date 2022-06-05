@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Amazon Machine Image on Szk302 Tech Blog</title>
+    <link>https://szk302.dev/tags/Amazon-Machine-Image/</link>
+    <description>Recent content in Amazon Machine Image on Szk302 Tech Blog</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Sun, 05 Jun 2022 16:23:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Amazon-Machine-Image/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWSCLIでAmazon公式の日本語版WindowsServerAMIの情報を取得する</title>
+      <link>https://szk302.dev/posts/AWSCLI%E3%81%A7Amazon%E5%85%AC%E5%BC%8F%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88WindowsServerAMI%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 05 Jun 2022 16:23:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AWSCLI%E3%81%A7Amazon%E5%85%AC%E5%BC%8F%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88WindowsServerAMI%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</guid>
+      <description>いつも日本語版AMIを探し回るのでメモ 方法 フィルター部分のOSのバージョン(年)を変えれば対象バージョンの最新のAMIが取得できる cmd aws ec2 describe-images --region</description>
+    </item>
+    
+  </channel>
+</rss>

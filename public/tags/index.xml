@@ -10,22 +10,67 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 05 Jun 2022 09:07:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 16:23:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>PowerShell</title>
-      <link>https://szk302.dev/tags/PowerShell/</link>
-      <pubDate>Sun, 05 Jun 2022 09:07:00 +0900</pubDate>
+      <title>Amazon Machine Image</title>
+      <link>https://szk302.dev/tags/Amazon-Machine-Image/</link>
+      <pubDate>Sun, 05 Jun 2022 16:23:00 +0900</pubDate>
       
-      <guid>https://szk302.dev/tags/PowerShell/</guid>
+      <guid>https://szk302.dev/tags/Amazon-Machine-Image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Amazon マシンイメージ (AMI)</title>
+      <link>https://szk302.dev/tags/Amazon-%E3%83%9E%E3%82%B7%E3%83%B3%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8-AMI/</link>
+      <pubDate>Sun, 05 Jun 2022 16:23:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Amazon-%E3%83%9E%E3%82%B7%E3%83%B3%E3%82%A4%E3%83%A1%E3%83%BC%E3%82%B8-AMI/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AMI</title>
+      <link>https://szk302.dev/tags/AMI/</link>
+      <pubDate>Sun, 05 Jun 2022 16:23:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AMI/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://szk302.dev/tags/AWS/</link>
+      <pubDate>Sun, 05 Jun 2022 16:23:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AWS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS CLI</title>
+      <link>https://szk302.dev/tags/AWS-CLI/</link>
+      <pubDate>Sun, 05 Jun 2022 16:23:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AWS-CLI/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Windows</title>
       <link>https://szk302.dev/tags/Windows/</link>
-      <pubDate>Sun, 05 Jun 2022 09:07:00 +0900</pubDate>
+      <pubDate>Sun, 05 Jun 2022 16:23:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PowerShell</title>
+      <link>https://szk302.dev/tags/PowerShell/</link>
+      <pubDate>Sun, 05 Jun 2022 09:07:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/PowerShell/</guid>
       <description></description>
     </item>
     
@@ -111,15 +156,6 @@
     </item>
     
     <item>
-      <title>AWS</title>
-      <link>https://szk302.dev/tags/AWS/</link>
-      <pubDate>Sun, 29 May 2022 10:01:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/AWS/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>AWS Application Load Balancer</title>
       <link>https://szk302.dev/tags/AWS-Application-Load-Balancer/</link>
       <pubDate>Sun, 29 May 2022 10:01:00 +0900</pubDate>
@@ -143,15 +179,6 @@
       <pubDate>Thu, 26 May 2022 08:17:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Amazon-SES/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS CLI</title>
-      <link>https://szk302.dev/tags/AWS-CLI/</link>
-      <pubDate>Thu, 26 May 2022 08:17:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/AWS-CLI/</guid>
       <description></description>
     </item>
     

@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 29 May 2022 10:01:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/AWS/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 16:23:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/AWS/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWSCLIでAmazon公式の日本語版WindowsServerAMIの情報を取得する</title>
+      <link>https://szk302.dev/posts/AWSCLI%E3%81%A7Amazon%E5%85%AC%E5%BC%8F%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88WindowsServerAMI%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 05 Jun 2022 16:23:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AWSCLI%E3%81%A7Amazon%E5%85%AC%E5%BC%8F%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E7%89%88WindowsServerAMI%E3%81%AE%E6%83%85%E5%A0%B1%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</guid>
+      <description>いつも日本語版AMIを探し回るのでメモ 方法 フィルター部分のOSのバージョン(年)を変えれば対象バージョンの最新のAMIが取得できる cmd aws ec2 describe-images --region</description>
+    </item>
+    
     <item>
       <title>AWSのALBのアクセスログがS3に出力されない</title>
       <link>https://szk302.dev/posts/AWS%E3%81%AEALB%E3%81%AE%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%83%AD%E3%82%B0%E3%81%8CS3%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84/</link>
