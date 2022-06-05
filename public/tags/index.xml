@@ -10,13 +10,31 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 05 Jun 2022 08:49:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 09:07:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PowerShell</title>
       <link>https://szk302.dev/tags/PowerShell/</link>
-      <pubDate>Sun, 05 Jun 2022 08:49:00 +0900</pubDate>
+      <pubDate>Sun, 05 Jun 2022 09:07:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/PowerShell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://szk302.dev/tags/Windows/</link>
+      <pubDate>Sun, 05 Jun 2022 09:07:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>サクラエディタ</title>
+      <link>https://szk302.dev/tags/%E3%82%B5%E3%82%AF%E3%83%A9%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF/</link>
+      <pubDate>Sun, 05 Jun 2022 09:07:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/%E3%82%B5%E3%82%AF%E3%83%A9%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF/</guid>
       <description></description>
     </item>
     
@@ -35,15 +53,6 @@
       <pubDate>Sun, 05 Jun 2022 08:49:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/VSCode/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Windows</title>
-      <link>https://szk302.dev/tags/Windows/</link>
-      <pubDate>Sun, 05 Jun 2022 08:49:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/Windows/</guid>
       <description></description>
     </item>
     

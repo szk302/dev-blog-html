@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 05 Jun 2022 08:49:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PowerShell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Jun 2022 09:07:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PowerShell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WindowsにPowerShellでサクラエディタをサイレントインストールする</title>
+      <link>https://szk302.dev/posts/Windows%E3%81%ABPowerShell%E3%81%A7%E3%82%B5%E3%82%AF%E3%83%A9%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%82%92%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 05 Jun 2022 09:07:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Windows%E3%81%ABPowerShell%E3%81%A7%E3%82%B5%E3%82%AF%E3%83%A9%E3%82%A8%E3%83%87%E3%82%A3%E3%82%BF%E3%82%92%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</guid>
+      <description>chocolateyやwingetが使用禁止のためpowershellでインストールする install_sakura.ps1 $INSTALLER_FILE_NAME = &amp;#34;sakura_installer.exe&amp;#34;; $INSTALLER_ZIP_FILE_NAME = &amp;#34;sakura_installer.zip&amp;#34; $INSTALLER_URL = &amp;#34;https://github.com/sakura-editor/sakura/releases/download/v2.4.1/sakura-tag-v2.4.1-build2849-ee8234f-Win32-Release-Installer.zip&amp;#34; $current_dir_path = $PSScriptRoot; $tmp_dir_path = &amp;#34;$env:TEMP/&amp;#34; + (Get-Date).ToString(&amp;#34;yyyyMMdd_HHmmssfff&amp;#34;); New-Item &amp;#34;${tmp_dir_path}&amp;#34; -ItemType Directory Invoke-WebRequest &amp;#34;${INSTALLER_URL}&amp;#34; -OutFile ${tmp_dir_path}/${INSTALLER_ZIP_FILE_NAME};</description>
+    </item>
+    
     <item>
       <title>WindowsにPowerShellでVSCodeをサイレントインストールする</title>
       <link>https://szk302.dev/posts/Windows%E3%81%ABPowerShell%E3%81%A7VSCode%E3%82%92%E3%82%B5%E3%82%A4%E3%83%AC%E3%83%B3%E3%83%88%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</link>
