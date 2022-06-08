@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 05 Jun 2022 20:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jun 2022 07:33:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gatsbyでtsxファイルのホットリロードが効かない</title>
+      <link>https://szk302.dev/posts/Gatsby%E3%81%A7tsx%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%8C%E5%8A%B9%E3%81%8B%E3%81%AA%E3%81%84/</link>
+      <pubDate>Thu, 09 Jun 2022 07:33:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Gatsby%E3%81%A7tsx%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%81%8C%E5%8A%B9%E3%81%8B%E3%81%AA%E3%81%84/</guid>
+      <description>Gatsbyのプロジェクトを新規作成したところ、tsxファイルを編集してもホットリロードが効かない。 2.X.X時代のプロジェクトでは効いてい</description>
+    </item>
+    
     <item>
       <title>PowerShellでファイルやディレクトリの存在チェック</title>
       <link>https://szk302.dev/posts/PowerShell%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%84%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%81%AE%E5%AD%98%E5%9C%A8%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF/</link>

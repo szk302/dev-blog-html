@@ -10,7 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 05 Jun 2022 20:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Jun 2022 07:33:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gatsby</title>
+      <link>https://szk302.dev/tags/Gatsby/</link>
+      <pubDate>Thu, 09 Jun 2022 07:33:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Gatsby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node.js</title>
+      <link>https://szk302.dev/tags/Node.js/</link>
+      <pubDate>Thu, 09 Jun 2022 07:33:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Node.js/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>PowerShell</title>
       <link>https://szk302.dev/tags/PowerShell/</link>
@@ -863,15 +881,6 @@
       <pubDate>Thu, 25 Nov 2021 07:52:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/JavaScript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Node.js</title>
-      <link>https://szk302.dev/tags/Node.js/</link>
-      <pubDate>Thu, 25 Nov 2021 07:52:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/Node.js/</guid>
       <description></description>
     </item>
     
