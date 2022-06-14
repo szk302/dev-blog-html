@@ -10,7 +10,52 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Thu, 09 Jun 2022 07:33:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Jun 2022 08:39:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS SDK for JavaScript v3</title>
+      <link>https://szk302.dev/tags/AWS-SDK-for-JavaScript-v3/</link>
+      <pubDate>Tue, 14 Jun 2022 08:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AWS-SDK-for-JavaScript-v3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>B2 Cloud Storage</title>
+      <link>https://szk302.dev/tags/B2-Cloud-Storage/</link>
+      <pubDate>Tue, 14 Jun 2022 08:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/B2-Cloud-Storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Backblaze</title>
+      <link>https://szk302.dev/tags/Backblaze/</link>
+      <pubDate>Tue, 14 Jun 2022 08:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Backblaze/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Backblaze B2</title>
+      <link>https://szk302.dev/tags/Backblaze-B2/</link>
+      <pubDate>Tue, 14 Jun 2022 08:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Backblaze-B2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>presigned URL</title>
+      <link>https://szk302.dev/tags/presigned-URL/</link>
+      <pubDate>Tue, 14 Jun 2022 08:39:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/presigned-URL/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Gatsby</title>
       <link>https://szk302.dev/tags/Gatsby/</link>

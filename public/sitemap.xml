@@ -3,6 +3,51 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://szk302.dev/tags/AWS-SDK-for-JavaScript-v3/</loc>
+    <lastmod>2022-06-14T08:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/AWSSDKJavaScriptV3%E3%81%A7BackblazeB2%E3%81%AEpresignedURL%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-06-14T08:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/B2-Cloud-Storage/</loc>
+    <lastmod>2022-06-14T08:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/Backblaze/</loc>
+    <lastmod>2022-06-14T08:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/Backblaze-B2/</loc>
+    <lastmod>2022-06-14T08:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-06-14T08:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/presigned-URL/</loc>
+    <lastmod>2022-06-14T08:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-06-14T08:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-06-14T08:39:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://szk302.dev/tags/Gatsby/</loc>
     <lastmod>2022-06-09T07:33:00+09:00</lastmod>
   </url>
@@ -14,21 +59,6 @@
   
   <url>
     <loc>https://szk302.dev/tags/Node.js/</loc>
-    <lastmod>2022-06-09T07:33:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-06-09T07:33:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-06-09T07:33:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-06-09T07:33:00+09:00</lastmod>
   </url>
   
