@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Cloudflare Pages on Szk302 Tech Blog</title>
+    <link>https://szk302.dev/tags/Cloudflare-Pages/</link>
+    <description>Recent content in Cloudflare Pages on Szk302 Tech Blog</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Sat, 18 Jun 2022 09:58:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Cloudflare-Pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CloudflarePagesでビルド時にNodeのバージョンを指定する</title>
+      <link>https://szk302.dev/posts/CloudflarePages%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABNode%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sat, 18 Jun 2022 09:58:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/CloudflarePages%E3%81%A7%E3%83%93%E3%83%AB%E3%83%89%E6%99%82%E3%81%ABNode%E3%81%AE%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E3%82%92%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B/</guid>
+      <description>CloudflarePagesを利用してGatsbyビルド時に以下のエラーが発生した。 07:43:59.243 error gatsby@4.15.2: The engine &amp;#34;node&amp;#34; is incompatible with this module. Expected version &amp;#34;&amp;gt;=14.15.0&amp;#34;. Got &amp;#34;12.18.0&amp;#34; 07:43:59.253 error Found incompatible module. Cloudf</description>
+    </item>
+    
+  </channel>
+</rss>
