@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 26 Jun 2022 08:16:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Jun 2022 07:41:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Honoのサンプルプロジェクトでテストを通す</title>
+      <link>https://szk302.dev/posts/Hono%E3%81%AE%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%A7%E3%83%86%E3%82%B9%E3%83%88%E3%82%92%E9%80%9A%E3%81%99/</link>
+      <pubDate>Mon, 27 Jun 2022 07:41:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Hono%E3%81%AE%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%A7%E3%83%86%E3%82%B9%E3%83%88%E3%82%92%E9%80%9A%E3%81%99/</guid>
+      <description>前回以下のコマンドでサンプルプロジェクトを作成したが、そのままではテストが通らなかった。 また、全部のパスを通るテストを追加してみたがカバレッ</description>
+    </item>
+    
     <item>
       <title>CloudflareWorkersでHonoを試してみる</title>
       <link>https://szk302.dev/posts/CloudflareWorkers%E3%81%A7Hono%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</link>

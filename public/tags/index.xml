@@ -10,11 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 26 Jun 2022 08:16:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Jun 2022 07:41:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloudflare</title>
       <link>https://szk302.dev/tags/Cloudflare/</link>
-      <pubDate>Sun, 26 Jun 2022 08:16:00 +0900</pubDate>
+      <pubDate>Mon, 27 Jun 2022 07:41:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Cloudflare/</guid>
       <description></description>
@@ -23,16 +23,25 @@
     <item>
       <title>Cloudflare Workers</title>
       <link>https://szk302.dev/tags/Cloudflare-Workers/</link>
-      <pubDate>Sun, 26 Jun 2022 08:16:00 +0900</pubDate>
+      <pubDate>Mon, 27 Jun 2022 07:41:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Cloudflare-Workers/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>esbuild-jest</title>
+      <link>https://szk302.dev/tags/esbuild-jest/</link>
+      <pubDate>Mon, 27 Jun 2022 07:41:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/esbuild-jest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hono</title>
       <link>https://szk302.dev/tags/Hono/</link>
-      <pubDate>Sun, 26 Jun 2022 08:16:00 +0900</pubDate>
+      <pubDate>Mon, 27 Jun 2022 07:41:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Hono/</guid>
       <description></description>
