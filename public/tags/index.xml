@@ -10,11 +10,11 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 27 Jun 2022 07:41:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 29 Jun 2022 08:58:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cloudflare</title>
       <link>https://szk302.dev/tags/Cloudflare/</link>
-      <pubDate>Mon, 27 Jun 2022 07:41:00 +0900</pubDate>
+      <pubDate>Wed, 29 Jun 2022 08:58:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Cloudflare/</guid>
       <description></description>
@@ -23,9 +23,27 @@
     <item>
       <title>Cloudflare Workers</title>
       <link>https://szk302.dev/tags/Cloudflare-Workers/</link>
-      <pubDate>Mon, 27 Jun 2022 07:41:00 +0900</pubDate>
+      <pubDate>Wed, 29 Jun 2022 08:58:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Cloudflare-Workers/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jose</title>
+      <link>https://szk302.dev/tags/jose/</link>
+      <pubDate>Wed, 29 Jun 2022 08:58:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/jose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebCryptoAPI</title>
+      <link>https://szk302.dev/tags/WebCryptoAPI/</link>
+      <pubDate>Wed, 29 Jun 2022 08:58:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/WebCryptoAPI/</guid>
       <description></description>
     </item>
     
