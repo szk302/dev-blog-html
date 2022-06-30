@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://szk302.dev/tags/AWS/</loc>
+    <lastmod>2022-06-30T21:26:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/AWS-CLI/</loc>
+    <lastmod>2022-06-30T21:26:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/AWS-CodeBuild/</loc>
+    <lastmod>2022-06-30T21:26:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/AWSCodeBuild%E3%81%AE%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%92CLI%E3%81%A7%E3%82%B3%E3%83%94%E3%83%BC%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-06-30T21:26:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-06-30T21:26:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-06-30T21:26:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-06-30T21:26:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://szk302.dev/tags/Cloudflare/</loc>
     <lastmod>2022-06-29T08:58:00+09:00</lastmod>
   </url>
@@ -19,21 +54,6 @@
   
   <url>
     <loc>https://szk302.dev/tags/jose/</loc>
-    <lastmod>2022-06-29T08:58:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-06-29T08:58:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-06-29T08:58:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-06-29T08:58:00+09:00</lastmod>
   </url>
   
@@ -60,11 +80,6 @@
   <url>
     <loc>https://szk302.dev/posts/CloudflareWorkers%E3%81%A7Hono%E3%82%92%E8%A9%A6%E3%81%97%E3%81%A6%E3%81%BF%E3%82%8B/</loc>
     <lastmod>2022-06-26T08:16:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/AWS/</loc>
-    <lastmod>2022-06-22T19:39:00+09:00</lastmod>
   </url>
   
   <url>
@@ -214,11 +229,6 @@
   
   <url>
     <loc>https://szk302.dev/tags/AMI/</loc>
-    <lastmod>2022-06-05T16:23:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://szk302.dev/tags/AWS-CLI/</loc>
     <lastmod>2022-06-05T16:23:00+09:00</lastmod>
   </url>
   

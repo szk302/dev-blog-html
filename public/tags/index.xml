@@ -10,7 +10,34 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 29 Jun 2022 08:58:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Jun 2022 21:26:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS</title>
+      <link>https://szk302.dev/tags/AWS/</link>
+      <pubDate>Thu, 30 Jun 2022 21:26:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AWS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS CLI</title>
+      <link>https://szk302.dev/tags/AWS-CLI/</link>
+      <pubDate>Thu, 30 Jun 2022 21:26:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AWS-CLI/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS CodeBuild</title>
+      <link>https://szk302.dev/tags/AWS-CodeBuild/</link>
+      <pubDate>Thu, 30 Jun 2022 21:26:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AWS-CodeBuild/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Cloudflare</title>
       <link>https://szk302.dev/tags/Cloudflare/</link>
@@ -62,15 +89,6 @@
       <pubDate>Mon, 27 Jun 2022 07:41:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Hono/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS</title>
-      <link>https://szk302.dev/tags/AWS/</link>
-      <pubDate>Wed, 22 Jun 2022 19:39:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/AWS/</guid>
       <description></description>
     </item>
     
@@ -269,15 +287,6 @@
       <pubDate>Sun, 05 Jun 2022 16:23:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/AMI/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS CLI</title>
-      <link>https://szk302.dev/tags/AWS-CLI/</link>
-      <pubDate>Sun, 05 Jun 2022 16:23:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/AWS-CLI/</guid>
       <description></description>
     </item>
     
