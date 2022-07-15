@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Fri, 08 Jul 2022 19:10:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Jul 2022 08:36:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShellでオブジェクトのプロパティを追加削除する</title>
+      <link>https://szk302.dev/posts/PowerShell%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%82%92%E8%BF%BD%E5%8A%A0%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/PowerShell%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%82%92%E8%BF%BD%E5%8A%A0%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</link>
+      <pubDate>Thu, 14 Jul 2022 08:36:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/PowerShell%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%82%92%E8%BF%BD%E5%8A%A0%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/PowerShell%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%82%92%E8%BF%BD%E5%8A%A0%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</guid>
+      <description>Jsonを読み込んで加工したかったので調査 json.ps1 $INPUT_FILE_PATH=&amp;#34;sample.json&amp;#34; $OUTPUT_FILE_PATH=&amp;#34;sample_cp.json&amp;#34; # json読み込み $jsonObj=(Get-Content -Path &amp;#34;${INPUT_FILE_PATH}&amp;#34; -Encodin UTF8 -Raw | ConvertFrom-Json) # プロパティの追加 $jsonObj | Add-Member -MemberType NoteProperty -Name &amp;#39;Key3&amp;#39; -Value &amp;#39;Added Value&amp;#39; # プロパティの削除 $jsonObj.psobject.properties.remove(&amp;#39;Key2&amp;#39;)</description>
+    </item>
+    
     <item>
       <title>PowerShellでJSONを読み取りUTF-8のBOMなしでファイルに書き出す</title>
       <link>https://szk302.dev/posts/PowerShell%E3%81%A7Json%E3%82%92%E8%AA%AD%E3%81%BF%E5%8F%96%E3%82%8AUTF-8%E3%81%AEBOM%E3%81%AA%E3%81%97%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E6%9B%B8%E3%81%8D%E5%87%BA%E3%81%99/PowerShell%E3%81%A7Json%E3%82%92%E8%AA%AD%E3%81%BF%E5%8F%96%E3%82%8AUTF-8%E3%81%AEBOM%E3%81%AA%E3%81%97%E3%81%A7%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E6%9B%B8%E3%81%8D%E5%87%BA%E3%81%99/</link>
