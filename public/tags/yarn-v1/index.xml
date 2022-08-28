@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>yarn v1 on Szk302 Tech Blog</title>
+    <link>https://szk302.dev/tags/yarn-v1/</link>
+    <description>Recent content in yarn v1 on Szk302 Tech Blog</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Fri, 26 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://szk302.dev/tags/yarn-v1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>yarn_v1でパッケージをオフラインインストールする</title>
+      <link>https://szk302.dev/posts/yarn_v1%E3%81%A7%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</link>
+      <pubDate>Fri, 26 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://szk302.dev/posts/yarn_v1%E3%81%A7%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</guid>
+      <description>yarnのv1を使用している環境でproxyを建てずオフラインインストールしたいという要望があったので調査。 環境 yarn: 1.22.19 方法 オフラインインストー</description>
+    </item>
+    
+  </channel>
+</rss>
