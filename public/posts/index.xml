@@ -10,7 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Fri, 26 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Aug 2022 08:53:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWSCLIとJQで一時的な認証情報をkey=value形式で取得する</title>
+      <link>https://szk302.dev/posts/AWSCLI%E3%81%A8JQ%E3%81%A7%E4%B8%80%E6%99%82%E7%9A%84%E3%81%AA%E8%AA%8D%E8%A8%BC%E6%83%85%E5%A0%B1%E3%82%92keyvalue%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 29 Aug 2022 08:53:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AWSCLI%E3%81%A8JQ%E3%81%A7%E4%B8%80%E6%99%82%E7%9A%84%E3%81%AA%E8%AA%8D%E8%A8%BC%E6%83%85%E5%A0%B1%E3%82%92keyvalue%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</guid>
+      <description>方法 AWSCLIで取得してjqで加工して保存する。 コマンドの実行はすべてコマンドプロンプトで実行するよう。 結果はそれぞれのシェルに貼り付ける</description>
+    </item>
+    
+    <item>
+      <title>AWSCLIとJQで一時的な認証情報をkey=value形式で取得する</title>
+      <link>https://szk302.dev/posts/AWSCLI%E3%81%A8JQ%E3%81%A7%E4%B8%80%E6%99%82%E7%9A%84%E3%81%AA%E8%AA%8D%E8%A8%BC%E6%83%85%E5%A0%B1%E3%82%92keyvalue%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 29 Aug 2022 08:53:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AWSCLI%E3%81%A8JQ%E3%81%A7%E4%B8%80%E6%99%82%E7%9A%84%E3%81%AA%E8%AA%8D%E8%A8%BC%E6%83%85%E5%A0%B1%E3%82%92keyvalue%E5%BD%A2%E5%BC%8F%E3%81%A7%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</guid>
+      <description>方法 AWSCLIで取得してjqで加工して保存する。 コマンドの実行はすべてコマンドプロンプトで実行するよう。 結果はそれぞれのシェルに貼り付ける</description>
+    </item>
+    
     <item>
       <title>yarn_v1でパッケージをオフラインインストールする</title>
       <link>https://szk302.dev/posts/yarn_v1%E3%81%A7%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</link>
@@ -21,21 +39,21 @@
     </item>
     
     <item>
-      <title>AWSCLIで行うIAMポリシーの作成と削除</title>
-      <link>https://szk302.dev/posts/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/</link>
-      <pubDate>Thu, 04 Aug 2022 08:10:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/posts/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/</guid>
-      <description>テストで使用するのでサクッと作りたいというご要望 方法 作成 bash POLICY_NAME=&amp;#34;szk302-iam-policy&amp;#34; aws iam create-policy --policy-name &amp;#34;${POLICY_NAME}&amp;#34; --policy-document file://./policy.json 表示 { &amp;#34;Version&amp;#34;: &amp;#34;2012-10-17&amp;#34;, &amp;#34;Statement&amp;#34;: [ { &amp;#34;Effect&amp;#34;: &amp;#34;Allow&amp;#34;, &amp;#34;Action&amp;#34;: [ &amp;#34;ec2:Describe*&amp;#34;, &amp;#34;iam:ListRoles&amp;#34;, &amp;#34;sts:AssumeRole&amp;#34; ], &amp;#34;Resource&amp;#34;: &amp;#34;*&amp;#34; } ] } jsonファイル使わない</description>
-    </item>
-    
-    <item>
       <title>AWSCLIで行うIAMロールの作成と削除</title>
       <link>https://szk302.dev/posts/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%AD%E3%83%BC%E3%83%AB%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%AD%E3%83%BC%E3%83%AB%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/</link>
       <pubDate>Thu, 04 Aug 2022 08:10:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%AD%E3%83%BC%E3%83%AB%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%AD%E3%83%BC%E3%83%AB%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/</guid>
       <description>テストで使用するのでサクッと作りたいというご要望 方法 作成 bash ROLE_NAME=&amp;#34;szk302-iam-role&amp;#34; aws iam create-role --role-name &amp;#34;${ROLE_NAME}&amp;#34; --assume-role-policy-document file://./ec2-assume-role-policy.json ec2-assume-role-policy.json { &amp;#34;Version&amp;#34;: &amp;#34;2012-10-17&amp;#34;, &amp;#34;Statement&amp;#34;: [ { &amp;#34;Effect&amp;#34;: &amp;#34;Allow&amp;#34;, &amp;#34;Action&amp;#34;: [ &amp;#34;sts:AssumeRole&amp;#34; ], &amp;#34;Principal&amp;#34;: { &amp;#34;Service&amp;#34;: [ &amp;#34;ec2.amazonaws.com&amp;#34; ] } } ] } jsonファイル使わ</description>
+    </item>
+    
+    <item>
+      <title>AWSCLIで行うIAMポリシーの作成と削除</title>
+      <link>https://szk302.dev/posts/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/</link>
+      <pubDate>Thu, 04 Aug 2022 08:10:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/AWSCLI%E3%81%A7%E8%A1%8C%E3%81%86IAM%E3%83%9D%E3%83%AA%E3%82%B7%E3%83%BC%E3%81%AE%E4%BD%9C%E6%88%90%E3%81%A8%E5%89%8A%E9%99%A4/</guid>
+      <description>テストで使用するのでサクッと作りたいというご要望 方法 作成 bash POLICY_NAME=&amp;#34;szk302-iam-policy&amp;#34; aws iam create-policy --policy-name &amp;#34;${POLICY_NAME}&amp;#34; --policy-document file://./policy.json 表示 { &amp;#34;Version&amp;#34;: &amp;#34;2012-10-17&amp;#34;, &amp;#34;Statement&amp;#34;: [ { &amp;#34;Effect&amp;#34;: &amp;#34;Allow&amp;#34;, &amp;#34;Action&amp;#34;: [ &amp;#34;ec2:Describe*&amp;#34;, &amp;#34;iam:ListRoles&amp;#34;, &amp;#34;sts:AssumeRole&amp;#34; ], &amp;#34;Resource&amp;#34;: &amp;#34;*&amp;#34; } ] } jsonファイル使わない</description>
     </item>
     
     <item>
