@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-08-30T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-08-30T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-08-30T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/watch/</loc>
+    <lastmod>2022-08-30T09:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/watch%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%83%90%E3%83%83%E3%82%AF%E3%82%B0%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E5%AE%9A%E6%9C%9F%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-08-30T09:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/tags/Java/</loc>
     <lastmod>2022-08-30T07:32:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/jstack/</loc>
-    <lastmod>2022-08-30T07:32:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-08-30T07:32:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-08-30T07:32:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-08-30T07:32:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/Tomcat/</loc>
@@ -312,9 +318,6 @@
     <lastmod>2022-05-13T08:38:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/w/</loc>
-    <lastmod>2022-05-13T08:38:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/watch/</loc>
     <lastmod>2022-05-13T08:38:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/Apache-JMeter/</loc>
