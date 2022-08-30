@@ -2,14 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/tags/AWS/</loc>
+    <lastmod>2022-08-31T08:54:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/Chromium/</loc>
+    <lastmod>2022-08-31T08:54:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/CloudWatch-Synthetics/</loc>
+    <lastmod>2022-08-31T08:54:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/CloudWatchSynthetics%E3%81%A7Host%E3%81%A8IP%E3%82%92%E7%B4%90%E3%81%A5%E3%81%91%E3%81%A6URL%E7%9B%A3%E8%A6%96%E3%82%92%E8%A1%8C%E3%81%86/</loc>
+    <lastmod>2022-08-31T08:54:00+09:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-08-30T09:00:00+00:00</lastmod>
+    <lastmod>2022-08-31T08:54:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/Puppeteer/</loc>
+    <lastmod>2022-08-31T08:54:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/</loc>
-    <lastmod>2022-08-30T09:00:00+00:00</lastmod>
+    <lastmod>2022-08-31T08:54:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/</loc>
-    <lastmod>2022-08-30T09:00:00+00:00</lastmod>
+    <lastmod>2022-08-31T08:54:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/watch/</loc>
     <lastmod>2022-08-30T09:00:00+00:00</lastmod>
@@ -28,9 +43,6 @@
   </url><url>
     <loc>https://szk302.dev/posts/%E5%88%A5%E3%83%A6%E3%83%BC%E3%82%B6%E3%81%A7%E5%8B%95%E4%BD%9C%E3%81%97%E3%81%A6%E3%81%84%E3%82%8Btomcat%E3%81%AE%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89%E3%83%80%E3%83%B3%E3%83%97%E3%82%92%E5%8F%96%E3%82%8B/</loc>
     <lastmod>2022-08-30T07:32:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/AWS/</loc>
-    <lastmod>2022-08-29T08:53:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/AWS-CLI/</loc>
     <lastmod>2022-08-29T08:53:00+09:00</lastmod>
