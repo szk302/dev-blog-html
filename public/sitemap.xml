@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/tags/awk/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/vmstat/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/vmstat%E3%81%A7%E6%97%A5%E4%BB%98%E5%85%A5%E3%82%8A%E3%81%AE%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%E3%82%92%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-08-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/tags/AWS/</loc>
     <lastmod>2022-08-31T08:54:00+09:00</lastmod>
   </url><url>
@@ -14,16 +32,7 @@
     <loc>https://szk302.dev/posts/CloudWatchSynthetics%E3%81%A7Host%E3%81%A8IP%E3%82%92%E7%B4%90%E3%81%A5%E3%81%91%E3%81%A6URL%E7%9B%A3%E8%A6%96%E3%82%92%E8%A1%8C%E3%81%86/</loc>
     <lastmod>2022-08-31T08:54:00+09:00</lastmod>
   </url><url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-08-31T08:54:00+09:00</lastmod>
-  </url><url>
     <loc>https://szk302.dev/tags/Puppeteer/</loc>
-    <lastmod>2022-08-31T08:54:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-08-31T08:54:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-08-31T08:54:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/watch/</loc>
@@ -324,9 +333,6 @@
     <lastmod>2022-05-13T08:38:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/uptime/</loc>
-    <lastmod>2022-05-13T08:38:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/vmstat/</loc>
     <lastmod>2022-05-13T08:38:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/w/</loc>
