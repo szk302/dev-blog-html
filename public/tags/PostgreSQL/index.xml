@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 30 May 2022 08:14:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PostgreSQL/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Sep 2022 23:27:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PostgreSQL/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DockerでPostgreSQLのPlaygroundを作る</title>
+      <link>https://szk302.dev/posts/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/</link>
+      <pubDate>Fri, 02 Sep 2022 23:27:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/</guid>
+      <description>最近PostgreSQLを触ることが多いため、サクッと遊べるようにDockerで作成してみた。 Dockerfile FROM postgres:14.5-bullseye RUN localedef -i ja_JP -c -f UTF-8 -A /usr/share/locale/locale.alias ja_JP.UTF-8 ENV LANG ja_JP.UTF-8 docker-compose.yml version: &amp;#39;3&amp;#39; services: db: build: ./</description>
+    </item>
+    
     <item>
       <title>A5M2で作成したSQLをA5M2cmdでコマンドラインから実行する</title>
       <link>https://szk302.dev/posts/A5M2%E3%81%A7%E4%BD%9C%E6%88%90%E3%81%97%E3%81%9FSQL%E3%82%92A5M2cmd%E3%81%A7%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%8B%E3%82%89%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</link>

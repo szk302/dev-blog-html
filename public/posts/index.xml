@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Sep 2022 23:27:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DockerでPostgreSQLのPlaygroundを作る</title>
+      <link>https://szk302.dev/posts/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/</link>
+      <pubDate>Fri, 02 Sep 2022 23:27:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/</guid>
+      <description>最近PostgreSQLを触ることが多いため、サクッと遊べるようにDockerで作成してみた。 Dockerfile FROM postgres:14.5-bullseye RUN localedef -i ja_JP -c -f UTF-8 -A /usr/share/locale/locale.alias ja_JP.UTF-8 ENV LANG ja_JP.UTF-8 docker-compose.yml version: &amp;#39;3&amp;#39; services: db: build: ./</description>
+    </item>
+    
     <item>
       <title>vmstatで日付入りのリソース情報をファイルに出力する</title>
       <link>https://szk302.dev/posts/vmstat%E3%81%A7%E6%97%A5%E4%BB%98%E5%85%A5%E3%82%8A%E3%81%AE%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E6%83%85%E5%A0%B1%E3%82%92%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AB%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B/</link>

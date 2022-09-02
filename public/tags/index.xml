@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 31 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Sep 2022 23:27:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PostgreSQL</title>
+      <link>https://szk302.dev/tags/PostgreSQL/</link>
+      <pubDate>Fri, 02 Sep 2022 23:27:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/PostgreSQL/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>awk</title>
       <link>https://szk302.dev/tags/awk/</link>
@@ -476,15 +485,6 @@
       <pubDate>Mon, 30 May 2022 08:14:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/A5M2cmd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PostgreSQL</title>
-      <link>https://szk302.dev/tags/PostgreSQL/</link>
-      <pubDate>Mon, 30 May 2022 08:14:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/PostgreSQL/</guid>
       <description></description>
     </item>
     
