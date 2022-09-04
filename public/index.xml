@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 04 Sep 2022 13:50:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Sep 2022 06:57:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SchemaSpyでDBのテーブル定義書を生成する</title>
+      <link>https://szk302.dev/posts/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 05 Sep 2022 06:57:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</guid>
+      <description>SchmaSpyで手元のPostgreSQL用DDLからテーブル定義書を生成してみる 方法 PostgreSQLのDockerでDDLからテーブ</description>
+    </item>
+    
     <item>
       <title>BashでTCPコネクションが受け付けるまでwaitする</title>
       <link>https://szk302.dev/posts/Bash%E3%81%A7TCP%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E5%8F%97%E3%81%91%E4%BB%98%E3%81%91%E3%82%8B%E3%81%BE%E3%81%A7wait%E3%81%99%E3%82%8B/</link>

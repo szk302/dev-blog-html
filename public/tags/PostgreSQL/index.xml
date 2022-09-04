@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Fri, 02 Sep 2022 23:27:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PostgreSQL/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Sep 2022 06:57:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PostgreSQL/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SchemaSpyでDBのテーブル定義書を生成する</title>
+      <link>https://szk302.dev/posts/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 05 Sep 2022 06:57:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</guid>
+      <description>SchmaSpyで手元のPostgreSQL用DDLからテーブル定義書を生成してみる 方法 PostgreSQLのDockerでDDLからテーブ</description>
+    </item>
+    
     <item>
       <title>DockerでPostgreSQLのPlaygroundを作る</title>
       <link>https://szk302.dev/posts/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/</link>

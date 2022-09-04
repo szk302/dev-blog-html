@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/tags/PostgreSQL/</loc>
+    <lastmod>2022-09-05T06:57:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-09-05T06:57:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/SchemaSpy/</loc>
+    <lastmod>2022-09-05T06:57:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-09-05T06:57:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-09-05T06:57:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-09-05T06:57:00+09:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/tags/Bash/</loc>
     <lastmod>2022-09-04T13:50:00+09:00</lastmod>
   </url><url>
@@ -14,25 +32,13 @@
     <loc>https://szk302.dev/tags/Linux/</loc>
     <lastmod>2022-09-04T13:50:00+09:00</lastmod>
   </url><url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-09-04T13:50:00+09:00</lastmod>
-  </url><url>
     <loc>https://szk302.dev/tags/sleep/</loc>
-    <lastmod>2022-09-04T13:50:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-09-04T13:50:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-09-04T13:50:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/timeout/</loc>
     <lastmod>2022-09-04T13:50:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/Docker%E3%81%A7PostgreSQL%E3%81%AEPlayground%E3%82%92%E4%BD%9C%E3%82%8B/</loc>
-    <lastmod>2022-09-02T23:27:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/PostgreSQL/</loc>
     <lastmod>2022-09-02T23:27:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/awk/</loc>
