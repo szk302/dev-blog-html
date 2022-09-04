@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Tue, 05 Apr 2022 07:07:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Bash/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Sep 2022 13:50:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BashでTCPコネクションが受け付けるまでwaitする</title>
+      <link>https://szk302.dev/posts/Bash%E3%81%A7TCP%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E5%8F%97%E3%81%91%E4%BB%98%E3%81%91%E3%82%8B%E3%81%BE%E3%81%A7wait%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 04 Sep 2022 13:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Bash%E3%81%A7TCP%E3%82%B3%E3%83%8D%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%8C%E5%8F%97%E3%81%91%E4%BB%98%E3%81%91%E3%82%8B%E3%81%BE%E3%81%A7wait%E3%81%99%E3%82%8B/</guid>
+      <description>BashでTCP接続可能になるまでまち、接続できたら終了する方法を調べた。 方法はncコマンドを使用する方法とBashだけでできる方法があるら</description>
+    </item>
+    
     <item>
       <title>シェルスクリプトで実行したコマンド実行時間(ms)を計測する</title>
       <link>https://szk302.dev/posts/%E3%82%B7%E3%82%A7%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%A7%E5%AE%9F%E8%A1%8C%E3%81%97%E3%81%9F%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E5%AE%9F%E8%A1%8C%E6%99%82%E9%96%93%E3%82%92%E8%A8%88%E6%B8%AC%E3%81%99%E3%82%8B/</link>
