@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 05 Sep 2022 06:57:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PostgreSQL/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Sep 2022 12:06:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PostgreSQL/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PostgreSQLでlog_statementとlog_min_duration_statementの関係を調べた</title>
+      <link>https://szk302.dev/posts/PostgreSQL%E3%81%A7log_statement%E3%81%A8log_min_duration_statement%E3%81%AE%E9%96%A2%E4%BF%82%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%9F/PostgreSQL%E3%81%A7log_statement%E3%81%A8log_min_duration_statement%E3%81%AE%E9%96%A2%E4%BF%82%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%9F/</link>
+      <pubDate>Sun, 11 Sep 2022 12:06:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/PostgreSQL%E3%81%A7log_statement%E3%81%A8log_min_duration_statement%E3%81%AE%E9%96%A2%E4%BF%82%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%9F/PostgreSQL%E3%81%A7log_statement%E3%81%A8log_min_duration_statement%E3%81%AE%E9%96%A2%E4%BF%82%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%9F/</guid>
+      <description>log_statementとlog_min_duration_statementを指定したときのクエリーの出方がわからなかったため調査。 pg</description>
+    </item>
+    
     <item>
       <title>SchemaSpyでDBのテーブル定義書を生成する</title>
       <link>https://szk302.dev/posts/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</link>

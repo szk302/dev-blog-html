@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/tags/log_min_duration_statement/</loc>
+    <lastmod>2022-09-11T12:06:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/log_statement/</loc>
+    <lastmod>2022-09-11T12:06:00+09:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/tags/PostgreSQL/</loc>
-    <lastmod>2022-09-05T06:57:00+09:00</lastmod>
+    <lastmod>2022-09-11T12:06:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/PostgreSQL%E3%81%A7log_statement%E3%81%A8log_min_duration_statement%E3%81%AE%E9%96%A2%E4%BF%82%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%9F/PostgreSQL%E3%81%A7log_statement%E3%81%A8log_min_duration_statement%E3%81%AE%E9%96%A2%E4%BF%82%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%9F/</loc>
+    <lastmod>2022-09-11T12:06:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-09-05T06:57:00+09:00</lastmod>
+    <lastmod>2022-09-11T12:06:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-09-11T12:06:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-09-11T12:06:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/SchemaSpy/</loc>
     <lastmod>2022-09-05T06:57:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/SchemaSpy%E3%81%A7DB%E3%81%AE%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%AE%9A%E7%BE%A9%E6%9B%B8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</loc>
-    <lastmod>2022-09-05T06:57:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-09-05T06:57:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-09-05T06:57:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/Bash/</loc>
