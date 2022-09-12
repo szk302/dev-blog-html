@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 11 Sep 2022 12:06:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Sep 2022 07:12:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>psql</title>
+      <link>https://szk302.dev/tags/psql/</link>
+      <pubDate>Tue, 13 Sep 2022 07:12:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/psql/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>log_min_duration_statement</title>
       <link>https://szk302.dev/tags/log_min_duration_statement/</link>

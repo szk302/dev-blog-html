@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 11 Sep 2022 12:06:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 Sep 2022 07:12:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>psqlでSELECTした結果をCSVとして出力する</title>
+      <link>https://szk302.dev/posts/psql%E3%81%A7SELECT%E3%81%97%E3%81%9F%E7%B5%90%E6%9E%9C%E3%82%92CSV%E3%81%A8%E3%81%97%E3%81%A6%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B/</link>
+      <pubDate>Tue, 13 Sep 2022 07:12:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/psql%E3%81%A7SELECT%E3%81%97%E3%81%9F%E7%B5%90%E6%9E%9C%E3%82%92CSV%E3%81%A8%E3%81%97%E3%81%A6%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B/</guid>
+      <description>psqlでselectした結果をCSVとして出力したい。 方法 2つの方法を試した。 COPYコマンドでCSV出力 セパレータに,を指定してコマンド</description>
+    </item>
+    
     <item>
       <title>PostgreSQLでlog_statementとlog_min_duration_statementの関係を調べた</title>
       <link>https://szk302.dev/posts/PostgreSQL%E3%81%A7log_statement%E3%81%A8log_min_duration_statement%E3%81%AE%E9%96%A2%E4%BF%82%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%9F/PostgreSQL%E3%81%A7log_statement%E3%81%A8log_min_duration_statement%E3%81%AE%E9%96%A2%E4%BF%82%E3%82%92%E8%AA%BF%E3%81%B9%E3%81%9F/</link>
