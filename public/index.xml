@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Tue, 13 Sep 2022 07:12:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Sep 2022 10:23:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AmazonLinux2にExtrasLibraryからDockerとdocker-composeをインストールする</title>
+      <link>https://szk302.dev/posts/AmazonLinux2%E3%81%ABExtrasLibrary%E3%81%8B%E3%82%89Docker%E3%81%A8docker-compose%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 25 Sep 2022 10:23:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AmazonLinux2%E3%81%ABExtrasLibrary%E3%81%8B%E3%82%89Docker%E3%81%A8docker-compose%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</guid>
+      <description>AmazonLinux2にExtrasLibraryからDockerとdocker-composeをインストールする # パッケージ更新 sudo yum update -y</description>
+    </item>
+    
     <item>
       <title>psqlでSELECTした結果をCSVとして出力する</title>
       <link>https://szk302.dev/posts/psql%E3%81%A7SELECT%E3%81%97%E3%81%9F%E7%B5%90%E6%9E%9C%E3%82%92CSV%E3%81%A8%E3%81%97%E3%81%A6%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B/</link>
