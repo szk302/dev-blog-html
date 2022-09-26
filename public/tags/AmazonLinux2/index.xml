@@ -17,7 +17,7 @@
       <pubDate>Sun, 25 Sep 2022 10:23:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/AmazonLinux2%E3%81%ABExtrasLibrary%E3%81%8B%E3%82%89Docker%E3%81%A8docker-compose%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</guid>
-      <description>AmazonLinux2にExtrasLibraryからDockerとdocker-composeをインストールする # パッケージ更新 sudo yum update -y</description>
+      <description>AmazonLinux2にExtrasLibraryからDockerとdocker-composeをインストールする ec2-userで接続中</description>
     </item>
     
   </channel>
