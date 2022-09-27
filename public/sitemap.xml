@@ -2,13 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/tags/AmazonLinux2/</loc>
+    <lastmod>2022-09-28T07:38:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/AWS-Systems-Manager-Parameter-Store/</loc>
+    <lastmod>2022-09-28T07:38:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/AWSSystemsManagerParameterStore%E3%81%8B%E3%82%89%E6%9C%80%E6%96%B0%E3%81%AEAMI-ID%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-09-28T07:38:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-09-28T07:38:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-09-28T07:38:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-09-28T07:38:00+09:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/tags/Amazon-EC2/</loc>
     <lastmod>2022-09-27T07:30:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/AWS-CloudFormation/</loc>
-    <lastmod>2022-09-27T07:30:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/AWS-Systems-Manager-Parameter-Store/</loc>
     <lastmod>2022-09-27T07:30:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/AWS-Systems-Manager-Session-Manager/</loc>
@@ -16,18 +31,6 @@
   </url><url>
     <loc>https://szk302.dev/posts/CloudFormation%E3%81%A7SSM%E7%B5%8C%E7%94%B1%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%A7%E3%81%8D%E3%82%8B%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/CloudFormation%E3%81%A7SSM%E7%B5%8C%E7%94%B1%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%A7%E3%81%8D%E3%82%8B%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/</loc>
     <lastmod>2022-09-27T07:30:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-09-27T07:30:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-09-27T07:30:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/</loc>
-    <lastmod>2022-09-27T07:30:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/AmazonLinux2/</loc>
-    <lastmod>2022-09-25T10:23:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/AmazonLinux2%E3%81%ABExtrasLibrary%E3%81%8B%E3%82%89Docker%E3%81%A8docker-compose%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</loc>
     <lastmod>2022-09-25T10:23:00+09:00</lastmod>

@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 25 Sep 2022 10:23:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/AmazonLinux2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Sep 2022 07:38:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/AmazonLinux2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWSSystemsManagerParameterStoreから最新のAMI-IDを取得する</title>
+      <link>https://szk302.dev/posts/AWSSystemsManagerParameterStore%E3%81%8B%E3%82%89%E6%9C%80%E6%96%B0%E3%81%AEAMI-ID%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</link>
+      <pubDate>Wed, 28 Sep 2022 07:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AWSSystemsManagerParameterStore%E3%81%8B%E3%82%89%E6%9C%80%E6%96%B0%E3%81%AEAMI-ID%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</guid>
+      <description>いつの間にかParameterStoreから最新のAMI-IDを取得できるようになっていたためメモ 各AWSサービスで使用できるPublicパ</description>
+    </item>
+    
     <item>
       <title>AmazonLinux2にExtrasLibraryからDockerとdocker-composeをインストールする</title>
       <link>https://szk302.dev/posts/AmazonLinux2%E3%81%ABExtrasLibrary%E3%81%8B%E3%82%89Docker%E3%81%A8docker-compose%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B/</link>

@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Tue, 27 Sep 2022 07:30:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/AWS-Systems-Manager-Parameter-Store/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Sep 2022 07:38:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/AWS-Systems-Manager-Parameter-Store/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWSSystemsManagerParameterStoreから最新のAMI-IDを取得する</title>
+      <link>https://szk302.dev/posts/AWSSystemsManagerParameterStore%E3%81%8B%E3%82%89%E6%9C%80%E6%96%B0%E3%81%AEAMI-ID%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</link>
+      <pubDate>Wed, 28 Sep 2022 07:38:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AWSSystemsManagerParameterStore%E3%81%8B%E3%82%89%E6%9C%80%E6%96%B0%E3%81%AEAMI-ID%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</guid>
+      <description>いつの間にかParameterStoreから最新のAMI-IDを取得できるようになっていたためメモ 各AWSサービスで使用できるPublicパ</description>
+    </item>
+    
     <item>
       <title>CloudFormationでSSM経由で接続できる使い捨てEC2を建てる</title>
       <link>https://szk302.dev/posts/CloudFormation%E3%81%A7SSM%E7%B5%8C%E7%94%B1%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%A7%E3%81%8D%E3%82%8B%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/CloudFormation%E3%81%A7SSM%E7%B5%8C%E7%94%B1%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%A7%E3%81%8D%E3%82%8B%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/</link>
