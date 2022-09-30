@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Tue, 27 Sep 2022 07:30:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Amazon-EC2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Oct 2022 07:33:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Amazon-EC2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>使い捨てEC2環境を作成してVSCodeを立ち上げるバッチ</title>
+      <link>https://szk302.dev/posts/%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E7%92%B0%E5%A2%83%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6VSCode%E3%82%92%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92%E3%82%8B%E3%83%90%E3%83%83%E3%83%81/</link>
+      <pubDate>Sat, 01 Oct 2022 07:33:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E7%92%B0%E5%A2%83%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6VSCode%E3%82%92%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92%E3%82%8B%E3%83%90%E3%83%83%E3%83%81/</guid>
+      <description>使い捨て環境をサクッと作りたくてバッチを適当に書いた。 実行するとSSM経由で接続できるEC2を起動し、SSHの設定と共にKeyPairを取得</description>
+    </item>
+    
     <item>
       <title>CloudFormationでSSM経由で接続できる使い捨てEC2を建てる</title>
       <link>https://szk302.dev/posts/CloudFormation%E3%81%A7SSM%E7%B5%8C%E7%94%B1%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%A7%E3%81%8D%E3%82%8B%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/CloudFormation%E3%81%A7SSM%E7%B5%8C%E7%94%B1%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%A7%E3%81%8D%E3%82%8B%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/</link>

@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/tags/Amazon-EC2/</loc>
+    <lastmod>2022-10-01T07:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/AWS-Systems-Manager-Session-Manager/</loc>
+    <lastmod>2022-10-01T07:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-10-01T07:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/SSH/</loc>
+    <lastmod>2022-10-01T07:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-10-01T07:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-10-01T07:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/Visual-Studio-Code/</loc>
+    <lastmod>2022-10-01T07:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/VSCode/</loc>
+    <lastmod>2022-10-01T07:33:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E7%92%B0%E5%A2%83%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6VSCode%E3%82%92%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92%E3%82%8B%E3%83%90%E3%83%83%E3%83%81/</loc>
+    <lastmod>2022-10-01T07:33:00+09:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/tags/AmazonLinux2/</loc>
     <lastmod>2022-09-28T07:38:00+09:00</lastmod>
   </url><url>
@@ -11,22 +38,7 @@
     <loc>https://szk302.dev/posts/AWSSystemsManagerParameterStore%E3%81%8B%E3%82%89%E6%9C%80%E6%96%B0%E3%81%AEAMI-ID%E3%82%92%E5%8F%96%E5%BE%97%E3%81%99%E3%82%8B/</loc>
     <lastmod>2022-09-28T07:38:00+09:00</lastmod>
   </url><url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-09-28T07:38:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-09-28T07:38:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/</loc>
-    <lastmod>2022-09-28T07:38:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/Amazon-EC2/</loc>
-    <lastmod>2022-09-27T07:30:00+09:00</lastmod>
-  </url><url>
     <loc>https://szk302.dev/tags/AWS-CloudFormation/</loc>
-    <lastmod>2022-09-27T07:30:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/AWS-Systems-Manager-Session-Manager/</loc>
     <lastmod>2022-09-27T07:30:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/CloudFormation%E3%81%A7SSM%E7%B5%8C%E7%94%B1%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%A7%E3%81%8D%E3%82%8B%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/CloudFormation%E3%81%A7SSM%E7%B5%8C%E7%94%B1%E3%81%A7%E6%8E%A5%E7%B6%9A%E3%81%A7%E3%81%8D%E3%82%8B%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E3%82%92%E5%BB%BA%E3%81%A6%E3%82%8B/</loc>
@@ -221,9 +233,6 @@
     <loc>https://szk302.dev/tags/devcontainer/</loc>
     <lastmod>2022-06-22T19:39:00+09:00</lastmod>
   </url><url>
-    <loc>https://szk302.dev/tags/VSCode/</loc>
-    <lastmod>2022-06-22T19:39:00+09:00</lastmod>
-  </url><url>
     <loc>https://szk302.dev/tags/Cloudflare-Pages/</loc>
     <lastmod>2022-06-18T09:58:00+09:00</lastmod>
   </url><url>
@@ -243,9 +252,6 @@
     <lastmod>2022-06-16T07:50:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/Node.js/</loc>
-    <lastmod>2022-06-16T07:50:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/Visual-Studio-Code/</loc>
     <lastmod>2022-06-16T07:50:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/yarn%E3%81%A7%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E6%B8%88%E3%81%BF%E3%81%AE%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B/</loc>
