@@ -10,7 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sat, 01 Oct 2022 07:33:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Oct 2022 07:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShellでStart-Processを使用して複数のオプションとともにコマンドを実行する</title>
+      <link>https://szk302.dev/posts/PowerShell%E3%81%A7Start-Process%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%81%A8%E3%82%82%E3%81%AB%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 03 Oct 2022 07:42:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/PowerShell%E3%81%A7Start-Process%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%81%A8%E3%82%82%E3%81%AB%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</guid>
+      <description>オプション -ArgumentList*を指定し、複数のパラメータの場合は *, で区切る 例 Start-Process -FilePath aws.exe -ArgumentList &amp;#39;ssm&amp;#39;,&amp;#39;start-session&amp;#39;,&amp;#39;--target&amp;#39;,&amp;#34;${instanceId}&amp;#34;,&amp;#39;--document-name&amp;#39;,&amp;#39;AWS-StartPortForwardingSession&amp;#39;,&amp;#39;--parameters&amp;#39;,&amp;#34;{\`&amp;#34;portNumber\`&amp;#34;:[\`&amp;#34;22\`&amp;#34;],\`&amp;#34;localPortNumber\`&amp;#34;:[\`&amp;#34;${port}\`&amp;#34;]}&amp;#34; -Wait 参考 Microsoft Ignite/Learn/PowerS</description>
+    </item>
+    
+    <item>
+      <title>Batでディレクトリやファイルを静かに削除する</title>
+      <link>https://szk302.dev/posts/Bat%E3%81%A7%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%84%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E9%9D%99%E3%81%8B%E3%81%AB%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 03 Oct 2022 05:30:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Bat%E3%81%A7%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%84%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E9%9D%99%E3%81%8B%E3%81%AB%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</guid>
+      <description>ディレクトリやファイルをコンソール非表示で強制削除したい() ディレクトリの削除 rd /s /q %dirPath% ファイルの削除 del /q %filePath% ディレクトリの削除(ディレクトリが</description>
+    </item>
+    
     <item>
       <title>使い捨てEC2環境を作成してVSCodeを立ち上げるバッチ</title>
       <link>https://szk302.dev/posts/%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E7%92%B0%E5%A2%83%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6VSCode%E3%82%92%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92%E3%82%8B%E3%83%90%E3%83%83%E3%83%81/</link>

@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Thu, 14 Jul 2022 08:36:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PowerShell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Oct 2022 07:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/PowerShell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShellでStart-Processを使用して複数のオプションとともにコマンドを実行する</title>
+      <link>https://szk302.dev/posts/PowerShell%E3%81%A7Start-Process%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%81%A8%E3%82%82%E3%81%AB%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 03 Oct 2022 07:42:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/PowerShell%E3%81%A7Start-Process%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%81%A8%E3%82%82%E3%81%AB%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</guid>
+      <description>オプション -ArgumentList*を指定し、複数のパラメータの場合は *, で区切る 例 Start-Process -FilePath aws.exe -ArgumentList &amp;#39;ssm&amp;#39;,&amp;#39;start-session&amp;#39;,&amp;#39;--target&amp;#39;,&amp;#34;${instanceId}&amp;#34;,&amp;#39;--document-name&amp;#39;,&amp;#39;AWS-StartPortForwardingSession&amp;#39;,&amp;#39;--parameters&amp;#39;,&amp;#34;{\`&amp;#34;portNumber\`&amp;#34;:[\`&amp;#34;22\`&amp;#34;],\`&amp;#34;localPortNumber\`&amp;#34;:[\`&amp;#34;${port}\`&amp;#34;]}&amp;#34; -Wait 参考 Microsoft Ignite/Learn/PowerS</description>
+    </item>
+    
     <item>
       <title>PowerShellでオブジェクトのプロパティを追加削除する</title>
       <link>https://szk302.dev/posts/PowerShell%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%82%92%E8%BF%BD%E5%8A%A0%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/PowerShell%E3%81%A7%E3%82%AA%E3%83%96%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E3%83%97%E3%83%AD%E3%83%91%E3%83%86%E3%82%A3%E3%82%92%E8%BF%BD%E5%8A%A0%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</link>

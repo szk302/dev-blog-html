@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Start-Process on Szk302 Tech Blog</title>
+    <link>https://szk302.dev/tags/Start-Process/</link>
+    <description>Recent content in Start-Process on Szk302 Tech Blog</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Mon, 03 Oct 2022 07:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Start-Process/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShellでStart-Processを使用して複数のオプションとともにコマンドを実行する</title>
+      <link>https://szk302.dev/posts/PowerShell%E3%81%A7Start-Process%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%81%A8%E3%82%82%E3%81%AB%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 03 Oct 2022 07:42:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/PowerShell%E3%81%A7Start-Process%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%81%A8%E3%82%82%E3%81%AB%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%82%92%E5%AE%9F%E8%A1%8C%E3%81%99%E3%82%8B/</guid>
+      <description>オプション -ArgumentList*を指定し、複数のパラメータの場合は *, で区切る 例 Start-Process -FilePath aws.exe -ArgumentList &amp;#39;ssm&amp;#39;,&amp;#39;start-session&amp;#39;,&amp;#39;--target&amp;#39;,&amp;#34;${instanceId}&amp;#34;,&amp;#39;--document-name&amp;#39;,&amp;#39;AWS-StartPortForwardingSession&amp;#39;,&amp;#39;--parameters&amp;#39;,&amp;#34;{\`&amp;#34;portNumber\`&amp;#34;:[\`&amp;#34;22\`&amp;#34;],\`&amp;#34;localPortNumber\`&amp;#34;:[\`&amp;#34;${port}\`&amp;#34;]}&amp;#34; -Wait 参考 Microsoft Ignite/Learn/PowerS</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bat on Szk302 Tech Blog</title>
+    <link>https://szk302.dev/tags/Bat/</link>
+    <description>Recent content in Bat on Szk302 Tech Blog</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Mon, 03 Oct 2022 05:30:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Bat/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Batでディレクトリやファイルを静かに削除する</title>
+      <link>https://szk302.dev/posts/Bat%E3%81%A7%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%84%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E9%9D%99%E3%81%8B%E3%81%AB%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</link>
+      <pubDate>Mon, 03 Oct 2022 05:30:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Bat%E3%81%A7%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E3%82%84%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%92%E9%9D%99%E3%81%8B%E3%81%AB%E5%89%8A%E9%99%A4%E3%81%99%E3%82%8B/</guid>
+      <description>ディレクトリやファイルをコンソール非表示で強制削除したい() ディレクトリの削除 rd /s /q %dirPath% ファイルの削除 del /q %filePath% ディレクトリの削除(ディレクトリが</description>
+    </item>
+    
+  </channel>
+</rss>

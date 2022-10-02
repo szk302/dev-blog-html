@@ -10,7 +10,61 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sat, 01 Oct 2022 07:33:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Oct 2022 07:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell</title>
+      <link>https://szk302.dev/tags/PowerShell/</link>
+      <pubDate>Mon, 03 Oct 2022 07:42:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/PowerShell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Start-Process</title>
+      <link>https://szk302.dev/tags/Start-Process/</link>
+      <pubDate>Mon, 03 Oct 2022 07:42:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Start-Process/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bat</title>
+      <link>https://szk302.dev/tags/Bat/</link>
+      <pubDate>Mon, 03 Oct 2022 05:30:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Bat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>del</title>
+      <link>https://szk302.dev/tags/del/</link>
+      <pubDate>Mon, 03 Oct 2022 05:30:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/del/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rd</title>
+      <link>https://szk302.dev/tags/rd/</link>
+      <pubDate>Mon, 03 Oct 2022 05:30:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/rd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>バッチ</title>
+      <link>https://szk302.dev/tags/%E3%83%90%E3%83%83%E3%83%81/</link>
+      <pubDate>Mon, 03 Oct 2022 05:30:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/%E3%83%90%E3%83%83%E3%83%81/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Amazon EC2</title>
       <link>https://szk302.dev/tags/Amazon-EC2/</link>
@@ -323,15 +377,6 @@
       <pubDate>Thu, 04 Aug 2022 08:10:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/AWS-IAM/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PowerShell</title>
-      <link>https://szk302.dev/tags/PowerShell/</link>
-      <pubDate>Thu, 14 Jul 2022 08:36:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/PowerShell/</guid>
       <description></description>
     </item>
     
