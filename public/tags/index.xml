@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 03 Oct 2022 08:38:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Oct 2022 08:58:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jq</title>
+      <link>https://szk302.dev/tags/jq/</link>
+      <pubDate>Mon, 03 Oct 2022 08:58:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/jq/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Get-NetTCPConnection</title>
       <link>https://szk302.dev/tags/Get-NetTCPConnection/</link>
@@ -341,15 +350,6 @@
       <pubDate>Mon, 29 Aug 2022 08:53:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/AWS-CLI/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jq</title>
-      <link>https://szk302.dev/tags/jq/</link>
-      <pubDate>Mon, 29 Aug 2022 08:53:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/jq/</guid>
       <description></description>
     </item>
     
