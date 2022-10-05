@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Tue, 04 Oct 2022 08:27:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Oct 2022 08:58:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWSCLIでAmazonSQSのQueueを作成する</title>
+      <link>https://szk302.dev/posts/AWSCLI%E3%81%A7AmazonSQS%E3%81%AEQueue%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/</link>
+      <pubDate>Wed, 05 Oct 2022 08:58:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AWSCLI%E3%81%A7AmazonSQS%E3%81%AEQueue%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/</guid>
+      <description>手順 作成 標準Queue 標準Queueを作成 QUEUE_NAME=&amp;#34;my-queue&amp;#34; ## Queueの作成 aws sqs create-queue --queue-name ${QUEUE_NAME} ## QueueのURL取得 QUEUE_URL=$(aws sqs get-queue-url --queue-name ${QUEUE_NAME} --output text) FIFOQueue FIFOQueueを作成する</description>
+    </item>
+    
     <item>
       <title>AWSCLIでJSONファイルの内容をAmazonSQSのQueueに送信する</title>
       <link>https://szk302.dev/posts/AWSCLI%E3%81%A7JSON%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92AmazonSQS%E3%81%AEQueue%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</link>
