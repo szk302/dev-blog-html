@@ -10,7 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 05 Oct 2022 08:58:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Oct 2022 23:50:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWSCLIを使用してAmazonSES経由でHTMLフォーマットのメールを送信する</title>
+      <link>https://szk302.dev/posts/AWSCLI%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6AmazonSES%E7%B5%8C%E7%94%B1%E3%81%A7HTML%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/AWSCLI%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6AmazonSES%E7%B5%8C%E7%94%B1%E3%81%A7HTML%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</link>
+      <pubDate>Wed, 12 Oct 2022 23:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/AWSCLI%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6AmazonSES%E7%B5%8C%E7%94%B1%E3%81%A7HTML%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/AWSCLI%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6AmazonSES%E7%B5%8C%E7%94%B1%E3%81%A7HTML%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</guid>
+      <description>CLIでHTMLフォーマットのメールを送る方法を調査 方法 オプション --message を使用することで送信可能。 文字列で渡すのが面倒なのでtemplateのJ</description>
+    </item>
+    
+    <item>
+      <title>PowerShellでBashのコマンド置換のようなことをしたい</title>
+      <link>https://szk302.dev/posts/PowerShell%E3%81%A7Bash%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E7%BD%AE%E6%8F%9B%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%81%93%E3%81%A8%E3%82%92%E3%81%97%E3%81%9F%E3%81%84/</link>
+      <pubDate>Tue, 11 Oct 2022 08:48:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/PowerShell%E3%81%A7Bash%E3%81%AE%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E7%BD%AE%E6%8F%9B%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%81%93%E3%81%A8%E3%82%92%E3%81%97%E3%81%9F%E3%81%84/</guid>
+      <description>Bashと同じように、変数なしでコマンドの結果を文字列結合させたい。 方法 部分式演算子(Subexpression operator)を利用する</description>
+    </item>
+    
     <item>
       <title>AWSCLIでAmazonSQSのQueueを作成する</title>
       <link>https://szk302.dev/posts/AWSCLI%E3%81%A7AmazonSQS%E3%81%AEQueue%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B/</link>
@@ -26,15 +44,6 @@
       <pubDate>Tue, 04 Oct 2022 08:27:00 +0900</pubDate>
       
       <guid>https://szk302.dev/posts/AWSCLI%E3%81%A7JSON%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92AmazonSQS%E3%81%AEQueue%E3%81%AB%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</guid>
-      <description>準備 メッセージを用意 { &amp;#34;id&amp;#34;: &amp;#34;xyz&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;TYPE&amp;#34;, &amp;#34;body&amp;#34;: &amp;#34;あいうえお。\nかきくけこ。&amp;#34;, &amp;#34;nest&amp;#34;:{ &amp;#34;key&amp;#34;: &amp;#34;サシスセソ。\nタチツテト。&amp;#34;, &amp;#34;array&amp;#34;: [</description>
-    </item>
-    
-    <item>
-      <title>AWSCLIとJQでJSONファイルの内容を送信する</title>
-      <link>https://szk302.dev/posts/AWSCLI%E3%81%A8JQ%E3%81%A7JSON%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</link>
-      <pubDate>Tue, 04 Oct 2022 08:27:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/posts/AWSCLI%E3%81%A8JQ%E3%81%A7JSON%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%81%AE%E5%86%85%E5%AE%B9%E3%82%92%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</guid>
       <description>準備 メッセージを用意 { &amp;#34;id&amp;#34;: &amp;#34;xyz&amp;#34;, &amp;#34;type&amp;#34;: &amp;#34;TYPE&amp;#34;, &amp;#34;body&amp;#34;: &amp;#34;あいうえお。\nかきくけこ。&amp;#34;, &amp;#34;nest&amp;#34;:{ &amp;#34;key&amp;#34;: &amp;#34;サシスセソ。\nタチツテト。&amp;#34;, &amp;#34;array&amp;#34;: [</description>
     </item>
     

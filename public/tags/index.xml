@@ -10,7 +10,79 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 05 Oct 2022 08:58:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Oct 2022 23:50:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Amazon SES</title>
+      <link>https://szk302.dev/tags/Amazon-SES/</link>
+      <pubDate>Wed, 12 Oct 2022 23:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Amazon-SES/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://szk302.dev/tags/AWS/</link>
+      <pubDate>Wed, 12 Oct 2022 23:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AWS/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS CLI</title>
+      <link>https://szk302.dev/tags/AWS-CLI/</link>
+      <pubDate>Wed, 12 Oct 2022 23:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AWS-CLI/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jq</title>
+      <link>https://szk302.dev/tags/jq/</link>
+      <pubDate>Wed, 12 Oct 2022 23:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/jq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SES</title>
+      <link>https://szk302.dev/tags/SES/</link>
+      <pubDate>Wed, 12 Oct 2022 23:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/SES/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PowerShell</title>
+      <link>https://szk302.dev/tags/PowerShell/</link>
+      <pubDate>Tue, 11 Oct 2022 08:48:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/PowerShell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>コマンド置換(Command substitution)</title>
+      <link>https://szk302.dev/tags/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E7%BD%AE%E6%8F%9BCommand-substitution/</link>
+      <pubDate>Tue, 11 Oct 2022 08:48:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E7%BD%AE%E6%8F%9BCommand-substitution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>部分式演算子(Subexpression operator)</title>
+      <link>https://szk302.dev/tags/%E9%83%A8%E5%88%86%E5%BC%8F%E6%BC%94%E7%AE%97%E5%AD%90Subexpression-operator/</link>
+      <pubDate>Tue, 11 Oct 2022 08:48:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/%E9%83%A8%E5%88%86%E5%BC%8F%E6%BC%94%E7%AE%97%E5%AD%90Subexpression-operator/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Amazon SQS</title>
       <link>https://szk302.dev/tags/Amazon-SQS/</link>
@@ -21,47 +93,11 @@
     </item>
     
     <item>
-      <title>AWS</title>
-      <link>https://szk302.dev/tags/AWS/</link>
-      <pubDate>Wed, 05 Oct 2022 08:58:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/AWS/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AWS CLI</title>
-      <link>https://szk302.dev/tags/AWS-CLI/</link>
-      <pubDate>Wed, 05 Oct 2022 08:58:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/AWS-CLI/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jq</title>
-      <link>https://szk302.dev/tags/jq/</link>
-      <pubDate>Tue, 04 Oct 2022 08:27:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/jq/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Get-NetTCPConnection</title>
       <link>https://szk302.dev/tags/Get-NetTCPConnection/</link>
       <pubDate>Mon, 03 Oct 2022 08:38:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/Get-NetTCPConnection/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>PowerShell</title>
-      <link>https://szk302.dev/tags/PowerShell/</link>
-      <pubDate>Mon, 03 Oct 2022 08:38:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/PowerShell/</guid>
       <description></description>
     </item>
     
@@ -701,24 +737,6 @@
       <pubDate>Sun, 29 May 2022 10:01:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/S3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Amazon SES</title>
-      <link>https://szk302.dev/tags/Amazon-SES/</link>
-      <pubDate>Thu, 26 May 2022 08:17:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/Amazon-SES/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SES</title>
-      <link>https://szk302.dev/tags/SES/</link>
-      <pubDate>Thu, 26 May 2022 08:17:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/SES/</guid>
       <description></description>
     </item>
     
