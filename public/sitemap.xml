@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/tags/Allure/</loc>
+    <lastmod>2022-10-16T07:54:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/Allure-Report/</loc>
+    <lastmod>2022-10-16T07:54:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/JUnit/</loc>
+    <lastmod>2022-10-16T07:54:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/JUnit%E3%81%AExml%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92ALLURE%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%83%A1%E3%83%BC%E3%83%AB%E9%80%81%E4%BF%A1%E5%8F%AF%E8%83%BD%E3%81%AAHTML%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B/JUnit%E3%81%AExml%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92ALLURE%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6HTML%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-10-16T07:54:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-10-16T07:54:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-10-16T07:54:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-10-16T07:54:00+09:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/tags/Amazon-SES/</loc>
     <lastmod>2022-10-12T23:50:00+09:00</lastmod>
   </url><url>
@@ -17,16 +38,7 @@
     <loc>https://szk302.dev/tags/jq/</loc>
     <lastmod>2022-10-12T23:50:00+09:00</lastmod>
   </url><url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-10-12T23:50:00+09:00</lastmod>
-  </url><url>
     <loc>https://szk302.dev/tags/SES/</loc>
-    <lastmod>2022-10-12T23:50:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-10-12T23:50:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-10-12T23:50:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/PowerShell/</loc>

@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 12 Oct 2022 23:50:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Oct 2022 07:54:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JUnitのxmlレポートをALLUREを使用してメール送信可能なHTMLレポート化する</title>
+      <link>https://szk302.dev/posts/JUnit%E3%81%AExml%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92ALLURE%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%83%A1%E3%83%BC%E3%83%AB%E9%80%81%E4%BF%A1%E5%8F%AF%E8%83%BD%E3%81%AAHTML%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B/JUnit%E3%81%AExml%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92ALLURE%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6HTML%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 16 Oct 2022 07:54:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/JUnit%E3%81%AExml%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92ALLURE%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%83%A1%E3%83%BC%E3%83%AB%E9%80%81%E4%BF%A1%E5%8F%AF%E8%83%BD%E3%81%AAHTML%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B/JUnit%E3%81%AExml%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92ALLURE%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6HTML%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B/</guid>
+      <description>メールでJUnitのテスト結果を知りたいという要望のため調査 Allure Reportはサーバが必要(HTML版含め)だったが、 fescobar/allure-docker-service の Emailable Report 機能を使用すると</description>
+    </item>
+    
     <item>
       <title>AWSCLIを使用してAmazonSES経由でHTMLフォーマットのメールを送信する</title>
       <link>https://szk302.dev/posts/AWSCLI%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6AmazonSES%E7%B5%8C%E7%94%B1%E3%81%A7HTML%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/AWSCLI%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6AmazonSES%E7%B5%8C%E7%94%B1%E3%81%A7HTML%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</link>
