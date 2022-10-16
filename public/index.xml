@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 16 Oct 2022 07:54:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Oct 2022 09:45:20 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AsciidoctorでiframeのHTMLを埋めこみ表示する</title>
+      <link>https://szk302.dev/posts/Asciidoctor%E3%81%A7iframe%E3%81%AEHTML%E3%82%92%E5%9F%8B%E3%82%81%E3%81%93%E3%81%BF%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B/Asciidoctor%E3%81%A7iframe%E3%81%AEHTML%E3%82%92%E5%9F%8B%E3%82%81%E3%81%93%E3%81%BF%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sun, 16 Oct 2022 09:45:20 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Asciidoctor%E3%81%A7iframe%E3%81%AEHTML%E3%82%92%E5%9F%8B%E3%82%81%E3%81%93%E3%81%BF%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B/Asciidoctor%E3%81%A7iframe%E3%81%AEHTML%E3%82%92%E5%9F%8B%E3%82%81%E3%81%93%E3%81%BF%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B/</guid>
+      <description>AsciidoctorでHTMLを埋め込んで表示しようとすると埋め込むHTMLのスタイルシートが親に適用されてしまう。 iframe形式で埋め</description>
+    </item>
+    
     <item>
       <title>JUnitのxmlレポートをALLUREを使用してメール送信可能なHTMLレポート化する</title>
       <link>https://szk302.dev/posts/JUnit%E3%81%AExml%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92ALLURE%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%83%A1%E3%83%BC%E3%83%AB%E9%80%81%E4%BF%A1%E5%8F%AF%E8%83%BD%E3%81%AAHTML%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B/JUnit%E3%81%AExml%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92ALLURE%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6HTML%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B/</link>
@@ -1089,6 +1098,15 @@
       
       <guid>https://szk302.dev/posts/Blog%E3%81%AB%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8BTheme%E3%82%92%E6%B1%BA%E3%82%81%E3%82%8B/</guid>
       <description>Awesome Open Source/hugo-themeなどからThemeを探してみた。 スター数やシンプルなブログを考慮すると以下のThemeが残った。 Hugo Papermod Loveit</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://szk302.dev/posts/Asciidoctor%E3%81%A7iframe%E3%81%AEHTML%E3%82%92%E5%9F%8B%E3%82%81%E3%81%93%E3%81%BF%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B/escaped_report/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://szk302.dev/posts/Asciidoctor%E3%81%A7iframe%E3%81%AEHTML%E3%82%92%E5%9F%8B%E3%82%81%E3%81%93%E3%81%BF%E8%A1%A8%E7%A4%BA%E3%81%99%E3%82%8B/escaped_report/</guid>
+      <description>&amp;lt;html&amp;gt; &amp;lt;head&amp;gt; &amp;lt;title&amp;gt;Myテストレポート - Allure Docker Service&amp;lt;/title&amp;gt; &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt; &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1&amp;quot;&amp;gt; &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cosmo/bootstrap.css&amp;quot;&amp;gt; &amp;lt;link rel=&amp;quot;shortcut icon&amp;quot; href=&amp;quot;/static/favicon&amp;quot;&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;div class=&amp;quot;container jumbotron&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;display-4 lead&amp;quot;&amp;gt;Myテストレポー</description>
     </item>
     
     

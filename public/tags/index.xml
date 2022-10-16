@@ -10,7 +10,52 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 16 Oct 2022 07:54:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 16 Oct 2022 09:45:20 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AsciiDoc</title>
+      <link>https://szk302.dev/tags/AsciiDoc/</link>
+      <pubDate>Sun, 16 Oct 2022 09:45:20 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/AsciiDoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asciidoctor</title>
+      <link>https://szk302.dev/tags/Asciidoctor/</link>
+      <pubDate>Sun, 16 Oct 2022 09:45:20 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Asciidoctor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iframe</title>
+      <link>https://szk302.dev/tags/iframe/</link>
+      <pubDate>Sun, 16 Oct 2022 09:45:20 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/iframe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Passthrough Block</title>
+      <link>https://szk302.dev/tags/Passthrough-Block/</link>
+      <pubDate>Sun, 16 Oct 2022 09:45:20 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Passthrough-Block/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>パススルーブロック</title>
+      <link>https://szk302.dev/tags/%E3%83%91%E3%82%B9%E3%82%B9%E3%83%AB%E3%83%BC%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF/</link>
+      <pubDate>Sun, 16 Oct 2022 09:45:20 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/%E3%83%91%E3%82%B9%E3%82%B9%E3%83%AB%E3%83%BC%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Allure</title>
       <link>https://szk302.dev/tags/Allure/</link>
@@ -1340,24 +1385,6 @@
       <pubDate>Wed, 17 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://szk302.dev/tags/webpack-bundle-analyzer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AsciiDoc</title>
-      <link>https://szk302.dev/tags/AsciiDoc/</link>
-      <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/AsciiDoc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Asciidoctor</title>
-      <link>https://szk302.dev/tags/Asciidoctor/</link>
-      <pubDate>Wed, 17 Nov 2021 00:27:20 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/Asciidoctor/</guid>
       <description></description>
     </item>
     
