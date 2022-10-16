@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/tags/Allure/</loc>
+    <lastmod>2022-10-17T07:42:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/Allure-Report/</loc>
+    <lastmod>2022-10-17T07:42:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/allure-docker-service%E3%81%AEEmailableReport%E3%82%92HTML%E3%83%A1%E3%83%BC%E3%83%AB%E3%81%A8%E3%81%97%E3%81%A6%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/allure-docker-service%E3%81%AEEmailableReport%E3%82%92HTML%E3%83%A1%E3%83%BC%E3%83%AB%E3%81%A8%E3%81%97%E3%81%A6%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-10-17T07:42:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/Amazon-SES/</loc>
+    <lastmod>2022-10-17T07:42:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/jq/</loc>
+    <lastmod>2022-10-17T07:42:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/juice/</loc>
+    <lastmod>2022-10-17T07:42:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-10-17T07:42:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-10-17T07:42:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-10-17T07:42:00+09:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/tags/AsciiDoc/</loc>
     <lastmod>2022-10-16T09:45:20+09:00</lastmod>
   </url><url>
@@ -17,32 +44,14 @@
     <loc>https://szk302.dev/tags/Passthrough-Block/</loc>
     <lastmod>2022-10-16T09:45:20+09:00</lastmod>
   </url><url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-10-16T09:45:20+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-10-16T09:45:20+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/</loc>
-    <lastmod>2022-10-16T09:45:20+09:00</lastmod>
-  </url><url>
     <loc>https://szk302.dev/tags/%E3%83%91%E3%82%B9%E3%82%B9%E3%83%AB%E3%83%BC%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF/</loc>
     <lastmod>2022-10-16T09:45:20+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/Allure/</loc>
-    <lastmod>2022-10-16T07:54:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/Allure-Report/</loc>
-    <lastmod>2022-10-16T07:54:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/JUnit/</loc>
     <lastmod>2022-10-16T07:54:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/JUnit%E3%81%AExml%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92ALLURE%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6%E3%83%A1%E3%83%BC%E3%83%AB%E9%80%81%E4%BF%A1%E5%8F%AF%E8%83%BD%E3%81%AAHTML%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B/JUnit%E3%81%AExml%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%92ALLURE%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6HTML%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E5%8C%96%E3%81%99%E3%82%8B/</loc>
     <lastmod>2022-10-16T07:54:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/Amazon-SES/</loc>
-    <lastmod>2022-10-12T23:50:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/AWS/</loc>
     <lastmod>2022-10-12T23:50:00+09:00</lastmod>
@@ -51,9 +60,6 @@
     <lastmod>2022-10-12T23:50:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/AWSCLI%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6AmazonSES%E7%B5%8C%E7%94%B1%E3%81%A7HTML%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/AWSCLI%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6AmazonSES%E7%B5%8C%E7%94%B1%E3%81%A7HTML%E3%83%95%E3%82%A9%E3%83%BC%E3%83%9E%E3%83%83%E3%83%88%E3%81%AE%E3%83%A1%E3%83%BC%E3%83%AB%E3%82%92%E9%80%81%E4%BF%A1%E3%81%99%E3%82%8B/</loc>
-    <lastmod>2022-10-12T23:50:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/jq/</loc>
     <lastmod>2022-10-12T23:50:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/SES/</loc>
