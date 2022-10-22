@@ -10,7 +10,52 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Mon, 17 Oct 2022 07:42:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Oct 2022 13:30:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Chrome</title>
+      <link>https://szk302.dev/tags/Chrome/</link>
+      <pubDate>Sat, 22 Oct 2022 13:30:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Chrome/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prerender</title>
+      <link>https://szk302.dev/tags/Prerender/</link>
+      <pubDate>Sat, 22 Oct 2022 13:30:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Prerender/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bullseye</title>
+      <link>https://szk302.dev/tags/bullseye/</link>
+      <pubDate>Sat, 22 Oct 2022 08:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/bullseye/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bullseye-slim</title>
+      <link>https://szk302.dev/tags/bullseye-slim/</link>
+      <pubDate>Sat, 22 Oct 2022 08:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/bullseye-slim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Debian</title>
+      <link>https://szk302.dev/tags/Debian/</link>
+      <pubDate>Sat, 22 Oct 2022 08:50:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Debian/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Allure</title>
       <link>https://szk302.dev/tags/Allure/</link>

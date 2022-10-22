@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Prerender on Szk302 Log Blog</title>
+    <link>https://szk302.dev/tags/Prerender/</link>
+    <description>Recent content in Prerender on Szk302 Log Blog</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Sat, 22 Oct 2022 13:30:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Prerender/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PrerenderでSPAの画面を1枚のHTMLで保存する</title>
+      <link>https://szk302.dev/posts/Prerender%E3%81%A7SPA%E3%81%AE%E7%94%BB%E9%9D%A2%E3%82%921%E6%9E%9A%E3%81%AEHTML%E3%81%A7%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B/Prerender%E3%81%A7SPA%E3%81%AE%E7%94%BB%E9%9D%A2%E3%82%921%E6%9E%9A%E3%81%AEHTML%E3%81%A7%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B/</link>
+      <pubDate>Sat, 22 Oct 2022 13:30:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Prerender%E3%81%A7SPA%E3%81%AE%E7%94%BB%E9%9D%A2%E3%82%921%E6%9E%9A%E3%81%AEHTML%E3%81%A7%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B/Prerender%E3%81%A7SPA%E3%81%AE%E7%94%BB%E9%9D%A2%E3%82%921%E6%9E%9A%E3%81%AEHTML%E3%81%A7%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B/</guid>
+      <description>SPAのようなJSで画面構築してレンダリングされた後のHTMLを取得したいので調査 以下の条件で検討した。 ReactやVueなどJSフレームワ</description>
+    </item>
+    
+  </channel>
+</rss>
