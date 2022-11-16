@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sat, 22 Oct 2022 13:30:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Nov 2022 22:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Astro</title>
+      <link>https://szk302.dev/tags/Astro/</link>
+      <pubDate>Wed, 16 Nov 2022 22:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Astro/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Chrome</title>
       <link>https://szk302.dev/tags/Chrome/</link>

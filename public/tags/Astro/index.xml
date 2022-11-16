@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Astro on Szk302 Log Blog</title>
+    <link>https://szk302.dev/tags/Astro/</link>
+    <description>Recent content in Astro on Szk302 Log Blog</description>
+    <image>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Wed, 16 Nov 2022 22:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Astro/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WSL2環境でAstroのホットリロードを動かす</title>
+      <link>https://szk302.dev/posts/WSL2%E7%92%B0%E5%A2%83%E3%81%A7Astro%E3%81%AE%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99/</link>
+      <pubDate>Wed, 16 Nov 2022 22:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/WSL2%E7%92%B0%E5%A2%83%E3%81%A7Astro%E3%81%AE%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99/</guid>
+      <description>Astro入門してみたが npm run dev して開発サーバ立ち上げてもいつものごとくホットリロードが効かないので調べた 対応 astro.config.mjs</description>
+    </item>
+    
+  </channel>
+</rss>

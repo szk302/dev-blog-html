@@ -10,7 +10,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sat, 22 Oct 2022 13:30:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Nov 2022 22:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>WSL2環境でAstroのホットリロードを動かす</title>
+      <link>https://szk302.dev/posts/WSL2%E7%92%B0%E5%A2%83%E3%81%A7Astro%E3%81%AE%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99/</link>
+      <pubDate>Wed, 16 Nov 2022 22:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/WSL2%E7%92%B0%E5%A2%83%E3%81%A7Astro%E3%81%AE%E3%83%9B%E3%83%83%E3%83%88%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%89%E3%82%92%E5%8B%95%E3%81%8B%E3%81%99/</guid>
+      <description>Astro入門してみたが npm run dev して開発サーバ立ち上げてもいつものごとくホットリロードが効かないので調べた 対応 astro.config.mjs</description>
+    </item>
+    
     <item>
       <title>PrerenderでSPAの画面を1枚のHTMLで保存する</title>
       <link>https://szk302.dev/posts/Prerender%E3%81%A7SPA%E3%81%AE%E7%94%BB%E9%9D%A2%E3%82%921%E6%9E%9A%E3%81%AEHTML%E3%81%A7%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B/Prerender%E3%81%A7SPA%E3%81%AE%E7%94%BB%E9%9D%A2%E3%82%921%E6%9E%9A%E3%81%AEHTML%E3%81%A7%E4%BF%9D%E5%AD%98%E3%81%99%E3%82%8B/</link>
