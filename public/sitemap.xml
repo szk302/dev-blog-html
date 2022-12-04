@@ -2,19 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/tags/express-oas-generator/</loc>
+    <lastmod>2022-12-04T11:27:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/JSON-Server/</loc>
+    <lastmod>2022-12-04T11:27:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/json-server%E3%81%8B%E3%82%89OpenAPISpecification%E3%81%AE%E4%B8%80%E9%83%A8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/json-server%E3%81%8B%E3%82%89OpenAPISpecification%E3%81%AE%E4%B8%80%E9%83%A8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/</loc>
+    <lastmod>2022-12-04T11:27:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/OpenAPI/</loc>
+    <lastmod>2022-12-04T11:27:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/OpenAPI-Specification-Version-3.0/</loc>
+    <lastmod>2022-12-04T11:27:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2022-12-04T11:27:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2022-12-04T11:27:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2022-12-04T11:27:00+09:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/tags/JavaScript/</loc>
     <lastmod>2022-11-17T19:40:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/Negative-lookbehind/</loc>
-    <lastmod>2022-11-17T19:40:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2022-11-17T19:40:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2022-11-17T19:40:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2022-11-17T19:40:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE/</loc>

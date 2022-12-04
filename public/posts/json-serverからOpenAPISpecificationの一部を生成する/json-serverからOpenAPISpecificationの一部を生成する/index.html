@@ -1,0 +1,607 @@
+<!doctype html><html lang=ja dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>json-serverからOpenAPISpecificationの一部を生成する | Szk302 Log Blog</title><meta name=keywords content="OpenAPI,OpenAPI Specification - Version 3.0,json-server,JSON Server,express-oas-generator"><meta name=description content="適当にJSON Serverで作成したMockからOpenAPIの定義を生成できないか試したのでメモ。 結果としては一応生成できたが余分な値や足"><meta name=author content="Szk302"><link rel=canonical href=https://szk302.dev/posts/json-server%E3%81%8B%E3%82%89OpenAPISpecification%E3%81%AE%E4%B8%80%E9%83%A8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/json-server%E3%81%8B%E3%82%89OpenAPISpecification%E3%81%AE%E4%B8%80%E9%83%A8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.js onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42><link rel=icon type=image/png sizes=16x16 href="https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?p=16"><link rel=icon type=image/png sizes=32x32 href="https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?p=32"><link rel=apple-touch-icon href=https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42><link rel=mask-icon href=https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-212898668-1","auto"),ga("send","pageview"))</script><meta property="og:title" content="json-serverからOpenAPISpecificationの一部を生成する"><meta property="og:description" content="適当にJSON Serverで作成したMockからOpenAPIの定義を生成できないか試したのでメモ。 結果としては一応生成できたが余分な値や足"><meta property="og:type" content="article"><meta property="og:url" content="https://szk302.dev/posts/json-server%E3%81%8B%E3%82%89OpenAPISpecification%E3%81%AE%E4%B8%80%E9%83%A8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/json-server%E3%81%8B%E3%82%89OpenAPISpecification%E3%81%AE%E4%B8%80%E9%83%A8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/"><meta property="og:image" content="https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-12-04T11:27:00+09:00"><meta property="article:modified_time" content="2022-12-04T11:27:00+09:00"><meta property="og:site_name" content="Szk302 Log Blog"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42"><meta name=twitter:title content="json-serverからOpenAPISpecificationの一部を生成する"><meta name=twitter:description content="適当にJSON Serverで作成したMockからOpenAPIの定義を生成できないか試したのでメモ。 結果としては一応生成できたが余分な値や足"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://szk302.dev/posts/"},{"@type":"ListItem","position":2,"name":"json-serverからOpenAPISpecificationの一部を生成する","item":"https://szk302.dev/posts/json-server%E3%81%8B%E3%82%89OpenAPISpecification%E3%81%AE%E4%B8%80%E9%83%A8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/json-server%E3%81%8B%E3%82%89OpenAPISpecification%E3%81%AE%E4%B8%80%E9%83%A8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"json-serverからOpenAPISpecificationの一部を生成する","name":"json-serverからOpenAPISpecificationの一部を生成する","description":"適当にJSON Serverで作成したMockからOpenAPIの定義を生成できないか試したのでメモ。 結果としては一応生成できたが余分な値や足","keywords":["OpenAPI","OpenAPI Specification - Version 3.0","json-server","JSON Server","express-oas-generator"],"articleBody":" 適当にJSON Serverで作成したMockからOpenAPIの定義を生成できないか試したのでメモ。 結果としては一応生成できたが余分な値や足りない(クエリパラメータなど)部分がある。\nディレクトリ構成 ./gen-openapi-from-json-server |-- db.json |-- package-lock.json |-- package.json `-- server.js package.json express-oas-generatorを使用して生成している。ただしそのままではschemaやexamplesが生成されないため、 localhostにリクエストしキャプチャして生成するために node-fetch を入れた。\npackage.json { \"name\": \"gen-openapi-from-json-server\", \"version\": \"1.0.0\", \"description\": \"\", \"main\": \"index.js\", \"scripts\": { \"gen\": \"node server.js\" }, \"author\": \"\", \"license\": \"ISC\", \"dependencies\": { \"express-oas-generator\": \"^1.0.45\", \"json-server\": \"^0.17.0\", \"node-fetch\": \"^2.6.7\" } } db.json json-serverで使用しているdb.json\ndb.json Unresolved directive in - include::/gen-openapi-from-json-server/db.json[] server.js 今回適当に作成した生成スクリプト。 express-oas-generatorを使用して生成しているが、pathしか生成されないのでキャプチャ機能を用いてdb.jsonの値をリクエストしてキャプチャしている。 クエリパラメータも試しにリクエストしてみたが、キャプチャされないためコメントアウト。 生成後はjson-serverは終了する。\nserver.js const express = require(\"express\"); const fs = require(\"fs\"); const fetch = require(\"node-fetch\"); const db = require(\"./db.json\"); const BASE_URL = \"http://localhost:3000\"; const keys = Object.keys(db); const postProcess = async (cb) =\u003e { for (const key of keys) { await pluralRoutesRequest(key, db[key][0]); // queryパラメータはキャプチャしてくれない // await filterRequest(key, value); } cb(); }; // Plural routes const pluralRoutesRequest = async (path, data) =\u003e { // GET /posts let response = await fetch(`${BASE_URL}/${path}`); // GET /posts/1 response = await fetch(`${BASE_URL}/${path}/${data.id}`); // PUT /posts/1 response = await fetch(`${BASE_URL}/${path}/${data.id}`, { method: \"PUT\", body: JSON.stringify(data), headers: { \"Content-Type\": \"application/json\" }, }); // PATCH /posts/1 response = await fetch(`${BASE_URL}/${path}/${data.id}`, { method: \"PATCH\", body: JSON.stringify(data), headers: { \"Content-Type\": \"application/json\" }, }); // DELETE /posts/1 response = await fetch(`${BASE_URL}/${path}/${data.id}`, { method: \"DELETE\", }); // POST /posts response = await fetch(`${BASE_URL}/${path}`, { method: \"POST\", body: JSON.stringify(data), headers: { \"Content-Type\": \"application/json\" }, }); }; // Filter const filterRequest = async (path, list) =\u003e { let query = Object.entries(list[0]).reduce((previous, [key, value]) =\u003e { if (key === \"id\") { return previous; } previous = previous ? `${previous}\u0026` : previous; return `${previous}${key}=${value}`; }, \"\"); // GET /posts?title=json-server\u0026author=typicode let response = await fetch(`${BASE_URL}/${path}?${query}`); // GET /posts?id=1\u0026id=2 response = await fetch( `${BASE_URL}/${path}/?id=${list[0].id}\u0026id=id=${list[1].id}` ); }; const expressOasGenerator = require(\"express-oas-generator\"); const jsonServer = require(\"json-server\"); const server = jsonServer.create(); server.use(express.json()); // for parsing application/json server.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded // expressOasGenerator.init(server, {}); expressOasGenerator.handleResponses(server, { swaggerUiServePath: \"api-docs\", specOutputPath: \"./openapi.json\", predefinedSpec: {}, writeIntervalMs: 60 * 1000, // mongooseModels: [\"User\", \"Student\"], mongooseModels: [], tags: keys, ignoredNodeEnvironments: [\"production\"], alwaysServeDocs: true, specOutputFileBehavior: \"PRESERVE\", // specOutputFileBehavior: \"RECREATE\", swaggerDocumentOptions: {}, }); const router = jsonServer.router(\"db.json\"); const middlewares = jsonServer.defaults(); server.use(middlewares); server.use(router); expressOasGenerator.handleRequests(); const s = server.listen(3000, () =\u003e { // console.info(\"JSON Server is running\"); postProcess(() =\u003e { expressOasGenerator.getSpecV3((err, spec) =\u003e { // console.log(JSON.stringify(spec)); const paths = spec.paths; delete paths[\"/db\"]; delete paths[\"/{resource}/{id}/{nested}\"]; fs.writeFileSync(\"my-openapi_v3.json\", JSON.stringify(spec)); s.close(() =\u003e { console.info(\"Done.\"); }); }); }); }); 結果 my-openapi_v3.json { \"openapi\": \"3.0.0\", \"info\": { \"title\": \"workspace\", \"version\": \"1.0.0\", \"license\": { \"name\": \"ISC\" }, \"description\": \"Specification JSONs: [v2](/api-spec/v2), [v3](/api-spec/v3).\" }, \"paths\": { \"/pet\": { \"get\": { \"summary\": \"/pet\", \"responses\": { \"200\": { \"description\": \"OK\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\" }, \"name\": { \"type\": \"string\" }, \"category\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\" }, \"name\": { \"type\": \"string\" } } }, \"photoUrls\": { \"type\": \"array\", \"items\": { \"type\": \"string\" } }, \"tags\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\" }, \"name\": { \"type\": \"string\" } } } }, \"status\": { \"type\": \"string\" } } } } } } } }, \"tags\": [\"pet\"] }, \"post\": { \"summary\": \"/pet\", \"responses\": { \"201\": { \"description\": \"Created\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 10 }, \"name\": { \"type\": \"string\", \"example\": \"doggie\" }, \"category\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 1 }, \"name\": { \"type\": \"string\", \"example\": \"Dogs\" } } }, \"photoUrls\": { \"type\": \"array\", \"items\": { \"type\": \"string\" }, \"example\": [\"string\"] }, \"tags\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\" }, \"name\": { \"type\": \"string\" } } }, \"example\": [{ \"id\": 0, \"name\": \"string\" }] }, \"status\": { \"type\": \"string\", \"example\": \"available\" } } } } } } }, \"tags\": [\"pet\"] } }, \"/pet/{id}\": { \"get\": { \"summary\": \"/pet/{id}\", \"parameters\": [ { \"name\": \"id\", \"in\": \"path\", \"required\": true, \"schema\": { \"type\": \"string\" } } ], \"responses\": { \"200\": { \"description\": \"OK\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 10 }, \"name\": { \"type\": \"string\", \"example\": \"doggie\" }, \"category\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 1 }, \"name\": { \"type\": \"string\", \"example\": \"Dogs\" } } }, \"photoUrls\": { \"type\": \"array\", \"items\": { \"type\": \"string\" }, \"example\": [\"string\"] }, \"tags\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\" }, \"name\": { \"type\": \"string\" } } }, \"example\": [{ \"id\": 0, \"name\": \"string\" }] }, \"status\": { \"type\": \"string\", \"example\": \"available\" } } } } } } }, \"tags\": [\"pet\"] }, \"put\": { \"summary\": \"/pet/{id}\", \"parameters\": [ { \"name\": \"id\", \"in\": \"path\", \"required\": true, \"schema\": { \"type\": \"string\" } } ], \"responses\": { \"200\": { \"description\": \"OK\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 10 }, \"name\": { \"type\": \"string\", \"example\": \"doggie\" }, \"category\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 1 }, \"name\": { \"type\": \"string\", \"example\": \"Dogs\" } } }, \"photoUrls\": { \"type\": \"array\", \"items\": { \"type\": \"string\" }, \"example\": [\"string\"] }, \"tags\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\" }, \"name\": { \"type\": \"string\" } } }, \"example\": [{ \"id\": 0, \"name\": \"string\" }] }, \"status\": { \"type\": \"string\", \"example\": \"available\" } } } } } } }, \"tags\": [\"pet\"] }, \"patch\": { \"summary\": \"/pet/{id}\", \"parameters\": [ { \"name\": \"id\", \"in\": \"path\", \"required\": true, \"schema\": { \"type\": \"string\" } } ], \"responses\": { \"200\": { \"description\": \"OK\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 10 }, \"name\": { \"type\": \"string\", \"example\": \"doggie\" }, \"category\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 1 }, \"name\": { \"type\": \"string\", \"example\": \"Dogs\" } } }, \"photoUrls\": { \"type\": \"array\", \"items\": { \"type\": \"string\" }, \"example\": [\"string\"] }, \"tags\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\" }, \"name\": { \"type\": \"string\" } } }, \"example\": [{ \"id\": 0, \"name\": \"string\" }] }, \"status\": { \"type\": \"string\", \"example\": \"available\" } } } } } } }, \"tags\": [\"pet\"] }, \"delete\": { \"summary\": \"/pet/{id}\", \"parameters\": [ { \"name\": \"id\", \"in\": \"path\", \"required\": true, \"schema\": { \"type\": \"string\" } } ], \"responses\": { \"200\": { \"description\": \"OK\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"object\", \"properties\": {} } } } } }, \"tags\": [\"pet\"] } }, \"/user\": { \"get\": { \"summary\": \"/user\", \"responses\": { \"200\": { \"description\": \"OK\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"array\", \"items\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\" }, \"username\": { \"type\": \"string\" }, \"firstName\": { \"type\": \"string\" }, \"lastName\": { \"type\": \"string\" }, \"email\": { \"type\": \"string\" }, \"password\": { \"type\": \"string\" }, \"phone\": { \"type\": \"string\" }, \"userStatus\": { \"type\": \"number\" } } } } } } } }, \"tags\": [\"user\"] }, \"post\": { \"summary\": \"/user\", \"responses\": { \"201\": { \"description\": \"Created\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 10 }, \"username\": { \"type\": \"string\", \"example\": \"theUser\" }, \"firstName\": { \"type\": \"string\", \"example\": \"John\" }, \"lastName\": { \"type\": \"string\", \"example\": \"James\" }, \"email\": { \"type\": \"string\", \"example\": \"john@email.com\" }, \"password\": { \"type\": \"string\", \"example\": \"******\" }, \"phone\": { \"type\": \"string\", \"example\": \"12345\" }, \"userStatus\": { \"type\": \"number\", \"example\": 1 } } } } } } }, \"tags\": [\"user\"] } }, \"/user/{id}\": { \"get\": { \"summary\": \"/user/{id}\", \"parameters\": [ { \"name\": \"id\", \"in\": \"path\", \"required\": true, \"schema\": { \"type\": \"string\" } } ], \"responses\": { \"200\": { \"description\": \"OK\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 10 }, \"username\": { \"type\": \"string\", \"example\": \"theUser\" }, \"firstName\": { \"type\": \"string\", \"example\": \"John\" }, \"lastName\": { \"type\": \"string\", \"example\": \"James\" }, \"email\": { \"type\": \"string\", \"example\": \"john@email.com\" }, \"password\": { \"type\": \"string\", \"example\": \"******\" }, \"phone\": { \"type\": \"string\", \"example\": \"12345\" }, \"userStatus\": { \"type\": \"number\", \"example\": 1 } } } } } } }, \"tags\": [\"user\"] }, \"put\": { \"summary\": \"/user/{id}\", \"parameters\": [ { \"name\": \"id\", \"in\": \"path\", \"required\": true, \"schema\": { \"type\": \"string\" } } ], \"responses\": { \"200\": { \"description\": \"OK\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 10 }, \"username\": { \"type\": \"string\", \"example\": \"theUser\" }, \"firstName\": { \"type\": \"string\", \"example\": \"John\" }, \"lastName\": { \"type\": \"string\", \"example\": \"James\" }, \"email\": { \"type\": \"string\", \"example\": \"john@email.com\" }, \"password\": { \"type\": \"string\", \"example\": \"******\" }, \"phone\": { \"type\": \"string\", \"example\": \"12345\" }, \"userStatus\": { \"type\": \"number\", \"example\": 1 } } } } } } }, \"tags\": [\"user\"] }, \"patch\": { \"summary\": \"/user/{id}\", \"parameters\": [ { \"name\": \"id\", \"in\": \"path\", \"required\": true, \"schema\": { \"type\": \"string\" } } ], \"responses\": { \"200\": { \"description\": \"OK\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"object\", \"properties\": { \"id\": { \"type\": \"number\", \"example\": 10 }, \"username\": { \"type\": \"string\", \"example\": \"theUser\" }, \"firstName\": { \"type\": \"string\", \"example\": \"John\" }, \"lastName\": { \"type\": \"string\", \"example\": \"James\" }, \"email\": { \"type\": \"string\", \"example\": \"john@email.com\" }, \"password\": { \"type\": \"string\", \"example\": \"******\" }, \"phone\": { \"type\": \"string\", \"example\": \"12345\" }, \"userStatus\": { \"type\": \"number\", \"example\": 1 } } } } } } }, \"tags\": [\"user\"] }, \"delete\": { \"summary\": \"/user/{id}\", \"parameters\": [ { \"name\": \"id\", \"in\": \"path\", \"required\": true, \"schema\": { \"type\": \"string\" } } ], \"responses\": { \"200\": { \"description\": \"OK\", \"content\": { \"application/json\": { \"schema\": { \"type\": \"object\", \"properties\": {} } } } } }, \"tags\": [\"user\"] } } }, \"tags\": [{ \"name\": \"pet\" }, { \"name\": \"user\" }] } 参考 github/typicode/json-server\ngithub/mpashkovskiy/express-oas-generator\ngithub/node-fetch/node-fetch\nSwagger Petstore - OpenAPI 3.0\n","wordCount":"1982","inLanguage":"ja","datePublished":"2022-12-04T11:27:00+09:00","dateModified":"2022-12-04T11:27:00+09:00","author":{"@type":"Person","name":"Szk302"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://szk302.dev/posts/json-server%E3%81%8B%E3%82%89OpenAPISpecification%E3%81%AE%E4%B8%80%E9%83%A8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/json-server%E3%81%8B%E3%82%89OpenAPISpecification%E3%81%AE%E4%B8%80%E9%83%A8%E3%82%92%E7%94%9F%E6%88%90%E3%81%99%E3%82%8B/"},"publisher":{"@type":"Organization","name":"Szk302 Log Blog","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42"}}}</script></head><body class=dark id=top><script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4731270307013315" crossorigin=anonymous></script><header class=header><nav class=nav><div class=logo><a href=https://szk302.dev/ accesskey=h title="Szk302 Teck Blog (Alt + H)"><img src=https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42 alt=logo aria-label=logo height=35>Szk302 Teck Blog</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://szk302.dev/categories/ title=カテゴリ><span>カテゴリ</span></a></li><li><a href=https://szk302.dev/tags/ title=タグ><span>タグ</span></a></li><li><a href=https://szk302.dev/search/ title=検索><span>検索</span></a></li><li><a href=https://szk302.dev/fixed/books title=Books><span>Books</span></a></li><li><a href=https://szk302.dev/fixed/profile title=プロフィール><span>プロフィール</span></a></li><li><a href=https://szk302.dev/fixed/blog title=このブログについて><span>このブログについて</span></a></li></ul></nav></header><main class=main><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4731270307013315" crossorigin=anonymous></script>
+<ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4731270307013315 data-ad-slot=8987813822 data-ad-format=auto data-full-width-responsive=true></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://szk302.dev/>ホーム</a>&nbsp;»&nbsp;<a href=https://szk302.dev/posts/>Posts</a></div><h1 class=post-title>json-serverからOpenAPISpecificationの一部を生成する</h1><div class=post-meta><span title='2022-12-04 11:27:00 +0900 +0900'>2022-12-04T11:27:00+09:00</span>&nbsp;·&nbsp;4 分&nbsp;·&nbsp;Szk302&nbsp;|&nbsp;<a href=https://github.com/szk302/dev-blog-content/blob/main/posts/json-server%e3%81%8b%e3%82%89OpenAPISpecification%e3%81%ae%e4%b8%80%e9%83%a8%e3%82%92%e7%94%9f%e6%88%90%e3%81%99%e3%82%8b/json-server%e3%81%8b%e3%82%89OpenAPISpecification%e3%81%ae%e4%b8%80%e9%83%a8%e3%82%92%e7%94%9f%e6%88%90%e3%81%99%e3%82%8b.adoc rel="noopener noreferrer" target=_blank>Suggest Changes</a></div></header><div class=post-content><div id=preamble><div class=sectionbody><div class=paragraph><p>適当にJSON Serverで作成したMockからOpenAPIの定義を生成できないか試したのでメモ。<br>結果としては一応生成できたが余分な値や足りない(クエリパラメータなど)部分がある。</p></div></div></div><div class=sect1><h2 id=_ディレクトリ構成>ディレクトリ構成<a hidden class=anchor aria-hidden=true href=#_ディレクトリ構成>#</a></h2><div class=sectionbody><div class=listingblock><div class=content><pre class=highlight><code class=language-txt data-lang=txt>./gen-openapi-from-json-server
+|-- db.json
+|-- package-lock.json
+|-- package.json
+`-- server.js</code></pre></div></div><div class=sect2><h3 id=_package_json>package.json<a hidden class=anchor aria-hidden=true href=#_package_json>#</a></h3><div class=paragraph><p>express-oas-generatorを使用して生成している。ただしそのままではschemaやexamplesが生成されないため、<br>localhostにリクエストしキャプチャして生成するために <strong>node-fetch</strong> を入れた。</p></div><div class=listingblock><div class=title>package.json</div><div class=content><pre class=highlight><code class=language-json data-lang=json>{
+  &#34;name&#34;: &#34;gen-openapi-from-json-server&#34;,
+  &#34;version&#34;: &#34;1.0.0&#34;,
+  &#34;description&#34;: &#34;&#34;,
+  &#34;main&#34;: &#34;index.js&#34;,
+  &#34;scripts&#34;: {
+    &#34;gen&#34;: &#34;node server.js&#34;
+  },
+  &#34;author&#34;: &#34;&#34;,
+  &#34;license&#34;: &#34;ISC&#34;,
+  &#34;dependencies&#34;: {
+    &#34;express-oas-generator&#34;: &#34;^1.0.45&#34;,
+    &#34;json-server&#34;: &#34;^0.17.0&#34;,
+    &#34;node-fetch&#34;: &#34;^2.6.7&#34;
+  }
+}</code></pre></div></div></div><div class=sect2><h3 id=_db_json>db.json<a hidden class=anchor aria-hidden=true href=#_db_json>#</a></h3><div class=paragraph><p>json-serverで使用しているdb.json</p></div><div class=listingblock><div class=title>db.json</div><div class=content><pre class=highlight><code class=language-json data-lang=json>Unresolved directive in &lt;stdin&gt; - include::/gen-openapi-from-json-server/db.json[]</code></pre></div></div></div></div></div><div class=sect1><h2 id=_server_js>server.js<a hidden class=anchor aria-hidden=true href=#_server_js>#</a></h2><div class=sectionbody><div class=paragraph><p>今回適当に作成した生成スクリプト。<br>express-oas-generatorを使用して生成しているが、pathしか生成されないのでキャプチャ機能を用いてdb.jsonの値をリクエストしてキャプチャしている。<br>クエリパラメータも試しにリクエストしてみたが、キャプチャされないためコメントアウト。<br>生成後はjson-serverは終了する。</p></div><div class=listingblock><div class=title>server.js</div><div class=content><pre class=highlight><code class=language-js data-lang=js>const express = require(&#34;express&#34;);
+const fs = require(&#34;fs&#34;);
+const fetch = require(&#34;node-fetch&#34;);
+const db = require(&#34;./db.json&#34;);
+
+const BASE_URL = &#34;http://localhost:3000&#34;;
+
+const keys = Object.keys(db);
+
+const postProcess = async (cb) =&gt; {
+  for (const key of keys) {
+    await pluralRoutesRequest(key, db[key][0]);
+    // queryパラメータはキャプチャしてくれない
+    // await filterRequest(key, value);
+  }
+  cb();
+};
+
+// Plural routes
+const pluralRoutesRequest = async (path, data) =&gt; {
+  // GET    /posts
+  let response = await fetch(`${BASE_URL}/${path}`);
+  // GET    /posts/1
+  response = await fetch(`${BASE_URL}/${path}/${data.id}`);
+  // PUT    /posts/1
+  response = await fetch(`${BASE_URL}/${path}/${data.id}`, {
+    method: &#34;PUT&#34;,
+    body: JSON.stringify(data),
+    headers: { &#34;Content-Type&#34;: &#34;application/json&#34; },
+  });
+  // PATCH  /posts/1
+  response = await fetch(`${BASE_URL}/${path}/${data.id}`, {
+    method: &#34;PATCH&#34;,
+    body: JSON.stringify(data),
+    headers: { &#34;Content-Type&#34;: &#34;application/json&#34; },
+  });
+  // DELETE /posts/1
+  response = await fetch(`${BASE_URL}/${path}/${data.id}`, {
+    method: &#34;DELETE&#34;,
+  });
+  // POST   /posts
+  response = await fetch(`${BASE_URL}/${path}`, {
+    method: &#34;POST&#34;,
+    body: JSON.stringify(data),
+    headers: { &#34;Content-Type&#34;: &#34;application/json&#34; },
+  });
+};
+
+// Filter
+const filterRequest = async (path, list) =&gt; {
+  let query = Object.entries(list[0]).reduce((previous, [key, value]) =&gt; {
+    if (key === &#34;id&#34;) {
+      return previous;
+    }
+
+    previous = previous ? `${previous}&amp;` : previous;
+
+    return `${previous}${key}=${value}`;
+  }, &#34;&#34;);
+
+  // GET /posts?title=json-server&amp;author=typicode
+  let response = await fetch(`${BASE_URL}/${path}?${query}`);
+  // GET /posts?id=1&amp;id=2
+  response = await fetch(
+    `${BASE_URL}/${path}/?id=${list[0].id}&amp;id=id=${list[1].id}`
+  );
+};
+
+const expressOasGenerator = require(&#34;express-oas-generator&#34;);
+const jsonServer = require(&#34;json-server&#34;);
+const server = jsonServer.create();
+
+server.use(express.json()); // for parsing application/json
+server.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
+
+// expressOasGenerator.init(server, {});
+expressOasGenerator.handleResponses(server, {
+  swaggerUiServePath: &#34;api-docs&#34;,
+  specOutputPath: &#34;./openapi.json&#34;,
+  predefinedSpec: {},
+  writeIntervalMs: 60 * 1000,
+  // mongooseModels: [&#34;User&#34;, &#34;Student&#34;],
+  mongooseModels: [],
+  tags: keys,
+  ignoredNodeEnvironments: [&#34;production&#34;],
+  alwaysServeDocs: true,
+  specOutputFileBehavior: &#34;PRESERVE&#34;,
+  // specOutputFileBehavior: &#34;RECREATE&#34;,
+  swaggerDocumentOptions: {},
+});
+
+const router = jsonServer.router(&#34;db.json&#34;);
+const middlewares = jsonServer.defaults();
+
+server.use(middlewares);
+server.use(router);
+
+expressOasGenerator.handleRequests();
+
+const s = server.listen(3000, () =&gt; {
+  // console.info(&#34;JSON Server is running&#34;);
+  postProcess(() =&gt; {
+    expressOasGenerator.getSpecV3((err, spec) =&gt; {
+      // console.log(JSON.stringify(spec));
+      const paths = spec.paths;
+      delete paths[&#34;/db&#34;];
+      delete paths[&#34;/{resource}/{id}/{nested}&#34;];
+      fs.writeFileSync(&#34;my-openapi_v3.json&#34;, JSON.stringify(spec));
+      s.close(() =&gt; {
+        console.info(&#34;Done.&#34;);
+      });
+    });
+  });
+});</code></pre></div></div></div></div><div class=sect1><h2 id=_結果>結果<a hidden class=anchor aria-hidden=true href=#_結果>#</a></h2><div class=sectionbody><div class=listingblock><div class=title>my-openapi_v3.json</div><div class=content><pre class=highlight><code class=language-json data-lang=json>{
+  &#34;openapi&#34;: &#34;3.0.0&#34;,
+  &#34;info&#34;: {
+    &#34;title&#34;: &#34;workspace&#34;,
+    &#34;version&#34;: &#34;1.0.0&#34;,
+    &#34;license&#34;: { &#34;name&#34;: &#34;ISC&#34; },
+    &#34;description&#34;: &#34;Specification JSONs: [v2](/api-spec/v2), [v3](/api-spec/v3).&#34;
+  },
+  &#34;paths&#34;: {
+    &#34;/pet&#34;: {
+      &#34;get&#34;: {
+        &#34;summary&#34;: &#34;/pet&#34;,
+        &#34;responses&#34;: {
+          &#34;200&#34;: {
+            &#34;description&#34;: &#34;OK&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: {
+                  &#34;type&#34;: &#34;array&#34;,
+                  &#34;items&#34;: {
+                    &#34;type&#34;: &#34;object&#34;,
+                    &#34;properties&#34;: {
+                      &#34;id&#34;: { &#34;type&#34;: &#34;number&#34; },
+                      &#34;name&#34;: { &#34;type&#34;: &#34;string&#34; },
+                      &#34;category&#34;: {
+                        &#34;type&#34;: &#34;object&#34;,
+                        &#34;properties&#34;: {
+                          &#34;id&#34;: { &#34;type&#34;: &#34;number&#34; },
+                          &#34;name&#34;: { &#34;type&#34;: &#34;string&#34; }
+                        }
+                      },
+                      &#34;photoUrls&#34;: {
+                        &#34;type&#34;: &#34;array&#34;,
+                        &#34;items&#34;: { &#34;type&#34;: &#34;string&#34; }
+                      },
+                      &#34;tags&#34;: {
+                        &#34;type&#34;: &#34;array&#34;,
+                        &#34;items&#34;: {
+                          &#34;type&#34;: &#34;object&#34;,
+                          &#34;properties&#34;: {
+                            &#34;id&#34;: { &#34;type&#34;: &#34;number&#34; },
+                            &#34;name&#34;: { &#34;type&#34;: &#34;string&#34; }
+                          }
+                        }
+                      },
+                      &#34;status&#34;: { &#34;type&#34;: &#34;string&#34; }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;pet&#34;]
+      },
+      &#34;post&#34;: {
+        &#34;summary&#34;: &#34;/pet&#34;,
+        &#34;responses&#34;: {
+          &#34;201&#34;: {
+            &#34;description&#34;: &#34;Created&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: {
+                  &#34;type&#34;: &#34;object&#34;,
+                  &#34;properties&#34;: {
+                    &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 10 },
+                    &#34;name&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;doggie&#34; },
+                    &#34;category&#34;: {
+                      &#34;type&#34;: &#34;object&#34;,
+                      &#34;properties&#34;: {
+                        &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 1 },
+                        &#34;name&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;Dogs&#34; }
+                      }
+                    },
+                    &#34;photoUrls&#34;: {
+                      &#34;type&#34;: &#34;array&#34;,
+                      &#34;items&#34;: { &#34;type&#34;: &#34;string&#34; },
+                      &#34;example&#34;: [&#34;string&#34;]
+                    },
+                    &#34;tags&#34;: {
+                      &#34;type&#34;: &#34;array&#34;,
+                      &#34;items&#34;: {
+                        &#34;type&#34;: &#34;object&#34;,
+                        &#34;properties&#34;: {
+                          &#34;id&#34;: { &#34;type&#34;: &#34;number&#34; },
+                          &#34;name&#34;: { &#34;type&#34;: &#34;string&#34; }
+                        }
+                      },
+                      &#34;example&#34;: [{ &#34;id&#34;: 0, &#34;name&#34;: &#34;string&#34; }]
+                    },
+                    &#34;status&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;available&#34; }
+                  }
+                }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;pet&#34;]
+      }
+    },
+    &#34;/pet/{id}&#34;: {
+      &#34;get&#34;: {
+        &#34;summary&#34;: &#34;/pet/{id}&#34;,
+        &#34;parameters&#34;: [
+          {
+            &#34;name&#34;: &#34;id&#34;,
+            &#34;in&#34;: &#34;path&#34;,
+            &#34;required&#34;: true,
+            &#34;schema&#34;: { &#34;type&#34;: &#34;string&#34; }
+          }
+        ],
+        &#34;responses&#34;: {
+          &#34;200&#34;: {
+            &#34;description&#34;: &#34;OK&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: {
+                  &#34;type&#34;: &#34;object&#34;,
+                  &#34;properties&#34;: {
+                    &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 10 },
+                    &#34;name&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;doggie&#34; },
+                    &#34;category&#34;: {
+                      &#34;type&#34;: &#34;object&#34;,
+                      &#34;properties&#34;: {
+                        &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 1 },
+                        &#34;name&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;Dogs&#34; }
+                      }
+                    },
+                    &#34;photoUrls&#34;: {
+                      &#34;type&#34;: &#34;array&#34;,
+                      &#34;items&#34;: { &#34;type&#34;: &#34;string&#34; },
+                      &#34;example&#34;: [&#34;string&#34;]
+                    },
+                    &#34;tags&#34;: {
+                      &#34;type&#34;: &#34;array&#34;,
+                      &#34;items&#34;: {
+                        &#34;type&#34;: &#34;object&#34;,
+                        &#34;properties&#34;: {
+                          &#34;id&#34;: { &#34;type&#34;: &#34;number&#34; },
+                          &#34;name&#34;: { &#34;type&#34;: &#34;string&#34; }
+                        }
+                      },
+                      &#34;example&#34;: [{ &#34;id&#34;: 0, &#34;name&#34;: &#34;string&#34; }]
+                    },
+                    &#34;status&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;available&#34; }
+                  }
+                }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;pet&#34;]
+      },
+      &#34;put&#34;: {
+        &#34;summary&#34;: &#34;/pet/{id}&#34;,
+        &#34;parameters&#34;: [
+          {
+            &#34;name&#34;: &#34;id&#34;,
+            &#34;in&#34;: &#34;path&#34;,
+            &#34;required&#34;: true,
+            &#34;schema&#34;: { &#34;type&#34;: &#34;string&#34; }
+          }
+        ],
+        &#34;responses&#34;: {
+          &#34;200&#34;: {
+            &#34;description&#34;: &#34;OK&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: {
+                  &#34;type&#34;: &#34;object&#34;,
+                  &#34;properties&#34;: {
+                    &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 10 },
+                    &#34;name&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;doggie&#34; },
+                    &#34;category&#34;: {
+                      &#34;type&#34;: &#34;object&#34;,
+                      &#34;properties&#34;: {
+                        &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 1 },
+                        &#34;name&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;Dogs&#34; }
+                      }
+                    },
+                    &#34;photoUrls&#34;: {
+                      &#34;type&#34;: &#34;array&#34;,
+                      &#34;items&#34;: { &#34;type&#34;: &#34;string&#34; },
+                      &#34;example&#34;: [&#34;string&#34;]
+                    },
+                    &#34;tags&#34;: {
+                      &#34;type&#34;: &#34;array&#34;,
+                      &#34;items&#34;: {
+                        &#34;type&#34;: &#34;object&#34;,
+                        &#34;properties&#34;: {
+                          &#34;id&#34;: { &#34;type&#34;: &#34;number&#34; },
+                          &#34;name&#34;: { &#34;type&#34;: &#34;string&#34; }
+                        }
+                      },
+                      &#34;example&#34;: [{ &#34;id&#34;: 0, &#34;name&#34;: &#34;string&#34; }]
+                    },
+                    &#34;status&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;available&#34; }
+                  }
+                }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;pet&#34;]
+      },
+      &#34;patch&#34;: {
+        &#34;summary&#34;: &#34;/pet/{id}&#34;,
+        &#34;parameters&#34;: [
+          {
+            &#34;name&#34;: &#34;id&#34;,
+            &#34;in&#34;: &#34;path&#34;,
+            &#34;required&#34;: true,
+            &#34;schema&#34;: { &#34;type&#34;: &#34;string&#34; }
+          }
+        ],
+        &#34;responses&#34;: {
+          &#34;200&#34;: {
+            &#34;description&#34;: &#34;OK&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: {
+                  &#34;type&#34;: &#34;object&#34;,
+                  &#34;properties&#34;: {
+                    &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 10 },
+                    &#34;name&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;doggie&#34; },
+                    &#34;category&#34;: {
+                      &#34;type&#34;: &#34;object&#34;,
+                      &#34;properties&#34;: {
+                        &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 1 },
+                        &#34;name&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;Dogs&#34; }
+                      }
+                    },
+                    &#34;photoUrls&#34;: {
+                      &#34;type&#34;: &#34;array&#34;,
+                      &#34;items&#34;: { &#34;type&#34;: &#34;string&#34; },
+                      &#34;example&#34;: [&#34;string&#34;]
+                    },
+                    &#34;tags&#34;: {
+                      &#34;type&#34;: &#34;array&#34;,
+                      &#34;items&#34;: {
+                        &#34;type&#34;: &#34;object&#34;,
+                        &#34;properties&#34;: {
+                          &#34;id&#34;: { &#34;type&#34;: &#34;number&#34; },
+                          &#34;name&#34;: { &#34;type&#34;: &#34;string&#34; }
+                        }
+                      },
+                      &#34;example&#34;: [{ &#34;id&#34;: 0, &#34;name&#34;: &#34;string&#34; }]
+                    },
+                    &#34;status&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;available&#34; }
+                  }
+                }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;pet&#34;]
+      },
+      &#34;delete&#34;: {
+        &#34;summary&#34;: &#34;/pet/{id}&#34;,
+        &#34;parameters&#34;: [
+          {
+            &#34;name&#34;: &#34;id&#34;,
+            &#34;in&#34;: &#34;path&#34;,
+            &#34;required&#34;: true,
+            &#34;schema&#34;: { &#34;type&#34;: &#34;string&#34; }
+          }
+        ],
+        &#34;responses&#34;: {
+          &#34;200&#34;: {
+            &#34;description&#34;: &#34;OK&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: { &#34;type&#34;: &#34;object&#34;, &#34;properties&#34;: {} }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;pet&#34;]
+      }
+    },
+    &#34;/user&#34;: {
+      &#34;get&#34;: {
+        &#34;summary&#34;: &#34;/user&#34;,
+        &#34;responses&#34;: {
+          &#34;200&#34;: {
+            &#34;description&#34;: &#34;OK&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: {
+                  &#34;type&#34;: &#34;array&#34;,
+                  &#34;items&#34;: {
+                    &#34;type&#34;: &#34;object&#34;,
+                    &#34;properties&#34;: {
+                      &#34;id&#34;: { &#34;type&#34;: &#34;number&#34; },
+                      &#34;username&#34;: { &#34;type&#34;: &#34;string&#34; },
+                      &#34;firstName&#34;: { &#34;type&#34;: &#34;string&#34; },
+                      &#34;lastName&#34;: { &#34;type&#34;: &#34;string&#34; },
+                      &#34;email&#34;: { &#34;type&#34;: &#34;string&#34; },
+                      &#34;password&#34;: { &#34;type&#34;: &#34;string&#34; },
+                      &#34;phone&#34;: { &#34;type&#34;: &#34;string&#34; },
+                      &#34;userStatus&#34;: { &#34;type&#34;: &#34;number&#34; }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;user&#34;]
+      },
+      &#34;post&#34;: {
+        &#34;summary&#34;: &#34;/user&#34;,
+        &#34;responses&#34;: {
+          &#34;201&#34;: {
+            &#34;description&#34;: &#34;Created&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: {
+                  &#34;type&#34;: &#34;object&#34;,
+                  &#34;properties&#34;: {
+                    &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 10 },
+                    &#34;username&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;theUser&#34; },
+                    &#34;firstName&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;John&#34; },
+                    &#34;lastName&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;James&#34; },
+                    &#34;email&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;john@email.com&#34; },
+                    &#34;password&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;******&#34; },
+                    &#34;phone&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;12345&#34; },
+                    &#34;userStatus&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 1 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;user&#34;]
+      }
+    },
+    &#34;/user/{id}&#34;: {
+      &#34;get&#34;: {
+        &#34;summary&#34;: &#34;/user/{id}&#34;,
+        &#34;parameters&#34;: [
+          {
+            &#34;name&#34;: &#34;id&#34;,
+            &#34;in&#34;: &#34;path&#34;,
+            &#34;required&#34;: true,
+            &#34;schema&#34;: { &#34;type&#34;: &#34;string&#34; }
+          }
+        ],
+        &#34;responses&#34;: {
+          &#34;200&#34;: {
+            &#34;description&#34;: &#34;OK&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: {
+                  &#34;type&#34;: &#34;object&#34;,
+                  &#34;properties&#34;: {
+                    &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 10 },
+                    &#34;username&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;theUser&#34; },
+                    &#34;firstName&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;John&#34; },
+                    &#34;lastName&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;James&#34; },
+                    &#34;email&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;john@email.com&#34; },
+                    &#34;password&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;******&#34; },
+                    &#34;phone&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;12345&#34; },
+                    &#34;userStatus&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 1 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;user&#34;]
+      },
+      &#34;put&#34;: {
+        &#34;summary&#34;: &#34;/user/{id}&#34;,
+        &#34;parameters&#34;: [
+          {
+            &#34;name&#34;: &#34;id&#34;,
+            &#34;in&#34;: &#34;path&#34;,
+            &#34;required&#34;: true,
+            &#34;schema&#34;: { &#34;type&#34;: &#34;string&#34; }
+          }
+        ],
+        &#34;responses&#34;: {
+          &#34;200&#34;: {
+            &#34;description&#34;: &#34;OK&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: {
+                  &#34;type&#34;: &#34;object&#34;,
+                  &#34;properties&#34;: {
+                    &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 10 },
+                    &#34;username&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;theUser&#34; },
+                    &#34;firstName&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;John&#34; },
+                    &#34;lastName&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;James&#34; },
+                    &#34;email&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;john@email.com&#34; },
+                    &#34;password&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;******&#34; },
+                    &#34;phone&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;12345&#34; },
+                    &#34;userStatus&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 1 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;user&#34;]
+      },
+      &#34;patch&#34;: {
+        &#34;summary&#34;: &#34;/user/{id}&#34;,
+        &#34;parameters&#34;: [
+          {
+            &#34;name&#34;: &#34;id&#34;,
+            &#34;in&#34;: &#34;path&#34;,
+            &#34;required&#34;: true,
+            &#34;schema&#34;: { &#34;type&#34;: &#34;string&#34; }
+          }
+        ],
+        &#34;responses&#34;: {
+          &#34;200&#34;: {
+            &#34;description&#34;: &#34;OK&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: {
+                  &#34;type&#34;: &#34;object&#34;,
+                  &#34;properties&#34;: {
+                    &#34;id&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 10 },
+                    &#34;username&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;theUser&#34; },
+                    &#34;firstName&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;John&#34; },
+                    &#34;lastName&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;James&#34; },
+                    &#34;email&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;john@email.com&#34; },
+                    &#34;password&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;******&#34; },
+                    &#34;phone&#34;: { &#34;type&#34;: &#34;string&#34;, &#34;example&#34;: &#34;12345&#34; },
+                    &#34;userStatus&#34;: { &#34;type&#34;: &#34;number&#34;, &#34;example&#34;: 1 }
+                  }
+                }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;user&#34;]
+      },
+      &#34;delete&#34;: {
+        &#34;summary&#34;: &#34;/user/{id}&#34;,
+        &#34;parameters&#34;: [
+          {
+            &#34;name&#34;: &#34;id&#34;,
+            &#34;in&#34;: &#34;path&#34;,
+            &#34;required&#34;: true,
+            &#34;schema&#34;: { &#34;type&#34;: &#34;string&#34; }
+          }
+        ],
+        &#34;responses&#34;: {
+          &#34;200&#34;: {
+            &#34;description&#34;: &#34;OK&#34;,
+            &#34;content&#34;: {
+              &#34;application/json&#34;: {
+                &#34;schema&#34;: { &#34;type&#34;: &#34;object&#34;, &#34;properties&#34;: {} }
+              }
+            }
+          }
+        },
+        &#34;tags&#34;: [&#34;user&#34;]
+      }
+    }
+  },
+  &#34;tags&#34;: [{ &#34;name&#34;: &#34;pet&#34; }, { &#34;name&#34;: &#34;user&#34; }]
+}</code></pre></div></div></div></div><div class=sect1><h2 id=_参考>参考<a hidden class=anchor aria-hidden=true href=#_参考>#</a></h2><div class=sectionbody><div class=ulist><ul><li><p><a href=https://github.com/typicode/json-server>github/typicode/json-server</a></p></li><li><p><a href=https://github.com/mpashkovskiy/express-oas-generator>github/mpashkovskiy/express-oas-generator</a></p></li><li><p><a href=https://github.com/node-fetch/node-fetch>github/node-fetch/node-fetch</a></p></li><li><p><a href=https://petstore3.swagger.io/>Swagger Petstore - OpenAPI 3.0</a></p></li></ul></div></div></div></div><footer class=post-footer><ul class=post-tags><li><a href=https://szk302.dev/tags/OpenAPI/>OpenAPI</a></li><li><a href=https://szk302.dev/tags/OpenAPI-Specification-Version-3.0/>OpenAPI Specification - Version 3.0</a></li><li><a href=https://szk302.dev/tags/JSON-Server/>JSON Server</a></li><li><a href=https://szk302.dev/tags/express-oas-generator/>express-oas-generator</a></li></ul><nav class=paginav><a class=next href=https://szk302.dev/posts/%E6%96%87%E7%AB%A0%E3%81%8B%E3%82%89%E3%83%80%E3%83%96%E3%83%AB%E3%82%AF%E3%82%A9%E3%83%BC%E3%83%88%E3%81%AB%E5%9B%B2%E3%81%BE%E3%82%8C%E3%81%9F%E6%96%87%E5%AD%97%E5%88%97%E3%82%92%E6%8A%9C%E3%81%8D%E5%87%BA%E3%81%99/><span class=title>次のページ »</span><br><span>文章からダブルクォートに囲まれた文字列を抜き出す</span></a></nav><div class=share-buttons><a target=_blank rel="noopener noreferrer" aria-label="share json-serverからOpenAPISpecificationの一部を生成する on twitter" href="https://twitter.com/intent/tweet/?text=json-server%e3%81%8b%e3%82%89OpenAPISpecification%e3%81%ae%e4%b8%80%e9%83%a8%e3%82%92%e7%94%9f%e6%88%90%e3%81%99%e3%82%8b&url=https%3a%2f%2fszk302.dev%2fposts%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2f&hashtags=OpenAPI%2cOpenAPISpecification-Version3.0%2cjson-server%2cJSONServer%2cexpress-oas-generator"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share json-serverからOpenAPISpecificationの一部を生成する on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fszk302.dev%2fposts%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2f&title=json-server%e3%81%8b%e3%82%89OpenAPISpecification%e3%81%ae%e4%b8%80%e9%83%a8%e3%82%92%e7%94%9f%e6%88%90%e3%81%99%e3%82%8b&summary=json-server%e3%81%8b%e3%82%89OpenAPISpecification%e3%81%ae%e4%b8%80%e9%83%a8%e3%82%92%e7%94%9f%e6%88%90%e3%81%99%e3%82%8b&source=https%3a%2f%2fszk302.dev%2fposts%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share json-serverからOpenAPISpecificationの一部を生成する on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fszk302.dev%2fposts%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2f&title=json-server%e3%81%8b%e3%82%89OpenAPISpecification%e3%81%ae%e4%b8%80%e9%83%a8%e3%82%92%e7%94%9f%e6%88%90%e3%81%99%e3%82%8b"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share json-serverからOpenAPISpecificationの一部を生成する on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fszk302.dev%2fposts%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share json-serverからOpenAPISpecificationの一部を生成する on whatsapp" href="https://api.whatsapp.com/send?text=json-server%e3%81%8b%e3%82%89OpenAPISpecification%e3%81%ae%e4%b8%80%e9%83%a8%e3%82%92%e7%94%9f%e6%88%90%e3%81%99%e3%82%8b%20-%20https%3a%2f%2fszk302.dev%2fposts%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share json-serverからOpenAPISpecificationの一部を生成する on telegram" href="https://telegram.me/share/url?text=json-server%e3%81%8b%e3%82%89OpenAPISpecification%e3%81%ae%e4%b8%80%e9%83%a8%e3%82%92%e7%94%9f%e6%88%90%e3%81%99%e3%82%8b&url=https%3a%2f%2fszk302.dev%2fposts%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2fjson-server%25E3%2581%258B%25E3%2582%2589OpenAPISpecification%25E3%2581%25AE%25E4%25B8%2580%25E9%2583%25A8%25E3%2582%2592%25E7%2594%259F%25E6%2588%2590%25E3%2581%2599%25E3%2582%258B%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentcolor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></div></footer></article><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4731270307013315" crossorigin=anonymous></script>
+<ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4731270307013315 data-ad-slot=1123428370 data-ad-format=auto data-full-width-responsive=true></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></main><footer class=footer><span>Copyright (c) 2021年 Szk302</span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>
