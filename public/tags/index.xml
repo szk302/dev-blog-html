@@ -10,7 +10,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 04 Dec 2022 11:27:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 11 Dec 2022 08:12:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash</title>
+      <link>https://szk302.dev/tags/Bash/</link>
+      <pubDate>Sun, 11 Dec 2022 08:12:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>declare</title>
+      <link>https://szk302.dev/tags/declare/</link>
+      <pubDate>Sun, 11 Dec 2022 08:12:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/declare/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>express-oas-generator</title>
       <link>https://szk302.dev/tags/express-oas-generator/</link>
@@ -476,15 +494,6 @@
       <pubDate>Mon, 05 Sep 2022 06:57:00 +0900</pubDate>
       
       <guid>https://szk302.dev/tags/SchemaSpy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Bash</title>
-      <link>https://szk302.dev/tags/Bash/</link>
-      <pubDate>Sun, 04 Sep 2022 13:50:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/Bash/</guid>
       <description></description>
     </item>
     
