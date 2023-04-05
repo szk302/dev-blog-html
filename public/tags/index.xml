@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sun, 08 Jan 2023 06:30:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Apr 2023 22:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Go</title>
+      <link>https://szk302.dev/tags/Go/</link>
+      <pubDate>Wed, 05 Apr 2023 22:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/tags/Go/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>RDP</title>
       <link>https://szk302.dev/tags/RDP/</link>
@@ -1494,15 +1503,6 @@
       <pubDate>Fri, 03 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://szk302.dev/tags/webpack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>https://szk302.dev/tags/Go/</link>
-      <pubDate>Sat, 27 Nov 2021 08:42:00 +0900</pubDate>
-      
-      <guid>https://szk302.dev/tags/Go/</guid>
       <description></description>
     </item>
     

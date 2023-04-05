@@ -2,16 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2023-01-08T06:30:00+09:00</lastmod>
+    <loc>https://szk302.dev/tags/Go/</loc>
+    <lastmod>2023-04-05T22:20:00+09:00</lastmod>
   </url><url>
-    <loc>https://szk302.dev/tags/RDP/</loc>
-    <lastmod>2023-01-08T06:30:00+09:00</lastmod>
+    <loc>https://szk302.dev/posts/Go%E3%81%A7%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E4%BD%9C%E6%88%90%E3%81%A8%E5%AE%9F%E8%A1%8C/</loc>
+    <lastmod>2023-04-05T22:20:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2023-04-05T22:20:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/</loc>
-    <lastmod>2023-01-08T06:30:00+09:00</lastmod>
+    <lastmod>2023-04-05T22:20:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2023-04-05T22:20:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/RDP/</loc>
     <lastmod>2023-01-08T06:30:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/Windows-11-Pro/</loc>
@@ -871,9 +877,6 @@
   </url><url>
     <loc>https://szk302.dev/tags/webpack/</loc>
     <lastmod>2021-12-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/Go/</loc>
-    <lastmod>2021-11-27T08:42:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/Go%E3%81%A7%E6%A8%99%E6%BA%96%E5%87%BA%E5%8A%9B%E3%81%AB%E3%83%AD%E3%82%B0%E3%82%92%E5%87%BA%E5%8A%9B%E3%81%99%E3%82%8B/</loc>
     <lastmod>2021-11-27T08:42:00+09:00</lastmod>
