@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Wed, 05 Apr 2023 22:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Apr 2023 16:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snowflake概要</title>
+      <link>https://szk302.dev/posts/Snowflake%E6%A6%82%E8%A6%81/</link>
+      <pubDate>Thu, 06 Apr 2023 16:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Snowflake%E6%A6%82%E8%A6%81/</guid>
+      <description>Snowflakeについて調べたのでメモ データ分析用のサービスだが、データ自体の売買もできそう。 複数のデータプールからコネコネして欲しい情報</description>
+    </item>
+    
     <item>
       <title>Goでプロジェクト作成と実行</title>
       <link>https://szk302.dev/posts/Go%E3%81%A7%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E4%BD%9C%E6%88%90%E3%81%A8%E5%AE%9F%E8%A1%8C/</link>

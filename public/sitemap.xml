@@ -2,19 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/posts/</loc>
+    <lastmod>2023-04-06T16:20:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/Snowflake/</loc>
+    <lastmod>2023-04-06T16:20:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/Snowflake%E6%A6%82%E8%A6%81/</loc>
+    <lastmod>2023-04-06T16:20:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2023-04-06T16:20:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2023-04-06T16:20:00+09:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/tags/Go/</loc>
     <lastmod>2023-04-05T22:20:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/Go%E3%81%A7%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E4%BD%9C%E6%88%90%E3%81%A8%E5%AE%9F%E8%A1%8C/</loc>
-    <lastmod>2023-04-05T22:20:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2023-04-05T22:20:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2023-04-05T22:20:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2023-04-05T22:20:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/RDP/</loc>

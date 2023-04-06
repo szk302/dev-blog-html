@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Snowflake on Szk302 Log Blog</title>
+    <link>https://szk302.dev/tags/Snowflake/</link>
+    <description>Recent content in Snowflake on Szk302 Log Blog</description>
+    <image>
+      <title>Szk302 Log Blog</title>
+      <url>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</url>
+      <link>https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2021年 Szk302</copyright>
+    <lastBuildDate>Thu, 06 Apr 2023 16:20:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/Snowflake/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Snowflake概要</title>
+      <link>https://szk302.dev/posts/Snowflake%E6%A6%82%E8%A6%81/</link>
+      <pubDate>Thu, 06 Apr 2023 16:20:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/Snowflake%E6%A6%82%E8%A6%81/</guid>
+      <description>Snowflakeについて調べたのでメモ データ分析用のサービスだが、データ自体の売買もできそう。 複数のデータプールからコネコネして欲しい情報</description>
+    </item>
+    
+  </channel>
+</rss>
