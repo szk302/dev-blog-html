@@ -11,7 +11,25 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Sat, 01 Oct 2022 07:33:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/tags/VSCode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Apr 2023 20:00:00 +0000</lastBuildDate><atom:link href="https://szk302.dev/tags/VSCode/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VSCodeのVimプラグインで入力が遅い</title>
+      <link>https://szk302.dev/posts/VSCode%E3%81%AEVim%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7%E5%85%A5%E5%8A%9B%E3%81%8C%E9%81%85%E3%81%84/</link>
+      <pubDate>Mon, 10 Apr 2023 20:00:00 +0000</pubDate>
+      
+      <guid>https://szk302.dev/posts/VSCode%E3%81%AEVim%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7%E5%85%A5%E5%8A%9B%E3%81%8C%E9%81%85%E3%81%84/</guid>
+      <description>VSCodeのVimプラグインでキー押下時に異様に遅くワンテンポ遅れて入力されるので対応 拡張ホストプロセスは共通プロセスで動いており他の拡張</description>
+    </item>
+    
+    <item>
+      <title>VSCodeのVimプラグインで入力が遅い</title>
+      <link>https://szk302.dev/posts/VSCode%E3%81%AEVim%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7%E5%85%A5%E5%8A%9B%E3%81%8C%E9%81%85%E3%81%842/</link>
+      <pubDate>Mon, 10 Apr 2023 20:00:00 +0000</pubDate>
+      
+      <guid>https://szk302.dev/posts/VSCode%E3%81%AEVim%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7%E5%85%A5%E5%8A%9B%E3%81%8C%E9%81%85%E3%81%842/</guid>
+      <description>VSCodeのVimプラグインでキー押下時に異様に遅くワンテンポ遅れて入力されるので対応 拡張ホストプロセスは共通プロセスで動いており他の拡張</description>
+    </item>
+    
     <item>
       <title>使い捨てEC2環境を作成してVSCodeを立ち上げるバッチ</title>
       <link>https://szk302.dev/posts/%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E7%92%B0%E5%A2%83%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6VSCode%E3%82%92%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92%E3%82%8B%E3%83%90%E3%83%83%E3%83%81/</link>

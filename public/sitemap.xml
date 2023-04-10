@@ -3,18 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2023-04-07T08:09:00+09:00</lastmod>
+    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/</loc>
+    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/</loc>
+    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/Vim/</loc>
+    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/Visual-Studio-Code/</loc>
+    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/VSCode/</loc>
+    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/vscodevim/</loc>
+    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/VSCode%E3%81%AEVim%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7%E5%85%A5%E5%8A%9B%E3%81%8C%E9%81%85%E3%81%84/</loc>
+    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/VSCode%E3%81%AEVim%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7%E5%85%A5%E5%8A%9B%E3%81%8C%E9%81%85%E3%81%842/</loc>
+    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/Snowflake/</loc>
     <lastmod>2023-04-07T08:09:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/Snowflake%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB_20%E5%88%86%E3%81%A7%E7%B4%B9%E4%BB%8B/Snowflake%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%ABSnowflake%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB_20%E5%88%86%E3%81%A7%E7%B4%B9%E4%BB%8B/</loc>
-    <lastmod>2023-04-07T08:09:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/</loc>
-    <lastmod>2023-04-07T08:09:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/</loc>
     <lastmod>2023-04-07T08:09:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/Snowflake%E6%A6%82%E8%A6%81/</loc>
@@ -234,12 +252,6 @@
     <lastmod>2022-10-01T07:33:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/SSH/</loc>
-    <lastmod>2022-10-01T07:33:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/Visual-Studio-Code/</loc>
-    <lastmod>2022-10-01T07:33:00+09:00</lastmod>
-  </url><url>
-    <loc>https://szk302.dev/tags/VSCode/</loc>
     <lastmod>2022-10-01T07:33:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/posts/%E4%BD%BF%E3%81%84%E6%8D%A8%E3%81%A6EC2%E7%92%B0%E5%A2%83%E3%82%92%E4%BD%9C%E6%88%90%E3%81%97%E3%81%A6VSCode%E3%82%92%E7%AB%8B%E3%81%A1%E4%B8%8A%E3%81%92%E3%82%8B%E3%83%90%E3%83%83%E3%83%81/</loc>
