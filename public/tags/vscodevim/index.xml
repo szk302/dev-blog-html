@@ -21,14 +21,5 @@
       <description>VSCodeのVimプラグインでキー押下時に異様に遅くワンテンポ遅れて入力されるので対応 拡張ホストプロセスは共通プロセスで動いており他の拡張</description>
     </item>
     
-    <item>
-      <title>VSCodeのVimプラグインで入力が遅い</title>
-      <link>https://szk302.dev/posts/VSCode%E3%81%AEVim%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7%E5%85%A5%E5%8A%9B%E3%81%8C%E9%81%85%E3%81%842/</link>
-      <pubDate>Mon, 10 Apr 2023 20:00:00 +0000</pubDate>
-      
-      <guid>https://szk302.dev/posts/VSCode%E3%81%AEVim%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7%E5%85%A5%E5%8A%9B%E3%81%8C%E9%81%85%E3%81%842/</guid>
-      <description>VSCodeのVimプラグインでキー押下時に異様に遅くワンテンポ遅れて入力されるので対応 拡張ホストプロセスは共通プロセスで動いており他の拡張</description>
-    </item>
-    
   </channel>
 </rss>
