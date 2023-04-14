@@ -1,0 +1,526 @@
+<!doctype html><html lang=ja dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Terraformのテンプレート開発環境の構築 | Szk302 Log Blog</title><meta name=keywords content="Terraform,tfenv,tflint,terrform-docs,tfsec,checkov"><meta name=description content="Terraformのテンプレート開発環境を構築する Terraform(以下TF)のツールとして以下のツールをインストールした。 tfenv: Terraf"><meta name=author content="Szk302"><link rel=canonical href=https://szk302.dev/posts/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/><meta name=google-site-verification content="XYZabc"><meta name=yandex-verification content="XYZabc"><meta name=msvalidate.01 content="XYZabc"><link crossorigin=anonymous href=/assets/css/stylesheet.css rel="preload stylesheet" as=style><script defer crossorigin=anonymous src=/assets/js/highlight.js onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42><link rel=icon type=image/png sizes=16x16 href="https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?p=16"><link rel=icon type=image/png sizes=32x32 href="https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42?p=32"><link rel=apple-touch-icon href=https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42><link rel=mask-icon href=https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><noscript><style>#theme-toggle,.top-link{display:none}</style></noscript><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,t,n,s,o,i,a){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,i=t.createElement(n),a=t.getElementsByTagName(n)[0],i.async=1,i.src=s,a.parentNode.insertBefore(i,a)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-212898668-1","auto"),ga("send","pageview"))</script><meta property="og:title" content="Terraformのテンプレート開発環境の構築"><meta property="og:description" content="Terraformのテンプレート開発環境を構築する Terraform(以下TF)のツールとして以下のツールをインストールした。 tfenv: Terraf"><meta property="og:type" content="article"><meta property="og:url" content="https://szk302.dev/posts/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/"><meta property="og:image" content="https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42"><meta property="article:section" content="posts"><meta property="article:published_time" content="2023-04-14T09:00:00+09:00"><meta property="article:modified_time" content="2023-04-14T09:00:00+09:00"><meta property="og:site_name" content="Szk302 Log Blog"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42"><meta name=twitter:title content="Terraformのテンプレート開発環境の構築"><meta name=twitter:description content="Terraformのテンプレート開発環境を構築する Terraform(以下TF)のツールとして以下のツールをインストールした。 tfenv: Terraf"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://szk302.dev/posts/"},{"@type":"ListItem","position":2,"name":"Terraformのテンプレート開発環境の構築","item":"https://szk302.dev/posts/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/"}]}</script><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Terraformのテンプレート開発環境の構築","name":"Terraformのテンプレート開発環境の構築","description":"Terraformのテンプレート開発環境を構築する Terraform(以下TF)のツールとして以下のツールをインストールした。 tfenv: Terraf","keywords":["Terraform","tfenv","tflint","terrform-docs","tfsec","checkov"],"articleBody":" Terraformのテンプレート開発環境を構築する\nTerraform(以下TF)のツールとして以下のツールをインストールした。\ntfenv: Terraformバージョン管理ツール\ntflint: 静的解析ツール\nterraform-docs: モジュールドキュメント生成ツール\ntfsec: 静的セキュリティ解析ツール\ncheckov: 静的コード分析ツール\n他のツールは shuaibiyy/awesome-terraform を参照\n使用したDockerfileは以下の通り\nFROM debian:bullseye-20230411-slim ARG DEFAULT_TERRAFROM_VERSION=1.4.4 ARG TFENV_VERSION=v3.0.0 ARG TFLINT_VERSION=v0.45.0 ARG TFDOCS_VERSION=v0.16.0 ARG TFSEC_VERSION=v1.28.1 ARG CHECKOV_VERSION=2.3.160 RUN apt-get update -y \u0026\u0026 \\ # 日本語化 apt-get install -y locales \u0026\u0026 \\ sed -i -E 's/# (ja_JP.UTF-8)/\\1/' /etc/locale.gen \u0026\u0026 \\ locale-gen \u0026\u0026 \\ apt-get install -y curl git unzip # tfenvインストール ENV TFENV_HOME=/usr/local/tfenv ENV TFENV_TAR_URL=https://github.com/tfutils/tfenv/archive/refs/tags/${TFENV_VERSION}.tar.gz ENV PATH=$PATH:${TFENV_HOME}/bin RUN mkdir -p \"${TFENV_HOME}\" \u0026\u0026 \\ curl -fSL \"${TFENV_TAR_URL}\" | tar zxvf - --strip-components=1 -C \"${TFENV_HOME}\" # デフォルトのterraformインストール RUN tfenv install \"${DEFAULT_TERRAFROM_VERSION}\" # tflintインストール ENV TFLINT_VERSION=\"${TFLINT_VERSION}\" RUN curl -fSL https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash # tfdocインストール ENV TFDOCS_HOME=/usr/local/tfdocs ENV PATH=$PATH:${TFDOCS_HOME}/bin ENV TFDOCS_TAR_URL=https://github.com/terraform-docs/terraform-docs/releases/download/${TFDOCS_VERSION}/terraform-docs-${TFDOCS_VERSION}-Linux-amd64.tar.gz RUN mkdir -p \"${TFDOCS_HOME}/bin\" \u0026\u0026 \\ curl -fSL \"${TFDOCS_TAR_URL}\" | tar zxvf - -C \"${TFDOCS_HOME}\" \u0026\u0026 \\ chmod +x \"${TFDOCS_HOME}/terraform-docs\" \u0026\u0026 \\ mv \"${TFDOCS_HOME}/terraform-docs\" \"${TFDOCS_HOME}/bin/\" # tfsecインストール ENV TFSEC_VERSION=\"${TFSEC_VERSION}\" RUN curl -fSL https://raw.githubusercontent.com/aquasecurity/tfsec/master/scripts/install_linux.sh | bash # checkovインストール RUN apt-get install -y python3 \u0026\u0026 \\ apt-get install -y python3-pip \u0026\u0026 \\ python3 -m pip install -U checkov==2.2.5 公式のVSCode用の拡張 Marketplace/HashiCorp Terraform も用意されている。評判は悪そう。。。\nUI: HashiCorp.terraform\ntfenv TFのバージョン管理ツール\ntfenv install バージョン番号 で指定バージョンのTFをインストールできる他、.terraform-versionファイルを作成し tfenv install を実行することで記述されたバージョンのTFがインストールされ使用できるようになる。\n.terraform-version 1.4.4 実行 tfenv install terraform --version で確認 Terraform v1.4.4 on linux_amd64 Your version of Terraform is out of date! The latest version is 1.4.5. You can update by downloading from https://www.terraform.io/downloads.html Terraform terraformを実行してみる\n【AWS編】Terraform公式チュートリアル【翻訳】 を参考にmain.tfを作成し実行してみる。\nmain.tf\nterraform { required_providers { aws = { source = \"hashicorp/aws\" version = \"~\u003e 4.16\" } } required_version = \"\u003e= 1.2.0\" } provider \"aws\" { region = \"us-west-2\" } resource \"aws_instance\" \"app_server\" { ami = \"ami-830c94e3\" instance_type = \"t2.micro\" tags = { Name = \"ExampleAppServerInstance\" } } 準備 terraform init を実行し初期化してプロバイダーをインストールする。\nterraform init の実行 Initializing the backend... Initializing provider plugins... - Finding hashicorp/aws versions matching \"~\u003e 4.16\"... - Installing hashicorp/aws v4.62.0... - Installed hashicorp/aws v4.62.0 (signed by HashiCorp) Terraform has created a lock file .terraform.lock.hcl to record the provider selections it made above. Include this file in your version control repository so that Terraform can guarantee to make the same selections by default when you run \"terraform init\" in the future. Terraform has been successfully initialized! You may now begin working with Terraform. Try running \"terraform plan\" to see any changes that are required for your infrastructure. All Terraform commands should now work. If you ever set or change modules or backend configuration for Terraform, rerun this command to reinitialize your working directory. If you forget, other commands will detect it and remind you to do so if necessary. 実行すると以下のファイルとディレクトリが作成された\n.terraform.lock.hcl\n.terraform\n.terraform/providers/registry.terraform.io/hashicorp/aws/4.62.0/linux_amd64/terraform-provider-aws_v4.62.0_x5\n確認 terraform validate で有効なテンプレートであるか確認\nterraform validate を実行 Success! The configuration is valid. 計画 terraform plan を実行する\nterraform plan を実行 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols: + create Terraform will perform the following actions: # aws_instance.app_server will be created + resource \"aws_instance\" \"app_server\" { + ami = \"ami-830c94e3\" + arn = (known after apply) + associate_public_ip_address = (known after apply) + availability_zone = (known after apply) + cpu_core_count = (known after apply) + cpu_threads_per_core = (known after apply) + disable_api_stop = (known after apply) + disable_api_termination = (known after apply) + ebs_optimized = (known after apply) + get_password_data = false + host_id = (known after apply) + host_resource_group_arn = (known after apply) + iam_instance_profile = (known after apply) + id = (known after apply) + instance_initiated_shutdown_behavior = (known after apply) + instance_state = (known after apply) + instance_type = \"t1.micro\" + ipv6_address_count = (known after apply) + ipv6_addresses = (known after apply) + key_name = (known after apply) + monitoring = (known after apply) + outpost_arn = (known after apply) + password_data = (known after apply) + placement_group = (known after apply) + placement_partition_number = (known after apply) + primary_network_interface_id = (known after apply) + private_dns = (known after apply) + private_ip = (known after apply) + public_dns = (known after apply) + public_ip = (known after apply) + secondary_private_ips = (known after apply) + security_groups = (known after apply) + source_dest_check = true + subnet_id = (known after apply) + tags = { + \"Name\" = \"ExampleAppServerInstance\" } + tags_all = { + \"Name\" = \"ExampleAppServerInstance\" } + tenancy = (known after apply) + user_data = (known after apply) + user_data_base64 = (known after apply) + user_data_replace_on_change = false + vpc_security_group_ids = (known after apply) } Plan: 1 to add, 0 to change, 0 to destroy. ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run \"terraform apply\" now. 適用 terraform apply を実行する\nterraform apply -auto-approve を実行 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols: + create Terraform will perform the following actions: # aws_instance.app_server will be created + resource \"aws_instance\" \"app_server\" { + ami = \"ami-830c94e3\" + arn = (known after apply) + associate_public_ip_address = (known after apply) + availability_zone = (known after apply) + cpu_core_count = (known after apply) + cpu_threads_per_core = (known after apply) + disable_api_stop = (known after apply) + disable_api_termination = (known after apply) + ebs_optimized = (known after apply) + get_password_data = false + host_id = (known after apply) + host_resource_group_arn = (known after apply) + iam_instance_profile = (known after apply) + id = (known after apply) + instance_initiated_shutdown_behavior = (known after apply) + instance_state = (known after apply) + instance_type = \"t1.micro\" + ipv6_address_count = (known after apply) + ipv6_addresses = (known after apply) + key_name = (known after apply) + monitoring = (known after apply) + outpost_arn = (known after apply) + password_data = (known after apply) + placement_group = (known after apply) + placement_partition_number = (known after apply) + primary_network_interface_id = (known after apply) + private_dns = (known after apply) + private_ip = (known after apply) + public_dns = (known after apply) + public_ip = (known after apply) + secondary_private_ips = (known after apply) + security_groups = (known after apply) + source_dest_check = true + subnet_id = (known after apply) + tags = { + \"Name\" = \"ExampleAppServerInstance\" } + tags_all = { + \"Name\" = \"ExampleAppServerInstance\" } + tenancy = (known after apply) + user_data = (known after apply) + user_data_base64 = (known after apply) + user_data_replace_on_change = false + vpc_security_group_ids = (known after apply) } Plan: 1 to add, 0 to change, 0 to destroy. aws_instance.app_server: Creating... aws_instance.app_server: Still creating... [10s elapsed] aws_instance.app_server: Still creating... [20s elapsed] aws_instance.app_server: Still creating... [30s elapsed] aws_instance.app_server: Creation complete after 34s [id=i-08f43a9387eabd711] Apply complete! Resources: 1 added, 0 changed, 0 destroyed. AWSコンソールをのぞくとリソースが作成されていた。\n-auto-approve オプションは強制的に適用させるためのオプション。 terraform apply だとInteractiveに動くため-auto-approveで強制実行させてみた。 ただし、CIでやるにはよろしくなさそう。\n別の方法として`terraform plan` 時に -out オプションを使用するとplan fileが出力される。 それを terraform apply ${PLAN_FILE} と指定して実行できるそうな。 また、planの中身をMDに変換するツールもあるらしい。\n参考 Terraform 1.0.1の新機能使ってみた\nTerraformのplan結果をmarkdownとして整形するツール、terraform-j2mdの紹介\n削除 terraform destroy を実行するとInteractiveに動く terraform destroy は terraform apply -destroy のaliasらしい。\nterraform apply -auto-approve -destroy を実行 aws_instance.app_server: Refreshing state... [id=i-08f43a9387eabd711] Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols: - destroy Terraform will perform the following actions: # aws_instance.app_server will be destroyed - resource \"aws_instance\" \"app_server\" { - ami = \"ami-830c94e3\" -\u003e null - arn = \"arn:aws:ec2:us-west-2:123456789101:instance/i-08f43a9387eabd711\" -\u003e null - associate_public_ip_address = true -\u003e null - availability_zone = \"us-west-2c\" -\u003e null - cpu_core_count = 1 -\u003e null - cpu_threads_per_core = 1 -\u003e null - disable_api_stop = false -\u003e null - disable_api_termination = false -\u003e null - ebs_optimized = false -\u003e null - get_password_data = false -\u003e null - hibernation = false -\u003e null - id = \"i-08f43a9387eabd711\" -\u003e null - instance_initiated_shutdown_behavior = \"stop\" -\u003e null - instance_state = \"running\" -\u003e null - instance_type = \"t1.micro\" -\u003e null - ipv6_address_count = 0 -\u003e null - ipv6_addresses = [] -\u003e null - monitoring = false -\u003e null - placement_partition_number = 0 -\u003e null - primary_network_interface_id = \"eni-09de77ee395cbbd15\" -\u003e null - private_dns = \"ip-172-31-11-125.us-west-2.compute.internal\" -\u003e null - private_ip = \"172.31.11.125\" -\u003e null - public_dns = \"ec2-35-89-169-164.us-west-2.compute.amazonaws.com\" -\u003e null - public_ip = \"35.89.169.164\" -\u003e null - secondary_private_ips = [] -\u003e null - security_groups = [ - \"default\", ] -\u003e null - source_dest_check = true -\u003e null - subnet_id = \"subnet-092f134f\" -\u003e null - tags = { - \"Name\" = \"ExampleAppServerInstance\" } -\u003e null - tags_all = { - \"Name\" = \"ExampleAppServerInstance\" } -\u003e null - tenancy = \"default\" -\u003e null - user_data_replace_on_change = false -\u003e null - vpc_security_group_ids = [ - \"sg-2da27048\", ] -\u003e null - capacity_reservation_specification { - capacity_reservation_preference = \"open\" -\u003e null } - enclave_options { - enabled = false -\u003e null } - maintenance_options { - auto_recovery = \"default\" -\u003e null } - metadata_options { - http_endpoint = \"enabled\" -\u003e null - http_put_response_hop_limit = 1 -\u003e null - http_tokens = \"optional\" -\u003e null - instance_metadata_tags = \"disabled\" -\u003e null } - private_dns_name_options { - enable_resource_name_dns_a_record = false -\u003e null - enable_resource_name_dns_aaaa_record = false -\u003e null - hostname_type = \"ip-name\" -\u003e null } - root_block_device { - delete_on_termination = true -\u003e null - device_name = \"/dev/sda1\" -\u003e null - encrypted = false -\u003e null - iops = 0 -\u003e null - tags = {} -\u003e null - throughput = 0 -\u003e null - volume_id = \"vol-0d0c8c535b33f7906\" -\u003e null - volume_size = 8 -\u003e null - volume_type = \"standard\" -\u003e null } } Plan: 0 to add, 0 to change, 1 to destroy. aws_instance.app_server: Destroying... [id=i-08f43a9387eabd711] aws_instance.app_server: Still destroying... [id=i-08f43a9387eabd711, 10s elapsed] aws_instance.app_server: Still destroying... [id=i-08f43a9387eabd711, 20s elapsed] aws_instance.app_server: Still destroying... [id=i-08f43a9387eabd711, 30s elapsed] aws_instance.app_server: Destruction complete after 31s Apply complete! Resources: 0 added, 0 changed, 1 destroyed. 試しに terraform plan -destroy を実行してみた。\nterraform plan -destroy を実行 aws_instance.app_server: Refreshing state... [id=i-08f43a9387eabd711] Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols: - destroy Terraform will perform the following actions: # aws_instance.app_server will be destroyed - resource \"aws_instance\" \"app_server\" { - ami = \"ami-830c94e3\" -\u003e null - arn = \"arn:aws:ec2:us-west-2:123456789101:instance/i-08f43a9387eabd711\" -\u003e null - associate_public_ip_address = true -\u003e null - availability_zone = \"us-west-2c\" -\u003e null - cpu_core_count = 1 -\u003e null - cpu_threads_per_core = 1 -\u003e null - disable_api_stop = false -\u003e null - disable_api_termination = false -\u003e null - ebs_optimized = false -\u003e null - get_password_data = false -\u003e null - hibernation = false -\u003e null - id = \"i-08f43a9387eabd711\" -\u003e null - instance_initiated_shutdown_behavior = \"stop\" -\u003e null - instance_state = \"running\" -\u003e null - instance_type = \"t1.micro\" -\u003e null - ipv6_address_count = 0 -\u003e null - ipv6_addresses = [] -\u003e null - monitoring = false -\u003e null - placement_partition_number = 0 -\u003e null - primary_network_interface_id = \"eni-09de77ee395cbbd15\" -\u003e null - private_dns = \"ip-172-31-11-125.us-west-2.compute.internal\" -\u003e null - private_ip = \"172.31.11.125\" -\u003e null - public_dns = \"ec2-35-89-169-164.us-west-2.compute.amazonaws.com\" -\u003e null - public_ip = \"35.89.169.164\" -\u003e null - secondary_private_ips = [] -\u003e null - security_groups = [ - \"default\", ] -\u003e null - source_dest_check = true -\u003e null - subnet_id = \"subnet-092f134f\" -\u003e null - tags = { - \"Name\" = \"ExampleAppServerInstance\" } -\u003e null - tags_all = { - \"Name\" = \"ExampleAppServerInstance\" } -\u003e null - tenancy = \"default\" -\u003e null - user_data_replace_on_change = false -\u003e null - vpc_security_group_ids = [ - \"sg-2da27048\", ] -\u003e null - capacity_reservation_specification { - capacity_reservation_preference = \"open\" -\u003e null } - enclave_options { - enabled = false -\u003e null } - maintenance_options { - auto_recovery = \"default\" -\u003e null } - metadata_options { - http_endpoint = \"enabled\" -\u003e null - http_put_response_hop_limit = 1 -\u003e null - http_tokens = \"optional\" -\u003e null - instance_metadata_tags = \"disabled\" -\u003e null } - private_dns_name_options { - enable_resource_name_dns_a_record = false -\u003e null - enable_resource_name_dns_aaaa_record = false -\u003e null - hostname_type = \"ip-name\" -\u003e null } - root_block_device { - delete_on_termination = true -\u003e null - device_name = \"/dev/sda1\" -\u003e null - encrypted = false -\u003e null - iops = 0 -\u003e null - tags = {} -\u003e null - throughput = 0 -\u003e null - volume_id = \"vol-0d0c8c535b33f7906\" -\u003e null - volume_size = 8 -\u003e null - volume_type = \"standard\" -\u003e null } } Plan: 0 to add, 0 to change, 1 to destroy. ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── Note: You didn't use the -out option to save this plan, so Terraform can't guarantee to take exactly these actions if you run \"terraform apply\" now. tflint 静的解析ツール\n.tflint.hcl を準備し tflint --init で初期化することで対象ルールセットをインストールして使用する。 以前はtflint腹持ちのTFと使用するTFのバージョンの同期が必要だったようだが、今はv1.x系ならほぼ問題ないらしい。(Compatibility with Terraform) .tflint.hcl の中身は terraform-linters/tflint-ruleset-aws のものを使用\n.tflint.hcl plugin \"aws\" { enabled = true version = \"0.22.1\" source = \"github.com/terraform-linters/tflint-ruleset-aws\" } 初期化 tflint --init 結果 root@1fbd264426b9:/workspace# tflint --version TFLint version 0.45.0 + ruleset.aws (0.22.1) + ruleset.terraform (0.2.2-bundled) 実行 そのままmain.tfを使用する。\ntflint を実行(何も表示されない) 試しに存在しないインスタンスタイプに変更してやってみる\nmain instance_type = \"x.micro\" tflint を実行 1 issue(s) found: Error: \"x.micro\" is an invalid value as instance_type (aws_instance_invalid_type) on main.tf line 18: 18: instance_type = \"x.micro\" tfsec tfsecを実行する(main.tfは元に戻した)\ntfsec を実行 Result #1 HIGH Instance does not require IMDS access to require a token ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── main.tf:16-23 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 16 resource \"aws_instance\" \"app_server\" { 17 ami = \"ami-830c94e3\" 18 instance_type = \"t2.micro\" 19 20 tags = { 21 Name = \"ExampleAppServerInstance\" 22 } 23 } ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── ID aws-ec2-enforce-http-token-imds Impact Instance metadata service can be interacted with freely Resolution Enable HTTP token requirement for IMDS More Information - https://aquasecurity.github.io/tfsec/v1.28.1/checks/aws/ec2/enforce-http-token-imds/ - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#metadata-options ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── Result #2 HIGH Root block device is not encrypted. ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── main.tf:16-23 ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── 16 resource \"aws_instance\" \"app_server\" { 17 ami = \"ami-830c94e3\" 18 instance_type = \"t2.micro\" 19 20 tags = { 21 Name = \"ExampleAppServerInstance\" 22 } 23 } ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── ID aws-ec2-enable-at-rest-encryption Impact The block device could be compromised and read from Resolution Turn on encryption for all block devices More Information - https://aquasecurity.github.io/tfsec/v1.28.1/checks/aws/ec2/enable-at-rest-encryption/ - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#ebs-ephemeral-and-root-block-devices ───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────── timings ────────────────────────────────────────── disk i/o 2.880857ms parsing 284.605µs adaptation 95.502µs checks 16.294024ms total 19.554988ms counts ────────────────────────────────────────── modules downloaded 0 modules processed 1 blocks processed 3 files read 1 results ────────────────────────────────────────── passed 3 ignored 0 critical 0 high 2 medium 0 low 0 3 passed, 2 potential problem(s) detected. テンプレートを以下の用に直し再度実行\nresource \"aws_instance\" \"app_server\" { ami = \"ami-830c94e3\" instance_type = \"t2.micro\" metadata_options { http_tokens = \"required\" } root_block_device { encrypted = true } tags = { Name = \"ExampleAppServerInstance\" } } tfsec を実行 timings ────────────────────────────────────────── disk i/o 3.699285ms parsing 278.107µs adaptation 109.703µs checks 7.237266ms total 11.324361ms counts ────────────────────────────────────────── modules downloaded 0 modules processed 1 blocks processed 3 files read 1 results ────────────────────────────────────────── passed 5 ignored 0 critical 0 high 0 medium 0 low 0 No problems detected! 参考 tfutils/tfenv\nterraform-linters/tflint\nbridgecrewio/checkov\naquasecurity/tfsec\nCheckov upgrade notice causing CI to fail\ntfsec vs chekhov vs terrascan - What do pople recommend?\nshuaibiyy/awesome-terraform\nQiita/【AWS編】Terraform公式チュートリアル【翻訳】\n","wordCount":"5855","inLanguage":"ja","datePublished":"2023-04-14T09:00:00+09:00","dateModified":"2023-04-14T09:00:00+09:00","author":{"@type":"Person","name":"Szk302"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://szk302.dev/posts/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/"},"publisher":{"@type":"Organization","name":"Szk302 Log Blog","logo":{"@type":"ImageObject","url":"https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42"}}}</script></head><body class=dark id=top><script>localStorage.getItem("pref-theme")==="light"&&document.body.classList.remove("dark")</script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4731270307013315" crossorigin=anonymous></script><header class=header><nav class=nav><div class=logo><a href=https://szk302.dev/ accesskey=h title="Szk302 Teck Blog (Alt + H)"><img src=https://www.gravatar.com/avatar/d9669165d1baf624cedab4afc3dfcc42 alt=logo aria-label=logo height=35>Szk302 Teck Blog</a>
+<span class=logo-switches><button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></button></span></div><ul id=menu><li><a href=https://szk302.dev/categories/ title=カテゴリ><span>カテゴリ</span></a></li><li><a href=https://szk302.dev/tags/ title=タグ><span>タグ</span></a></li><li><a href=https://szk302.dev/search/ title=検索><span>検索</span></a></li><li><a href=https://szk302.dev/fixed/books title=Books><span>Books</span></a></li><li><a href=https://szk302.dev/fixed/profile title=プロフィール><span>プロフィール</span></a></li><li><a href=https://szk302.dev/fixed/blog title=このブログについて><span>このブログについて</span></a></li></ul></nav></header><main class=main><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4731270307013315" crossorigin=anonymous></script>
+<ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4731270307013315 data-ad-slot=8987813822 data-ad-format=auto data-full-width-responsive=true></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script><article class=post-single><header class=post-header><div class=breadcrumbs><a href=https://szk302.dev/>ホーム</a>&nbsp;»&nbsp;<a href=https://szk302.dev/posts/>Posts</a></div><h1 class=post-title>Terraformのテンプレート開発環境の構築</h1><div class=post-meta><span title='2023-04-14 09:00:00 +0900 +0900'>2023-04-14T09:00:00+09:00</span>&nbsp;·&nbsp;12 分&nbsp;·&nbsp;Szk302&nbsp;|&nbsp;<a href=https://github.com/szk302/dev-blog-content/blob/main/posts/Terraform%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e9%96%8b%e7%99%ba%e7%92%b0%e5%a2%83%e3%81%ae%e6%a7%8b%e7%af%89/Terraform%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e9%96%8b%e7%99%ba%e7%92%b0%e5%a2%83%e3%81%ae%e6%a7%8b%e7%af%89.adoc rel="noopener noreferrer" target=_blank>Suggest Changes</a></div></header><div class=post-content><div id=preamble><div class=sectionbody><div class=paragraph><p>Terraformのテンプレート開発環境を構築する</p></div><div class=paragraph><p>Terraform(以下TF)のツールとして以下のツールをインストールした。</p></div><div class=ulist><ul><li><p>tfenv: Terraformバージョン管理ツール</p></li><li><p>tflint: 静的解析ツール</p></li><li><p>terraform-docs: モジュールドキュメント生成ツール</p></li><li><p>tfsec: 静的セキュリティ解析ツール</p></li><li><p>checkov: 静的コード分析ツール</p></li></ul></div><div class=paragraph><p>他のツールは <a href=https://github.com/shuaibiyy/awesome-terraform>shuaibiyy/awesome-terraform</a> を参照</p></div><div class=paragraph><p>使用したDockerfileは以下の通り</p></div><div class=listingblock><div class=content><pre class=highlight><code class=language-docker data-lang=docker>FROM debian:bullseye-20230411-slim
+ARG DEFAULT_TERRAFROM_VERSION=1.4.4
+ARG TFENV_VERSION=v3.0.0
+ARG TFLINT_VERSION=v0.45.0
+ARG TFDOCS_VERSION=v0.16.0
+ARG TFSEC_VERSION=v1.28.1
+ARG CHECKOV_VERSION=2.3.160
+
+RUN apt-get update -y &amp;&amp; \
+    # 日本語化
+    apt-get install -y locales &amp;&amp; \
+    sed -i -E &#39;s/# (ja_JP.UTF-8)/\1/&#39; /etc/locale.gen &amp;&amp; \
+    locale-gen &amp;&amp; \
+    apt-get install -y curl git unzip
+    # tfenvインストール
+ENV TFENV_HOME=/usr/local/tfenv
+ENV TFENV_TAR_URL=https://github.com/tfutils/tfenv/archive/refs/tags/${TFENV_VERSION}.tar.gz
+ENV PATH=$PATH:${TFENV_HOME}/bin
+RUN mkdir -p &#34;${TFENV_HOME}&#34; &amp;&amp; \
+    curl -fSL &#34;${TFENV_TAR_URL}&#34; | tar zxvf - --strip-components=1 -C &#34;${TFENV_HOME}&#34;
+    # デフォルトのterraformインストール
+RUN tfenv install &#34;${DEFAULT_TERRAFROM_VERSION}&#34;
+    # tflintインストール
+ENV TFLINT_VERSION=&#34;${TFLINT_VERSION}&#34;
+RUN curl -fSL https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash
+    # tfdocインストール
+ENV TFDOCS_HOME=/usr/local/tfdocs
+ENV PATH=$PATH:${TFDOCS_HOME}/bin
+ENV TFDOCS_TAR_URL=https://github.com/terraform-docs/terraform-docs/releases/download/${TFDOCS_VERSION}/terraform-docs-${TFDOCS_VERSION}-Linux-amd64.tar.gz
+RUN mkdir -p &#34;${TFDOCS_HOME}/bin&#34; &amp;&amp; \
+    curl -fSL &#34;${TFDOCS_TAR_URL}&#34; | tar zxvf - -C &#34;${TFDOCS_HOME}&#34; &amp;&amp; \
+    chmod +x &#34;${TFDOCS_HOME}/terraform-docs&#34; &amp;&amp; \
+    mv &#34;${TFDOCS_HOME}/terraform-docs&#34; &#34;${TFDOCS_HOME}/bin/&#34;
+    # tfsecインストール
+ENV TFSEC_VERSION=&#34;${TFSEC_VERSION}&#34;
+RUN curl -fSL https://raw.githubusercontent.com/aquasecurity/tfsec/master/scripts/install_linux.sh | bash
+    # checkovインストール
+RUN apt-get install -y python3 &amp;&amp; \
+    apt-get install -y python3-pip &amp;&amp; \
+    python3 -m pip install -U checkov==2.2.5</code></pre></div></div><div class=paragraph><p>公式のVSCode用の拡張 <a href="https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform">Marketplace/HashiCorp Terraform</a> も用意されている。評判は悪そう。。。</p></div><div class=ulist><ul><li><p>UI: HashiCorp.terraform</p></li></ul></div></div></div><div class=sect1><h2 id=_tfenv>tfenv<a hidden class=anchor aria-hidden=true href=#_tfenv>#</a></h2><div class=sectionbody><div class=paragraph><p>TFのバージョン管理ツール</p></div><div class=paragraph><p><code>tfenv install バージョン番号</code> で指定バージョンのTFをインストールできる他、.terraform-versionファイルを作成し <code>tfenv install</code> を実行することで記述されたバージョンのTFがインストールされ使用できるようになる。</p></div><div class=listingblock><div class=title>.terraform-version</div><div class=content><pre class=highlight><code class=language-txt data-lang=txt>1.4.4</code></pre></div></div><div class=listingblock><div class=title>実行</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>tfenv install</code></pre></div></div><div class=listingblock><div class=title><code>terraform --version</code> で確認</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>Terraform v1.4.4
+on linux_amd64
+
+Your version of Terraform is out of date! The latest version
+is 1.4.5. You can update by downloading from https://www.terraform.io/downloads.html</code></pre></div></div></div></div><div class=sect1><h2 id=_terraform>Terraform<a hidden class=anchor aria-hidden=true href=#_terraform>#</a></h2><div class=sectionbody><div class=paragraph><p>terraformを実行してみる</p></div><div class=paragraph><p><a href=https://qiita.com/NI57721/items/9c686647863a4d93cbde>【AWS編】Terraform公式チュートリアル【翻訳】</a> を参考にmain.tfを作成し実行してみる。</p></div><div class=paragraph><p>main.tf</p></div><div class=listingblock><div class=content><pre class=highlight><code class=language-hcl data-lang=hcl>terraform {
+  required_providers {
+    aws = {
+      source  = &#34;hashicorp/aws&#34;
+      version = &#34;~&gt; 4.16&#34;
+    }
+  }
+
+  required_version = &#34;&gt;= 1.2.0&#34;
+}
+
+provider &#34;aws&#34; {
+  region = &#34;us-west-2&#34;
+}
+
+resource &#34;aws_instance&#34; &#34;app_server&#34; {
+  ami           = &#34;ami-830c94e3&#34;
+  instance_type = &#34;t2.micro&#34;
+
+  tags = {
+    Name = &#34;ExampleAppServerInstance&#34;
+  }
+}</code></pre></div></div><div class=sect2><h3 id=_準備>準備<a hidden class=anchor aria-hidden=true href=#_準備>#</a></h3><div class=paragraph><p><code>terraform init</code> を実行し初期化してプロバイダーをインストールする。</p></div><div class=listingblock><div class=title><code>terraform init</code> の実行</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>Initializing the backend...
+
+Initializing provider plugins...
+- Finding hashicorp/aws versions matching &#34;~&gt; 4.16&#34;...
+- Installing hashicorp/aws v4.62.0...
+- Installed hashicorp/aws v4.62.0 (signed by HashiCorp)
+
+Terraform has created a lock file .terraform.lock.hcl to record the provider
+selections it made above. Include this file in your version control repository
+so that Terraform can guarantee to make the same selections by default when
+you run &#34;terraform init&#34; in the future.
+
+Terraform has been successfully initialized!
+
+You may now begin working with Terraform. Try running &#34;terraform plan&#34; to see
+any changes that are required for your infrastructure. All Terraform commands
+should now work.
+
+If you ever set or change modules or backend configuration for Terraform,
+rerun this command to reinitialize your working directory. If you forget, other
+commands will detect it and remind you to do so if necessary.</code></pre></div></div><div class=paragraph><p>実行すると以下のファイルとディレクトリが作成された</p></div><div class=ulist><ul><li><p>.terraform.lock.hcl</p></li><li><p>.terraform</p><div class=ulist><ul><li><p>.terraform/providers/registry.terraform.io/hashicorp/aws/4.62.0/linux_amd64/terraform-provider-aws_v4.62.0_x5</p></li></ul></div></li></ul></div></div><div class=sect2><h3 id=_確認>確認<a hidden class=anchor aria-hidden=true href=#_確認>#</a></h3><div class=paragraph><p><code>terraform validate</code> で有効なテンプレートであるか確認</p></div><div class=listingblock><div class=title><code>terraform validate</code> を実行</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>Success! The configuration is valid.</code></pre></div></div></div><div class=sect2><h3 id=_計画>計画<a hidden class=anchor aria-hidden=true href=#_計画>#</a></h3><div class=paragraph><p><code>terraform plan</code> を実行する</p></div><div class=listingblock><div class=title><code>terraform plan</code> を実行</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_instance.app_server will be created
+  + resource &#34;aws_instance&#34; &#34;app_server&#34; {
+      + ami                                  = &#34;ami-830c94e3&#34;
+      + arn                                  = (known after apply)
+      + associate_public_ip_address          = (known after apply)
+      + availability_zone                    = (known after apply)
+      + cpu_core_count                       = (known after apply)
+      + cpu_threads_per_core                 = (known after apply)
+      + disable_api_stop                     = (known after apply)
+      + disable_api_termination              = (known after apply)
+      + ebs_optimized                        = (known after apply)
+      + get_password_data                    = false
+      + host_id                              = (known after apply)
+      + host_resource_group_arn              = (known after apply)
+      + iam_instance_profile                 = (known after apply)
+      + id                                   = (known after apply)
+      + instance_initiated_shutdown_behavior = (known after apply)
+      + instance_state                       = (known after apply)
+      + instance_type                        = &#34;t1.micro&#34;
+      + ipv6_address_count                   = (known after apply)
+      + ipv6_addresses                       = (known after apply)
+      + key_name                             = (known after apply)
+      + monitoring                           = (known after apply)
+      + outpost_arn                          = (known after apply)
+      + password_data                        = (known after apply)
+      + placement_group                      = (known after apply)
+      + placement_partition_number           = (known after apply)
+      + primary_network_interface_id         = (known after apply)
+      + private_dns                          = (known after apply)
+      + private_ip                           = (known after apply)
+      + public_dns                           = (known after apply)
+      + public_ip                            = (known after apply)
+      + secondary_private_ips                = (known after apply)
+      + security_groups                      = (known after apply)
+      + source_dest_check                    = true
+      + subnet_id                            = (known after apply)
+      + tags                                 = {
+          + &#34;Name&#34; = &#34;ExampleAppServerInstance&#34;
+        }
+      + tags_all                             = {
+          + &#34;Name&#34; = &#34;ExampleAppServerInstance&#34;
+        }
+      + tenancy                              = (known after apply)
+      + user_data                            = (known after apply)
+      + user_data_base64                     = (known after apply)
+      + user_data_replace_on_change          = false
+      + vpc_security_group_ids               = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Note: You didn&#39;t use the -out option to save this plan, so Terraform can&#39;t guarantee to take exactly these actions if you run &#34;terraform apply&#34; now.</code></pre></div></div></div><div class=sect2><h3 id=_適用>適用<a hidden class=anchor aria-hidden=true href=#_適用>#</a></h3><div class=paragraph><p><code>terraform apply</code> を実行する</p></div><div class=listingblock><div class=title><code>terraform apply -auto-approve</code> を実行</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  + create
+
+Terraform will perform the following actions:
+
+  # aws_instance.app_server will be created
+  + resource &#34;aws_instance&#34; &#34;app_server&#34; {
+      + ami                                  = &#34;ami-830c94e3&#34;
+      + arn                                  = (known after apply)
+      + associate_public_ip_address          = (known after apply)
+      + availability_zone                    = (known after apply)
+      + cpu_core_count                       = (known after apply)
+      + cpu_threads_per_core                 = (known after apply)
+      + disable_api_stop                     = (known after apply)
+      + disable_api_termination              = (known after apply)
+      + ebs_optimized                        = (known after apply)
+      + get_password_data                    = false
+      + host_id                              = (known after apply)
+      + host_resource_group_arn              = (known after apply)
+      + iam_instance_profile                 = (known after apply)
+      + id                                   = (known after apply)
+      + instance_initiated_shutdown_behavior = (known after apply)
+      + instance_state                       = (known after apply)
+      + instance_type                        = &#34;t1.micro&#34;
+      + ipv6_address_count                   = (known after apply)
+      + ipv6_addresses                       = (known after apply)
+      + key_name                             = (known after apply)
+      + monitoring                           = (known after apply)
+      + outpost_arn                          = (known after apply)
+      + password_data                        = (known after apply)
+      + placement_group                      = (known after apply)
+      + placement_partition_number           = (known after apply)
+      + primary_network_interface_id         = (known after apply)
+      + private_dns                          = (known after apply)
+      + private_ip                           = (known after apply)
+      + public_dns                           = (known after apply)
+      + public_ip                            = (known after apply)
+      + secondary_private_ips                = (known after apply)
+      + security_groups                      = (known after apply)
+      + source_dest_check                    = true
+      + subnet_id                            = (known after apply)
+      + tags                                 = {
+          + &#34;Name&#34; = &#34;ExampleAppServerInstance&#34;
+        }
+      + tags_all                             = {
+          + &#34;Name&#34; = &#34;ExampleAppServerInstance&#34;
+        }
+      + tenancy                              = (known after apply)
+      + user_data                            = (known after apply)
+      + user_data_base64                     = (known after apply)
+      + user_data_replace_on_change          = false
+      + vpc_security_group_ids               = (known after apply)
+    }
+
+Plan: 1 to add, 0 to change, 0 to destroy.
+aws_instance.app_server: Creating...
+aws_instance.app_server: Still creating... [10s elapsed]
+aws_instance.app_server: Still creating... [20s elapsed]
+aws_instance.app_server: Still creating... [30s elapsed]
+aws_instance.app_server: Creation complete after 34s [id=i-08f43a9387eabd711]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.</code></pre></div></div><div class=paragraph><p>AWSコンソールをのぞくとリソースが作成されていた。</p></div><div class=paragraph><p><strong>-auto-approve</strong> オプションは強制的に適用させるためのオプション。<br><code>terraform apply</code> だとInteractiveに動くため-auto-approveで強制実行させてみた。
+ただし、CIでやるにはよろしくなさそう。</p></div><div class=paragraph><p>別の方法として`terraform plan` 時に <strong>-out</strong> オプションを使用するとplan fileが出力される。<br>それを <code>terraform apply ${PLAN_FILE}</code> と指定して実行できるそうな。<br>また、planの中身をMDに変換するツールもあるらしい。</p></div><div class=sect3><h4 id=_参考>参考<a hidden class=anchor aria-hidden=true href=#_参考>#</a></h4><div class=ulist><ul><li><p><a href=https://dev.classmethod.jp/articles/terraform-101/>Terraform 1.0.1の新機能使ってみた</a></p></li><li><p><a href=https://tech.repro.io/entry/2022/07/05/113226>Terraformのplan結果をmarkdownとして整形するツール、terraform-j2mdの紹介</a></p></li></ul></div></div></div><div class=sect2><h3 id=_削除>削除<a hidden class=anchor aria-hidden=true href=#_削除>#</a></h3><div class=paragraph><p><code>terraform destroy</code> を実行するとInteractiveに動く<br><code>terraform destroy</code> は <code>terraform apply -destroy</code> のaliasらしい。<br></p></div><div class=listingblock><div class=title><code>terraform apply -auto-approve -destroy</code> を実行</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>aws_instance.app_server: Refreshing state... [id=i-08f43a9387eabd711]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_instance.app_server will be destroyed
+  - resource &#34;aws_instance&#34; &#34;app_server&#34; {
+      - ami                                  = &#34;ami-830c94e3&#34; -&gt; null
+      - arn                                  = &#34;arn:aws:ec2:us-west-2:123456789101:instance/i-08f43a9387eabd711&#34; -&gt; null
+      - associate_public_ip_address          = true -&gt; null
+      - availability_zone                    = &#34;us-west-2c&#34; -&gt; null
+      - cpu_core_count                       = 1 -&gt; null
+      - cpu_threads_per_core                 = 1 -&gt; null
+      - disable_api_stop                     = false -&gt; null
+      - disable_api_termination              = false -&gt; null
+      - ebs_optimized                        = false -&gt; null
+      - get_password_data                    = false -&gt; null
+      - hibernation                          = false -&gt; null
+      - id                                   = &#34;i-08f43a9387eabd711&#34; -&gt; null
+      - instance_initiated_shutdown_behavior = &#34;stop&#34; -&gt; null
+      - instance_state                       = &#34;running&#34; -&gt; null
+      - instance_type                        = &#34;t1.micro&#34; -&gt; null
+      - ipv6_address_count                   = 0 -&gt; null
+      - ipv6_addresses                       = [] -&gt; null
+      - monitoring                           = false -&gt; null
+      - placement_partition_number           = 0 -&gt; null
+      - primary_network_interface_id         = &#34;eni-09de77ee395cbbd15&#34; -&gt; null
+      - private_dns                          = &#34;ip-172-31-11-125.us-west-2.compute.internal&#34; -&gt; null
+      - private_ip                           = &#34;172.31.11.125&#34; -&gt; null
+      - public_dns                           = &#34;ec2-35-89-169-164.us-west-2.compute.amazonaws.com&#34; -&gt; null
+      - public_ip                            = &#34;35.89.169.164&#34; -&gt; null
+      - secondary_private_ips                = [] -&gt; null
+      - security_groups                      = [
+          - &#34;default&#34;,
+        ] -&gt; null
+      - source_dest_check                    = true -&gt; null
+      - subnet_id                            = &#34;subnet-092f134f&#34; -&gt; null
+      - tags                                 = {
+          - &#34;Name&#34; = &#34;ExampleAppServerInstance&#34;
+        } -&gt; null
+      - tags_all                             = {
+          - &#34;Name&#34; = &#34;ExampleAppServerInstance&#34;
+        } -&gt; null
+      - tenancy                              = &#34;default&#34; -&gt; null
+      - user_data_replace_on_change          = false -&gt; null
+      - vpc_security_group_ids               = [
+          - &#34;sg-2da27048&#34;,
+        ] -&gt; null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = &#34;open&#34; -&gt; null
+        }
+
+      - enclave_options {
+          - enabled = false -&gt; null
+        }
+
+      - maintenance_options {
+          - auto_recovery = &#34;default&#34; -&gt; null
+        }
+
+      - metadata_options {
+          - http_endpoint               = &#34;enabled&#34; -&gt; null
+          - http_put_response_hop_limit = 1 -&gt; null
+          - http_tokens                 = &#34;optional&#34; -&gt; null
+          - instance_metadata_tags      = &#34;disabled&#34; -&gt; null
+        }
+
+      - private_dns_name_options {
+          - enable_resource_name_dns_a_record    = false -&gt; null
+          - enable_resource_name_dns_aaaa_record = false -&gt; null
+          - hostname_type                        = &#34;ip-name&#34; -&gt; null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -&gt; null
+          - device_name           = &#34;/dev/sda1&#34; -&gt; null
+          - encrypted             = false -&gt; null
+          - iops                  = 0 -&gt; null
+          - tags                  = {} -&gt; null
+          - throughput            = 0 -&gt; null
+          - volume_id             = &#34;vol-0d0c8c535b33f7906&#34; -&gt; null
+          - volume_size           = 8 -&gt; null
+          - volume_type           = &#34;standard&#34; -&gt; null
+        }
+    }
+
+Plan: 0 to add, 0 to change, 1 to destroy.
+aws_instance.app_server: Destroying... [id=i-08f43a9387eabd711]
+aws_instance.app_server: Still destroying... [id=i-08f43a9387eabd711, 10s elapsed]
+aws_instance.app_server: Still destroying... [id=i-08f43a9387eabd711, 20s elapsed]
+aws_instance.app_server: Still destroying... [id=i-08f43a9387eabd711, 30s elapsed]
+aws_instance.app_server: Destruction complete after 31s
+
+Apply complete! Resources: 0 added, 0 changed, 1 destroyed.</code></pre></div></div><div class=paragraph><p>試しに <code>terraform plan -destroy</code> を実行してみた。</p></div><div class=listingblock><div class=title><code>terraform plan -destroy</code> を実行</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>aws_instance.app_server: Refreshing state... [id=i-08f43a9387eabd711]
+
+Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # aws_instance.app_server will be destroyed
+  - resource &#34;aws_instance&#34; &#34;app_server&#34; {
+      - ami                                  = &#34;ami-830c94e3&#34; -&gt; null
+      - arn                                  = &#34;arn:aws:ec2:us-west-2:123456789101:instance/i-08f43a9387eabd711&#34; -&gt; null
+      - associate_public_ip_address          = true -&gt; null
+      - availability_zone                    = &#34;us-west-2c&#34; -&gt; null
+      - cpu_core_count                       = 1 -&gt; null
+      - cpu_threads_per_core                 = 1 -&gt; null
+      - disable_api_stop                     = false -&gt; null
+      - disable_api_termination              = false -&gt; null
+      - ebs_optimized                        = false -&gt; null
+      - get_password_data                    = false -&gt; null
+      - hibernation                          = false -&gt; null
+      - id                                   = &#34;i-08f43a9387eabd711&#34; -&gt; null
+      - instance_initiated_shutdown_behavior = &#34;stop&#34; -&gt; null
+      - instance_state                       = &#34;running&#34; -&gt; null
+      - instance_type                        = &#34;t1.micro&#34; -&gt; null
+      - ipv6_address_count                   = 0 -&gt; null
+      - ipv6_addresses                       = [] -&gt; null
+      - monitoring                           = false -&gt; null
+      - placement_partition_number           = 0 -&gt; null
+      - primary_network_interface_id         = &#34;eni-09de77ee395cbbd15&#34; -&gt; null
+      - private_dns                          = &#34;ip-172-31-11-125.us-west-2.compute.internal&#34; -&gt; null
+      - private_ip                           = &#34;172.31.11.125&#34; -&gt; null
+      - public_dns                           = &#34;ec2-35-89-169-164.us-west-2.compute.amazonaws.com&#34; -&gt; null
+      - public_ip                            = &#34;35.89.169.164&#34; -&gt; null
+      - secondary_private_ips                = [] -&gt; null
+      - security_groups                      = [
+          - &#34;default&#34;,
+        ] -&gt; null
+      - source_dest_check                    = true -&gt; null
+      - subnet_id                            = &#34;subnet-092f134f&#34; -&gt; null
+      - tags                                 = {
+          - &#34;Name&#34; = &#34;ExampleAppServerInstance&#34;
+        } -&gt; null
+      - tags_all                             = {
+          - &#34;Name&#34; = &#34;ExampleAppServerInstance&#34;
+        } -&gt; null
+      - tenancy                              = &#34;default&#34; -&gt; null
+      - user_data_replace_on_change          = false -&gt; null
+      - vpc_security_group_ids               = [
+          - &#34;sg-2da27048&#34;,
+        ] -&gt; null
+
+      - capacity_reservation_specification {
+          - capacity_reservation_preference = &#34;open&#34; -&gt; null
+        }
+
+      - enclave_options {
+          - enabled = false -&gt; null
+        }
+
+      - maintenance_options {
+          - auto_recovery = &#34;default&#34; -&gt; null
+        }
+
+      - metadata_options {
+          - http_endpoint               = &#34;enabled&#34; -&gt; null
+          - http_put_response_hop_limit = 1 -&gt; null
+          - http_tokens                 = &#34;optional&#34; -&gt; null
+          - instance_metadata_tags      = &#34;disabled&#34; -&gt; null
+        }
+
+      - private_dns_name_options {
+          - enable_resource_name_dns_a_record    = false -&gt; null
+          - enable_resource_name_dns_aaaa_record = false -&gt; null
+          - hostname_type                        = &#34;ip-name&#34; -&gt; null
+        }
+
+      - root_block_device {
+          - delete_on_termination = true -&gt; null
+          - device_name           = &#34;/dev/sda1&#34; -&gt; null
+          - encrypted             = false -&gt; null
+          - iops                  = 0 -&gt; null
+          - tags                  = {} -&gt; null
+          - throughput            = 0 -&gt; null
+          - volume_id             = &#34;vol-0d0c8c535b33f7906&#34; -&gt; null
+          - volume_size           = 8 -&gt; null
+          - volume_type           = &#34;standard&#34; -&gt; null
+        }
+    }
+
+Plan: 0 to add, 0 to change, 1 to destroy.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Note: You didn&#39;t use the -out option to save this plan, so Terraform can&#39;t guarantee to take exactly these actions if you run &#34;terraform apply&#34; now.</code></pre></div></div></div></div></div><div class=sect1><h2 id=_tflint>tflint<a hidden class=anchor aria-hidden=true href=#_tflint>#</a></h2><div class=sectionbody><div class=paragraph><p>静的解析ツール</p></div><div class=paragraph><p><strong>.tflint.hcl</strong> を準備し <code>tflint --init</code> で初期化することで対象ルールセットをインストールして使用する。<br>以前はtflint腹持ちのTFと使用するTFのバージョンの同期が必要だったようだが、今はv1.x系ならほぼ問題ないらしい。(<a href=https://github.com/terraform-linters/tflint/blob/master/docs/user-guide/compatibility.md>Compatibility with Terraform</a>)<br><strong>.tflint.hcl</strong> の中身は <a href=https://github.com/terraform-linters/tflint-ruleset-aws>terraform-linters/tflint-ruleset-aws</a> のものを使用</p></div><div class=listingblock><div class=title>.tflint.hcl</div><div class=content><pre class=highlight><code class=language-hcl data-lang=hcl>plugin &#34;aws&#34; {
+    enabled = true
+    version = &#34;0.22.1&#34;
+    source  = &#34;github.com/terraform-linters/tflint-ruleset-aws&#34;
+}</code></pre></div></div><div class=listingblock><div class=title>初期化</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>tflint --init</code></pre></div></div><div class=listingblock><div class=title>結果</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>root@1fbd264426b9:/workspace# tflint --version
+TFLint version 0.45.0
++ ruleset.aws (0.22.1)
++ ruleset.terraform (0.2.2-bundled)</code></pre></div></div><div class=sect2><h3 id=_実行>実行<a hidden class=anchor aria-hidden=true href=#_実行>#</a></h3><div class=paragraph><p>そのままmain.tfを使用する。</p></div><div class=listingblock><div class=title><code>tflint</code> を実行(何も表示されない)</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash></code></pre></div></div><div class=paragraph><p>試しに存在しないインスタンスタイプに変更してやってみる</p></div><div class=listingblock><div class=title>main</div><div class=content><pre class=highlight><code class=language-tf data-lang=tf>  instance_type = &#34;x.micro&#34;</code></pre></div></div><div class=listingblock><div class=title><code>tflint</code> を実行</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>1 issue(s) found:
+
+Error: &#34;x.micro&#34; is an invalid value as instance_type (aws_instance_invalid_type)
+
+  on main.tf line 18:
+  18:   instance_type = &#34;x.micro&#34;</code></pre></div></div></div></div></div><div class=sect1><h2 id=_tfsec>tfsec<a hidden class=anchor aria-hidden=true href=#_tfsec>#</a></h2><div class=sectionbody><div class=paragraph><p>tfsecを実行する(main.tfは元に戻した)</p></div><div class=listingblock><div class=title><code>tfsec</code> を実行</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>Result #1 HIGH Instance does not require IMDS access to require a token
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  main.tf:16-23
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   16    resource &#34;aws_instance&#34; &#34;app_server&#34; {
+   17      ami           = &#34;ami-830c94e3&#34;
+   18      instance_type = &#34;t2.micro&#34;
+   19
+   20      tags = {
+   21        Name = &#34;ExampleAppServerInstance&#34;
+   22      }
+   23    }
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+          ID aws-ec2-enforce-http-token-imds
+      Impact Instance metadata service can be interacted with freely
+  Resolution Enable HTTP token requirement for IMDS
+
+  More Information
+  - https://aquasecurity.github.io/tfsec/v1.28.1/checks/aws/ec2/enforce-http-token-imds/
+  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#metadata-options
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+Result #2 HIGH Root block device is not encrypted.
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+  main.tf:16-23
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   16    resource &#34;aws_instance&#34; &#34;app_server&#34; {
+   17      ami           = &#34;ami-830c94e3&#34;
+   18      instance_type = &#34;t2.micro&#34;
+   19
+   20      tags = {
+   21        Name = &#34;ExampleAppServerInstance&#34;
+   22      }
+   23    }
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+          ID aws-ec2-enable-at-rest-encryption
+      Impact The block device could be compromised and read from
+  Resolution Turn on encryption for all block devices
+
+  More Information
+  - https://aquasecurity.github.io/tfsec/v1.28.1/checks/aws/ec2/enable-at-rest-encryption/
+  - https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#ebs-ephemeral-and-root-block-devices
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  timings
+  ──────────────────────────────────────────
+  disk i/o             2.880857ms
+  parsing              284.605µs
+  adaptation           95.502µs
+  checks               16.294024ms
+  total                19.554988ms
+
+  counts
+  ──────────────────────────────────────────
+  modules downloaded   0
+  modules processed    1
+  blocks processed     3
+  files read           1
+
+  results
+  ──────────────────────────────────────────
+  passed               3
+  ignored              0
+  critical             0
+  high                 2
+  medium               0
+  low                  0
+
+  3 passed, 2 potential problem(s) detected.</code></pre></div></div><div class=paragraph><p>テンプレートを以下の用に直し再度実行</p></div><div class=listingblock><div class=content><pre class=highlight><code class=language-tf data-lang=tf>resource &#34;aws_instance&#34; &#34;app_server&#34; {
+  ami           = &#34;ami-830c94e3&#34;
+  instance_type = &#34;t2.micro&#34;
+
+  metadata_options {
+  http_tokens = &#34;required&#34;
+  }
+
+  root_block_device {
+      encrypted = true
+  }
+
+  tags = {
+    Name = &#34;ExampleAppServerInstance&#34;
+  }
+}</code></pre></div></div><div class=listingblock><div class=title><code>tfsec</code> を実行</div><div class=content><pre class=highlight><code class=language-bash data-lang=bash>  timings
+  ──────────────────────────────────────────
+  disk i/o             3.699285ms
+  parsing              278.107µs
+  adaptation           109.703µs
+  checks               7.237266ms
+  total                11.324361ms
+
+  counts
+  ──────────────────────────────────────────
+  modules downloaded   0
+  modules processed    1
+  blocks processed     3
+  files read           1
+
+  results
+  ──────────────────────────────────────────
+  passed               5
+  ignored              0
+  critical             0
+  high                 0
+  medium               0
+  low                  0
+
+
+No problems detected!</code></pre></div></div></div></div><div class=sect1><h2 id=_参考_2>参考<a hidden class=anchor aria-hidden=true href=#_参考_2>#</a></h2><div class=sectionbody><div class=ulist><ul><li><p><a href=https://github.com/tfutils/tfenv>tfutils/tfenv</a></p></li><li><p><a href=https://github.com/terraform-linters/tflint>terraform-linters/tflint</a></p></li><li><p><a href=https://github.com/bridgecrewio/checkov>bridgecrewio/checkov</a></p></li><li><p><a href=https://github.com/aquasecurity/tfsec>aquasecurity/tfsec</a></p></li><li><p><a href=https://stackoverflow.com/questions/74522498/checkov-upgrade-notice-causing-ci-to-fail>Checkov upgrade notice causing CI to fail</a></p></li><li><p><a href=https://www.reddit.com/r/Terraform/comments/mzzz5h/tfsec_vs_chekhov_vs_terrascan_what_do_pople/>tfsec vs chekhov vs terrascan - What do pople recommend?</a></p></li><li><p><a href=https://github.com/shuaibiyy/awesome-terraform>shuaibiyy/awesome-terraform</a></p></li><li><p><a href=https://qiita.com/NI57721/items/9c686647863a4d93cbde>Qiita/【AWS編】Terraform公式チュートリアル【翻訳】</a></p></li></ul></div></div></div></div><footer class=post-footer><ul class=post-tags><li><a href=https://szk302.dev/tags/Terraform/>Terraform</a></li><li><a href=https://szk302.dev/tags/tfenv/>tfenv</a></li><li><a href=https://szk302.dev/tags/tflint/>tflint</a></li><li><a href=https://szk302.dev/tags/terrform-docs/>terrform-docs</a></li><li><a href=https://szk302.dev/tags/tfsec/>tfsec</a></li><li><a href=https://szk302.dev/tags/checkov/>checkov</a></li></ul><nav class=paginav><a class=next href=https://szk302.dev/posts/VSCode%E3%81%AEVim%E3%83%97%E3%83%A9%E3%82%B0%E3%82%A4%E3%83%B3%E3%81%A7%E5%85%A5%E5%8A%9B%E3%81%8C%E9%81%85%E3%81%84/><span class=title>次へ »</span><br><span>VSCodeのVimプラグインで入力が遅い</span></a></nav><div class=share-buttons><a target=_blank rel="noopener noreferrer" aria-label="share Terraformのテンプレート開発環境の構築 on twitter" href="https://twitter.com/intent/tweet/?text=Terraform%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e9%96%8b%e7%99%ba%e7%92%b0%e5%a2%83%e3%81%ae%e6%a7%8b%e7%af%89&url=https%3a%2f%2fszk302.dev%2fposts%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2f&hashtags=Terraform%2ctfenv%2ctflint%2cterrform-docs%2ctfsec%2ccheckov"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share Terraformのテンプレート開発環境の構築 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fszk302.dev%2fposts%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2f&title=Terraform%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e9%96%8b%e7%99%ba%e7%92%b0%e5%a2%83%e3%81%ae%e6%a7%8b%e7%af%89&summary=Terraform%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e9%96%8b%e7%99%ba%e7%92%b0%e5%a2%83%e3%81%ae%e6%a7%8b%e7%af%89&source=https%3a%2f%2fszk302.dev%2fposts%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share Terraformのテンプレート開発環境の構築 on reddit" href="https://reddit.com/submit?url=https%3a%2f%2fszk302.dev%2fposts%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2f&title=Terraform%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e9%96%8b%e7%99%ba%e7%92%b0%e5%a2%83%e3%81%ae%e6%a7%8b%e7%af%89"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share Terraformのテンプレート開発環境の構築 on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fszk302.dev%2fposts%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share Terraformのテンプレート開発環境の構築 on whatsapp" href="https://api.whatsapp.com/send?text=Terraform%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e9%96%8b%e7%99%ba%e7%92%b0%e5%a2%83%e3%81%ae%e6%a7%8b%e7%af%89%20-%20https%3a%2f%2fszk302.dev%2fposts%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2f"><svg viewBox="0 0 512 512" height="30" width="30" fill="currentcolor"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg></a><a target=_blank rel="noopener noreferrer" aria-label="share Terraformのテンプレート開発環境の構築 on telegram" href="https://telegram.me/share/url?text=Terraform%e3%81%ae%e3%83%86%e3%83%b3%e3%83%97%e3%83%ac%e3%83%bc%e3%83%88%e9%96%8b%e7%99%ba%e7%92%b0%e5%a2%83%e3%81%ae%e6%a7%8b%e7%af%89&url=https%3a%2f%2fszk302.dev%2fposts%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2fTerraform%25E3%2581%25AE%25E3%2583%2586%25E3%2583%25B3%25E3%2583%2597%25E3%2583%25AC%25E3%2583%25BC%25E3%2583%2588%25E9%2596%258B%25E7%2599%25BA%25E7%2592%25B0%25E5%25A2%2583%25E3%2581%25AE%25E6%25A7%258B%25E7%25AF%2589%2f"><svg viewBox="2 2 28 28" height="30" width="30" fill="currentcolor"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg></a></div></footer></article><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4731270307013315" crossorigin=anonymous></script>
+<ins class=adsbygoogle style=display:block data-ad-client=ca-pub-4731270307013315 data-ad-slot=1123428370 data-ad-format=auto data-full-width-responsive=true></ins>
+<script>(adsbygoogle=window.adsbygoogle||[]).push({})</script></main><footer class=footer><span>Copyright (c) 2021年 Szk302</span>
+<span>Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg></a><script>let menu=document.getElementById("menu");menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(e){e.preventDefault();var t=this.getAttribute("href").substr(1);window.matchMedia("(prefers-reduced-motion: reduce)").matches?document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(t)}']`).scrollIntoView({behavior:"smooth"}),t==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${t}`)})})</script><script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></body></html>

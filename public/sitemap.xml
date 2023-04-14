@@ -2,14 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://szk302.dev/tags/checkov/</loc>
+    <lastmod>2023-04-14T09:00:00+09:00</lastmod>
+  </url><url>
     <loc>https://szk302.dev/posts/</loc>
-    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
+    <lastmod>2023-04-14T09:00:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/</loc>
-    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
+    <lastmod>2023-04-14T09:00:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/</loc>
-    <lastmod>2023-04-10T20:00:00+00:00</lastmod>
+    <lastmod>2023-04-14T09:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/Terraform/</loc>
+    <lastmod>2023-04-14T09:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/posts/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/</loc>
+    <lastmod>2023-04-14T09:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/terrform-docs/</loc>
+    <lastmod>2023-04-14T09:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/tfenv/</loc>
+    <lastmod>2023-04-14T09:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/tflint/</loc>
+    <lastmod>2023-04-14T09:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://szk302.dev/tags/tfsec/</loc>
+    <lastmod>2023-04-14T09:00:00+09:00</lastmod>
   </url><url>
     <loc>https://szk302.dev/tags/Vim/</loc>
     <lastmod>2023-04-10T20:00:00+00:00</lastmod>
