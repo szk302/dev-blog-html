@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright (c) 2021年 Szk302</copyright>
-    <lastBuildDate>Fri, 14 Apr 2023 09:00:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 May 2023 08:30:00 +0900</lastBuildDate><atom:link href="https://szk302.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tfcmtを使用してTerraformのplan結果をGitHubのプルリクに追加する</title>
+      <link>https://szk302.dev/posts/tfcmt%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6Terraform%E3%81%AEplan%E7%B5%90%E6%9E%9C%E3%82%92GitHub%E3%81%AE%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%81%AB%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/</link>
+      <pubDate>Tue, 09 May 2023 08:30:00 +0900</pubDate>
+      
+      <guid>https://szk302.dev/posts/tfcmt%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%97%E3%81%A6Terraform%E3%81%AEplan%E7%B5%90%E6%9E%9C%E3%82%92GitHub%E3%81%AE%E3%83%97%E3%83%AB%E3%83%AA%E3%82%AF%E3%81%AB%E8%BF%BD%E5%8A%A0%E3%81%99%E3%82%8B/</guid>
+      <description>tfcmtを使用する 方法 tfcmtをインストールして-patchオプション(既存のコメントを上書きする)を指定して実行 terraform-p</description>
+    </item>
+    
     <item>
       <title>Terraformのテンプレート開発環境の構築</title>
       <link>https://szk302.dev/posts/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/Terraform%E3%81%AE%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88%E9%96%8B%E7%99%BA%E7%92%B0%E5%A2%83%E3%81%AE%E6%A7%8B%E7%AF%89/</link>
